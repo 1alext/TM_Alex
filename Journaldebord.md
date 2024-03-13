@@ -30,3 +30,7 @@ Mardi 12 mars :
     - "Creer un site? HTML/CSS #1 - Les bases" de Graven-Développement
     - "Build and Deploy Ecommerce Website with HTML CSS Javasript, Full Respnsive Ecommerce Course Freee" de Tech 2 etc
 
+Mercredi 13 mars :
+    - Héberger mon site sur Vercel, j'ai regardé une vidéo de Akdev "Héberger gratuitement son site web ! (très facilement)"
+https://tm-alex.vercel.app/
+
