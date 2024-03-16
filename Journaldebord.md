@@ -34,3 +34,6 @@ Mercredi 13 mars :
     - Héberger mon site sur Vercel, j'ai regardé une vidéo de Akdev "Héberger gratuitement son site web ! (très facilement)"
 https://tm-alex.vercel.app/
 
+
+Samedi 16 mars :
+    - J'ai continué à lire "HTML & CSS pour les nuls", au quart du livre
