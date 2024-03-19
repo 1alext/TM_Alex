@@ -37,3 +37,9 @@ https://tm-alex.vercel.app/
 
 Samedi 16 mars :
     - J'ai continué à lire "HTML & CSS pour les nuls", au quart du livre
+
+Mardi 19 mars : 
+    - Brouillon du site sur papier avec page d'accueil et les fonctionnalités, inspiration sur des sites de ventes d'habits comme Adidas, Nike, Snipes, Zalando
+    - Continuer le cours "Build and Deploy Ecommerce Website with HTML CSS Javasript, Full Respnsive Ecommerce Course Freee" de Tech 2"
+
+D'ci fin de la semaine, jusqu'au 24 mars, être à la moitié du livre et regarder encore des vidéos mais sur PHP et MYSQL et JavaScript.
