@@ -43,3 +43,8 @@ Mardi 19 mars :
     - Continuer le cours "Build and Deploy Ecommerce Website with HTML CSS Javasript, Full Respnsive Ecommerce Course Freee" de Tech 2"
 
 D' ci fin de la semaine, jusqu'au 24 mars, être à la moitié du livre et regarder encore des vidéos mais sur PHP et MYSQL et JavaScript.
+
+24.03.2024 : Finalement j'ai fini le livre. mis en évidence quelques pages potentiellements importants : P.48 (planifier correctement le site), P.82-103 (Informations concernants le texte). P.150 et P217(CSS), P.240 (Un peu de Javascript), P299 (Petites animations avec CSS), P.329 (Site web sur appareil mobile).
+
+Avant avril : être à la moitié du second livre "Concevez votre site web avec PHP et MYSQL". Et commencer à coder
+
