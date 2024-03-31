@@ -48,3 +48,5 @@ D' ci fin de la semaine, jusqu'au 24 mars, être à la moitié du livre et regar
 
 Avant avril : être à la moitié du second livre "Concevez votre site web avec PHP et MYSQL". Et commencer à coder
 
+31.03.2024 : Fini le livre PHP et MYSQL plus tôt que prévu, maintenant coder
+
