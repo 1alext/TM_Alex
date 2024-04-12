@@ -50,3 +50,4 @@ Avant avril : être à la moitié du second livre "Concevez votre site web avec 
 
 31.03.2024 : Fini le livre PHP et MYSQL plus tôt que prévu, maintenant coder
 
+12.04.2024 : ajout logo et icones
