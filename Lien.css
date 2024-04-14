@@ -33,9 +33,10 @@ nav::before {
     color:black;
 }
 
+/* l'image est au centre et change aléatoirement*/
 img{
     display:block;
     width: 800px;
     margin: 0 auto;
-    transition: 0,5s;
+    transition: 2s;
 }
