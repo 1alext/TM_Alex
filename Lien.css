@@ -33,6 +33,22 @@ nav::before {
     color:black;
 }
 
+/*alignement du texte*/
+#hero {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 110vh;
+    text-align: center;
+    background-size: 100% auto;
+    background-position: center;
+}
+#hero h1 {
+    margin-bottom: 20px; 
+}
+
 /* l'image est au centre et change aléatoirement*/
 img{
     display:block;

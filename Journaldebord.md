@@ -52,3 +52,5 @@ Avant avril : être à la moitié du second livre "Concevez votre site web avec 
 
 12.04.2024 : ajout logo et icones, petits problèmes mais facilement réussi à résoudre. 
 Solution problèmes trouvé sur youtube: https://www.youtube.com/watch?v=vlIN27js3UY (Bug avec run and debug), https://www.youtube.com/watch?v=4OMdzHnys9o (probleme avec les liens html et css), https://www.youtube.com/watch?v=ihTB-aZ-Msk&t=47s (problème avec ajout des icones), déplacement des icones à l'horizontal
+
+14.04.2024 : ajout d'un fond gris, du texte et images 
