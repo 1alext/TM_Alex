@@ -50,4 +50,5 @@ Avant avril : être à la moitié du second livre "Concevez votre site web avec 
 
 31.03.2024 : Fini le livre PHP et MYSQL plus tôt que prévu, maintenant coder
 
-12.04.2024 : ajout logo et icones
+12.04.2024 : ajout logo et icones, petits problèmes mais facilement réussi à résoudre. 
+Solution problèmes trouvé sur youtube: https://www.youtube.com/watch?v=vlIN27js3UY (Bug avec run and debug), https://www.youtube.com/watch?v=4OMdzHnys9o (probleme avec les liens html et css), https://www.youtube.com/watch?v=ihTB-aZ-Msk&t=47s (problème avec ajout des icones), déplacement des icones à l'horizontal
