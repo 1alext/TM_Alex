@@ -54,3 +54,6 @@ Avant avril : être à la moitié du second livre "Concevez votre site web avec 
 Solution problèmes trouvé sur youtube: https://www.youtube.com/watch?v=vlIN27js3UY (Bug avec run and debug), https://www.youtube.com/watch?v=4OMdzHnys9o (probleme avec les liens html et css), https://www.youtube.com/watch?v=ihTB-aZ-Msk&t=47s (problème avec ajout des icones), déplacement des icones à l'horizontal
 
 14.04.2024 : ajout d'un fond gris, du texte et images 
+
+22.04.2024 : ajout d'un aide mémoire pour mieux comprendre le code, en faisant des recherches, je suis tombé sur différent site et documents dont W3school qui sert à apprendre différents types de langages informatiques et https://www.eecis.udel.edu/~yarringt/103/Spr20/JSACV.GEBI-1.pdf fichier provenant d'une université au USA qui explique quelques fonctionnalités de javascript.
+

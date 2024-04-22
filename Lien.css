@@ -49,10 +49,3 @@ nav::before {
     margin-bottom: 20px; 
 }
 
-/* l'image est au centre et change aléatoirement*/
-img{
-    display:block;
-    width: 800px;
-    margin: 0 auto;
-    transition: 2s;
-}
