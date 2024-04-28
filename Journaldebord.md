@@ -57,3 +57,4 @@ Solution problèmes trouvé sur youtube: https://www.youtube.com/watch?v=vlIN27j
 
 22.04.2024 : ajout d'un aide mémoire pour mieux comprendre le code, en faisant des recherches, je suis tombé sur différent site et documents dont W3school qui sert à apprendre différents types de langages informatiques et https://www.eecis.udel.edu/~yarringt/103/Spr20/JSACV.GEBI-1.pdf fichier provenant d'une université au USA qui explique quelques fonctionnalités de javascript.
 
+28.04.2024 : https://youtu.be/rD2Tnc-W31A?si=fLv75qj13w_iMLEr vidéo montrant comment mettre des images qui change après un temps donné, je veux faire la même mais celà ne marche pas, il y a un petit délai lors que je lance le site et il y a toujours le problème avec les bordures blanches.

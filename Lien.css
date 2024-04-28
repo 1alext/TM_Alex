@@ -5,16 +5,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-/*ajout d'un fond gris*/
-nav::before { 
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px; /* Hauteur du fond gris */
-    background-color: #dadada; /* Couleur grise */ 
-}
+
 /* Mis en horizontale*/
 .nav-links{
     flex: 1;
