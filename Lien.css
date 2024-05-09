@@ -18,3 +18,11 @@ header{
     justify-content: space-between;
     padding: 30px 8%;
 }
+
+#menu-icon{
+    font-size: 35px;
+    color:black;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
