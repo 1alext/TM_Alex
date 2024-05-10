@@ -26,3 +26,23 @@ header{
     cursor: pointer;
     display: none;
 }
+.logo img{
+    width: 100%;
+    height: auto;
+}
+
+.navbar-icon{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon i{
+    font-size: 30px;
+    color: black;
+    margin-right: 14px;
+    transition: all .42s;
+}
+
+.navbar-icon i:hover{
+    color: rgb(24, 167, 211);
+}
