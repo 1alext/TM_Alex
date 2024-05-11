@@ -100,3 +100,10 @@ section{
 .button:hover{
     background-color: rgb(99, 99, 99);
 }
+
+img{
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
