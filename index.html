@@ -51,7 +51,7 @@
     <!--liste d'image en javascript et ajout fonction qui prend des images aléatoires-->
     <script type="text/javascript">
         let image = document.getElementById('image');
-        let images = ['image1.jpg','image2.jpg','image3.jpg','image4.jpg','image5.jpg']
+        let images = ['image1.jpg','image2.jpg','image3.jpg']
         setInterval(function(){
             let random = Math.floor(Math.random()* 5);
             hero.style.backgroundImage = `url(${images[random]})`;
