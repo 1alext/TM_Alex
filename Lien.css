@@ -120,4 +120,28 @@ section{
     box-shadow: 0 24px 48px -12px hsla(0, 0%, 0%, 0.25);
 }
 
-.slider
+
+.slider img{
+    flex: 1 0 100%; /*1 = toutes images ont la meme taille, 0 = conserve largeur, 100% = toutes images prendront la tailles du conteneur*/
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
