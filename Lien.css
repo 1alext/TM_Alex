@@ -114,6 +114,7 @@ section{
 }
 
 .slider{
+    
     display: flex;
     aspect-ratio: 16 / 9;
     overflow-x: hidden;
@@ -127,7 +128,8 @@ section{
     flex: 0 0 100%;
     scroll-snap-align: start;
     background-size: cover;
-    background-position: center;¨
+    background-position: center;
+    
 }
 
 
@@ -138,7 +140,7 @@ section{
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 2;
 }
 
 .slider-nav a{
