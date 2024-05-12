@@ -63,5 +63,12 @@ Solution problèmes trouvé sur youtube: https://www.youtube.com/watch?v=vlIN27j
 https://www.youtube.com/watch?v=0qu4fTFr26M  
 PHP : https://www.youtube.com/watch?v=-NTvIHHDmg8
 
+10.05.2024 : https://www.youtube.com/watch?v=762i5_M9JAk&t=715s Tutoriel Site html & CSS et ajout logo et refait les icones, j'ai refait le code car l'ancien était pas très bien
+
+11.05.2024 : Ajout de texte et un peu bloquer car je savais pas comment ajouter des images de fond qui changent après un certains temps du coup j'ai regardé des vidéos mais ça ne correspondait pas à ce que je voulais. https://www.youtube.com/watch?v=iUKteYBGopw&t=234s https://www.youtube.com/watch?v=cIPKliHh-aQ https://www.youtube.com/watch?v=rD2Tnc-W31A
+
+12.05.2024 : https://youtu.be/McPdzhLRzCg?si=M3x96PH1YmB72yPL cette vidéo correspond mieux à ce que je veux, https://www.youtube.com/watch?v=cA4ACzQafUg&t=851s celle là aussi
+un autre tutoriel concernant le html : https://www.youtube.com/watch?v=FaNTVjATYHQ&t=259s 
+
 
 
