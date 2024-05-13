@@ -100,12 +100,6 @@ section{
     background-color: rgb(99, 99, 99);
 }
 
-.container{
-    padding : 32px;
-    background-size: cover; 
-    background-position: center; 
-}
-
 .slider-wrapper{
     position: relative;
     max-width: 2000px;
@@ -123,8 +117,8 @@ section{
 }
 
 
-.slide {
-    flex: 0 0 100%;
+.slider img {
+    flex: 1 0 100%;
     scroll-snap-align: start;
     background-size: cover;
     background-position: center;
@@ -154,3 +148,4 @@ section{
 .slider-nav a:hover{
     opacity: 1;
 }
+
