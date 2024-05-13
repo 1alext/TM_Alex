@@ -75,4 +75,6 @@ un autre tutoriel concernant le html : https://www.youtube.com/watch?v=FaNTVjATY
 
  13.04.2024 : problème 1 réussi : superposé le texte sur l'image en utilisant z index, PLUS De problème avec les marges blanches autour de l'image
 vidéo regardé : https://www.youtube.com/watch?v=FaNTVjATYHQ&t=262s https://www.youtube.com/watch?v=QNWIlrW7q_o
-installation de PHP mysql
+installation de PHP mysql : https://www.youtube.com/watch?v=QNWIlrW7q_o https://www.youtube.com/watch?v=dnBa2pTKYY0
+
+
