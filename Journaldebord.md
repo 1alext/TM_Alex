@@ -71,4 +71,6 @@ PHP : https://www.youtube.com/watch?v=-NTvIHHDmg8
 un autre tutoriel concernant le html : https://www.youtube.com/watch?v=FaNTVjATYHQ&t=259s 
 
 
- pour le 13.03.2024 : regarder comment faire pour que les textes soient bien superposé sur les images, regarder comment mettre les icones et logo sur un rectangle blanc en haut de page et regarder comment faire pour que les images défilent automatiquement et regarder comment faire pour que quand on appuie sur les boutons, l'image ne reinitialise pas à l'endroit à la base.
+ pour le 13.05.2024 : regarder comment faire pour que les textes soient bien superposé sur les images, regarder comment mettre les icones et logo sur un rectangle blanc en haut de page et regarder comment faire pour que les images défilent automatiquement et regarder comment faire pour que quand on appuie sur les boutons, l'image ne reinitialise pas à l'endroit à la base.
+
+ 13.04.2024 : problème 1 réussi : superposé le texte sur l'image en utilisant z index
