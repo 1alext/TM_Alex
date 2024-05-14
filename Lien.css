@@ -122,7 +122,7 @@ section{
     scroll-snap-align: start;
     background-size: cover;
     background-position: center;
-    
+    user-select: none;
 }
 
 
