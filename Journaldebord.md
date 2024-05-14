@@ -79,3 +79,8 @@ installation de PHP mysql : https://www.youtube.com/watch?v=QNWIlrW7q_o https://
 
 14.04.2024 : Petit problème, je sais pas comment lier un fichier html avec la base de données, php admin : ouverture d'un serveur local et mis en place de ce qu'il y aura sur le site 
 questions à poser car je suis pas sûr : est ce que actuellement html est lié avec php ? le fichier xampp doit rester dans l'onglet Windows(C:) dans fichier ou je peux le déplacer ? 
+vidéos regardées en lien avec php et son installation et utilisation : https://www.youtube.com/watch?v=1zXqo2WcOew&t=100s
+https://www.youtube.com/watch?v=7-WDb7YaoYk&t=163s
+https://www.youtube.com/watch?v=n6nid7YgvxI
+https://www.youtube.com/watch?v=2HVKizgcfjo&t=30s
+https://www.youtube.com/watch?v=WYufSGgaCZ8&t=412s
