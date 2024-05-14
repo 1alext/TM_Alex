@@ -77,4 +77,4 @@ un autre tutoriel concernant le html : https://www.youtube.com/watch?v=FaNTVjATY
 vidéo regardé : https://www.youtube.com/watch?v=FaNTVjATYHQ&t=262s https://www.youtube.com/watch?v=QNWIlrW7q_o
 installation de PHP mysql : https://www.youtube.com/watch?v=QNWIlrW7q_o https://www.youtube.com/watch?v=dnBa2pTKYY0
 
-
+14.04.2024 : Petit problème, je sais pas comment lier un fichier html avec la base de données
