@@ -86,4 +86,6 @@ https://www.youtube.com/watch?v=2HVKizgcfjo&t=30s
 https://www.youtube.com/watch?v=WYufSGgaCZ8&t=412s
 
 chose à régler concernant html : Ajouter une animation automatique pour que les images défilent sans qu'on appuie dessus, et synchroniser avec les 3 petits boutons, 
-à continuer : page produit en dessous de la page principale, faire page de connexion (login, logout) en haut à droite, clikable sur l'icone et ajouter la barre de recherche.
+à continuer : page produit en dessous de la page principale, faire p age de connexion (login, logout) en haut à droite, clikable sur l'icone et ajouter la barre de recherche.
+
+Prochaine fois, continuer la base de données

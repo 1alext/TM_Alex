@@ -6,12 +6,22 @@
 
 <nav> sert à définir une section de navigation et regroupe les liens dans une page web
 
-<div class="nav-links"> sert à diviser le contenu en sections et dire qu'il contient des liens de navigation
+<div class=""> sert à diviser le contenu en sections et va à l'intérieur ça va regrouper des éléments pour leurs appliquer du style avec css
 
-<section id="hero"> id veut dire qu'on donne un identifiant unique à la section pour la cibler. Le hero sert à contenir le contenu (image/texte) et sert à attirer l'attention de l'utilisateur
+<img src="" id="image"> Je l'avais ajouté sans comprendre ce qu'il fait, img src est une balise pour insérer une image et un url, src contient l'image e et le id ="image" a comme identifiant image et du coup il va selectioner img en utilisant l'id image et le stock dans la variable image. Mais en fait javascript le fait déjà donc c'est pourquoi il a été supprimé
 
-<img src="" id="image"> Je l'avais ajouté sans comprendre ce qu'il fait, img src est une balise pour insérer une image et un url, src est vide donc pas d'image mais en fait javascript va s'en occuper et le id ="image" a comme identifiant image et du coup il va selectioner img en utilisant l'id image et le stock dans la variable image. Mais en fait javascript le fait déjà donc c'est pourquoi il a été supprimé
+CSS
 
-let image = document.getElementById('image'); va sélectioner un élément à partir de son id avec <img src="" id="image">. mais quand j'ai enlevé : <img src="" id="image">, le code marchait encore et affichait encore les images. Donc le code javascript peut afficher les images et les défiler sans <img src="" id="image">.
-
-hero.style.backgroundImage = `url(${images[random]})`;},3000); définit l'image comme image de fond et prend une image aléatoirement et l'interval de temps pour changer d'image est de 3 sec
+Padding : sert à créer des espaces autour de l'élément
+Display : Type d'affichage
+transform : déplace l'élément
+uppercase : texte en majuscule
+capitalize : Met la premiere lettre de chaque mot en majuscule
+display flex : rendre l'élément flexible permettant de le faire bouger
+overflow-x: hidden : barre en bas pour faire bouger les images
+scroll-snap-type: x mandatory : permet que le défilement soit "élastique" mais il marche pas encore chez moi
+scroll-snap-align: start : Spécifie comment un élément doit etre aligné, pour l'instant chez moi il est inutile, je dois régler ça
+flex: 1 0 100% : 1 c'est l'image prend tout l'espace disponible, 0 pour dire l'élément ne peut pas rétrécir, 100% définit la taille de base de l'élément
+column-gap: 16px : espace entre les petits points 
+transition: opacity ease 250ms : pour l'instant il me sert à rien mais il sert à creer des transitions en douceur entre les images 
+scroll-behavior: smooth : Fluidité mais ne marche pas encore

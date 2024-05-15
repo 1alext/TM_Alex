@@ -36,11 +36,13 @@ header{
     align-items: center;
 }
 
+/*le transition: all .42s; devait normalement exprimer le temps que ça prend pour que l'image change à une autre mais elle ne marche pas*/
+
 .navbar-icon i{
     font-size: 30px;
     color: black;
     margin-right: 14px;
-    transition: all .42s;
+    transition: all .42s; 
 }
 
 .navbar-icon i:hover{
