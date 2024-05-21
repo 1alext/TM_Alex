@@ -25,3 +25,8 @@ flex: 1 0 100% : 1 c'est l'image prend tout l'espace disponible, 0 pour dire l'�
 column-gap: 16px : espace entre les petits points 
 transition: opacity ease 250ms : pour l'instant il me sert à rien mais il sert à creer des transitions en douceur entre les images 
 scroll-behavior: smooth : Fluidité mais ne marche pas encore
+
+* : pour sélectionner tout les éléments de la page
+header : Contient le contenu en haut de page
+le # sert à sélectionner l'élément par son ID
+. : sert à sélectionner des éléments par leur classe. Classe car on veut appliquer les mêmes styles à plusieurs éléments

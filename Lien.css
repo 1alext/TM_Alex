@@ -26,15 +26,7 @@ header{
     cursor: pointer;
     display: none;
 }
-.logo img{
-    width: 100%;
-    height: auto;
-}
 
-.navbar-icon{
-    display: flex;
-    align-items: center;
-}
 
 /*le transition: all .42s; devait normalement exprimer le temps que ça prend pour que l'image change à une autre mais elle ne marche pas*/
 

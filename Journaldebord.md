@@ -89,3 +89,5 @@ chose à régler concernant html : Ajouter une animation automatique pour que le
 à continuer : page produit en dessous de la page principale, faire p age de connexion (login, logout) en haut à droite, clikable sur l'icone et ajouter la barre de recherche.
 
 Prochaine fois, continuer la base de données
+
+21.05.2024 : ajout de l'aide mémoire
