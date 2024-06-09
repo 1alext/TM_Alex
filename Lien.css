@@ -88,9 +88,6 @@ section {
     margin-top: 10px;
 }
 
-.button:hover {
-    background-color: rgb(99, 99, 99);
-}
 
 .slider-wrapper {
     position: relative;
