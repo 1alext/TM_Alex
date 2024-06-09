@@ -91,3 +91,5 @@ chose à régler concernant html : Ajouter une animation automatique pour que le
 Prochaine fois, continuer la base de données
 
 21.05.2024 : ajout de l'aide mémoire
+
+09.06.2024 : ajout de code javascript pour la transition et modification css pour les images

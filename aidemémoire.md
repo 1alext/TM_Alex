@@ -30,3 +30,7 @@ scroll-behavior: smooth : Fluidité mais ne marche pas encore
 header : Contient le contenu en haut de page
 le # sert à sélectionner l'élément par son ID
 . : sert à sélectionner des éléments par leur classe. Classe car on veut appliquer les mêmes styles à plusieurs éléments
+
+javascript 
+
+defer 
