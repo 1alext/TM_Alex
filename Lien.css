@@ -35,7 +35,7 @@ header {
 }
 
 .navbar-icon i:hover {
-    color: rgb(24, 167, 211);
+    color: rgb(61, 61, 61);
 }
 
 section {
@@ -87,7 +87,9 @@ section {
     transition: all .42s;
     margin-top: 10px;
 }
-
+.button:hover {
+    background-color: rgb(61, 61, 61);
+}
 
 .slider-wrapper {
     position: relative;
