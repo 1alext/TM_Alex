@@ -46,3 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {  vérifie que la page
     }
     setInterval(nextSlide, 4500);  temps d'intervalle entre chaque image
 });
+
+    const logo = document.getElementById("logo");           Selectionne logo 
+    logo.addEventListener("click", function(event) {        logo sera attacher avec addEventListener qui est un gestionnaire d'évenement et marchera quand on click dessus
+        event.preventDefault();                             empeche de scroller vers le haut lors qu'on refresh la page
+        location.reload();                                  recharge la page actuelle
+});

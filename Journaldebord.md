@@ -92,4 +92,6 @@ Prochaine fois, continuer la base de données
 
 21.05.2024 : ajout de l'aide mémoire
 
-09.06.2024 : ajout de code javascript pour la transition et modification css pour les images
+09.06.2024 : ajout de code javascript pour la transition et modification css pour les images, enlever les 3 boutons en bas car plus besoin puis ce que
+il y a l'animation
+ajout d'un bouton pour raffraichir la page : https://www.youtube.com/watch?v=ZJUhKP9PbHs https://www.youtube.com/watch?v=5hLbCC2YPu0

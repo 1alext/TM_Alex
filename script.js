@@ -9,4 +9,11 @@ document.addEventListener("DOMContentLoaded", function() {
         slider.style.transform = `translateX(${-index * 100}%)`;
     }
     setInterval(nextSlide, 3000); 
+
+    
+    const logo = document.getElementById("logo");
+    logo.addEventListener("click", function(event) {
+        event.preventDefault(); 
+        location.reload();
+    });
 });
