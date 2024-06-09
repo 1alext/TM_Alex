@@ -33,4 +33,16 @@ le # sert à sélectionner l'élément par son ID
 
 javascript 
 
-defer 
+document.addEventListener("DOMContentLoaded", function() {  vérifie que la page est chargée pour que la fonction soit exécutée
+    const slider = document.querySelector(".slider");       Selectionne la classe .slider dans css et le stocke dans la variable, coté transition, const veut dire qu'on ne 
+                                                            peut pas changer la valeur de slider une fois initialisée.
+    const slides = document.querySelectorAll(".slider img");Selectionne la classe .slider img dans css et stocke dans slides, coté images
+    const totalSlides = slides.length;                      Selectionne toutes les images de la classe slider et renvoie le nmbre d'images (3)
+    let index = 0;                                          Initialise variable 0
+
+    function nextSlide() {                                  fonction responsable de faire défiler l'image
+        index = (index + 1) % totalSlides;                  incrémente index et on utilise le modulo % pour qu'il revient à 0 et ça fait une boucle
+        slider.style.transform = `translateX(${-index * 100}%)`; Déplacement horizontale
+    }
+    setInterval(nextSlide, 4500);  temps d'intervalle entre chaque image
+});
