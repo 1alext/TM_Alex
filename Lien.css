@@ -1,3 +1,4 @@
+/*Texte*/
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
     list-style: none;
     text-decoration: none;
 }
-
+/*logo et icones*/
 header {
     position: fixed;
     width: 100%;
@@ -23,7 +24,7 @@ header {
 #menu-icon {
     font-size: 35px;
     color: black;
-    z-index: 10001;
+    z-index: 1;
     cursor: pointer;
     display: none;
 }
@@ -39,10 +40,8 @@ header {
     color: rgb(61, 61, 61);
 }
 
-section {
-    padding: 0 13%;
-}
 
+/*Position et taille du texte*/
 .home {
     position: absolute;
     top: 50%;
@@ -92,6 +91,7 @@ section {
     background-color: rgb(61, 61, 61);
 }
 
+/*Concerne les images de fonds*/
 .slider-wrapper {
     position: relative;
     max-width: 2000px;
@@ -112,27 +112,9 @@ section {
     user-select: none;
 }
 
-.slider-nav {
-    display: flex;
-    column-gap: 16px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.slider-nav a {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: white;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover {
-    opacity: 1;
+/*Produit en bas*/
+section {
+    padding: 0 13%;
 }
 
 .products-section {

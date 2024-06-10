@@ -99,4 +99,5 @@ bouton "Acheter maintenant est amélioré
 ajout section en dessous pour scroller en bas et voir les futurs produits
 ajout animation javascript pour le logo et les icones, sources : https://www.youtube.com/watch?v=JEBgqbZWYIQ https://www.youtube.com/watch?v=WuWL_BNyhfU https://www.youtube.com/watch?v=Jiwe4FKJ9R4 https://www.youtube.com/watch?v=8T1apRcKTY0
 
+10.06.2024 : Ajout de commentaire dans l'aide mémoire pour comprendre le javascript, sources : https://developer.mozilla.org/fr/docs/Web/JavaScript et W3School.
 

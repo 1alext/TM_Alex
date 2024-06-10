@@ -49,18 +49,24 @@ document.addEventListener("DOMContentLoaded", function() {          vérifie que
     }
     setInterval(nextSlide, 3000);                                   temps d'intervalle entre chaque image
 
+
+Javascript logo
+
     const logo = document.getElementById("logo");                   Selectionne logo 
     logo.addEventListener("click", function(event) {                logo attacher avec addEventListener qui est un gestionnaire d'évenement et marchera quand on click dessus
         event.preventDefault();                                     empeche de scroller vers le haut lors qu'on refresh la page
         location.reload();                                          recharge la page actuelle
     });
 
+
+Javascript logo et icones
+
     const header = document.querySelector('header');                Choisit Header
     let scroll = window.scrollY;                                    let déclare la variable scroll qui va être assigner et window.scrollY c'est la position actuelle     
 
     window.addEventListener('scroll', function() {                  Fonction qui est executé chaque fois qu'on défile la page
         const scrollY = window.scrollY;                             const va stocker la valeur de la position actuelle du défilement 
-        const scrollDirection = scrollY > scroll ? 'down' : 'up';   scrollDirection va prendre la valeur down ou up en fonction de la direction du défilement, si scrolly est supérieur à scroll, alors utilisateur défile vers le bas sinon c'est vers le haut.
+        const scrollDirection = scrollY > scroll ? 'down' : 'up';   scrollDirection va prendre la valeur down ou up en fonction de la direction du défilement, si scrolly est   supérieur à scroll, alors utilisateur défile vers le bas sinon c'est vers le haut.
 
         if (scrollDirection === 'down' && scrollY > 80) {           Si on scroll en bas en dépassant les 80 pixels, l'opacité du logo et icones passent à 0
             header.style.opacity = '0'; 
@@ -72,4 +78,9 @@ document.addEventListener("DOMContentLoaded", function() {          vérifie que
     });
 });
 
-const c'est pour déclarer la variable qui ne peut pas être modifier 
+
+DOMContentLoaded : Fonctionne quand le site HTML est chargé completement
+const :  c'est pour déclarer la variable qui ne peut pas être modifier (constante)
+let : déclare une variable qui peut être modifier
+document.querySelector : va renvoyer le premier élément de ce qu'on a sélectionner
+document.getElementById : c'est pour sélectionner spécifiquement l'identifiant
