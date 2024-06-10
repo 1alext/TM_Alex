@@ -15,6 +15,8 @@ CSS
 
 Padding : sert à créer des espaces autour de l'élément
 
+padding: 30px 8%; px c'est pour dimension et % taille
+
 box-sizing : border-box; gère dimension d'un élément, border-box indique de prendre en compte toute bordure et remplissage
 
 list-style: none; pour supprimer les puces
@@ -22,6 +24,10 @@ list-style: none; pour supprimer les puces
 text-decoration: none; supprime le soulignement
 
 Z-Index : superposition des éléments
+
+transform: translate(-50%, -50%); déplacer un élément, 
+
+text-transform: capitalize; chaque 1er lettre d'un mot est en majuscule
 
 justify-content : Définit comment les éléments sont alignés
 
@@ -49,7 +55,7 @@ background-size: cover; Prend toute la place
 
 header : Contient le contenu en haut de page
 
-# sert à sélectionner l'élément par son ID
+# : sert à sélectionner l'élément par son ID
 
 . : sert à sélectionner des éléments par leur classe. Classe car on veut appliquer les mêmes styles à plusieurs éléments
 
