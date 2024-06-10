@@ -14,22 +14,43 @@
 CSS
 
 Padding : sert à créer des espaces autour de l'élément
-Display : Type d'affichage
+
+box-sizing : border-box; gère dimension d'un élément, border-box indique de prendre en compte toute bordure et remplissage
+
+list-style: none; pour supprimer les puces
+
+text-decoration: none; supprime le soulignement
+
+Z-Index : superposition des éléments
+
+justify-content : Définit comment les éléments sont alignés
+
+cursor: pointer; Apparence du curseur
+
+display: none; masquer un élément mais il marche encore
+
+Display : Type d'affichage, modèle de mise en page flexible
+
+display: inline-block; Aligne horizontalement les éléments horizontalement
+
 transform : déplace l'élément
+
 uppercase : texte en majuscule
-capitalize : Met la premiere lettre de chaque mot en majuscule
+
 display flex : rendre l'élément flexible permettant de le faire bouger
+
 overflow-x: hidden : barre en bas pour faire bouger les images
-scroll-snap-type: x mandatory : permet que le défilement soit "élastique" mais il marche pas encore chez moi
-scroll-snap-align: start : Spécifie comment un élément doit etre aligné, pour l'instant chez moi il est inutile, je dois régler ça
-flex: 1 0 100% : 1 c'est l'image prend tout l'espace disponible, 0 pour dire l'élément ne peut pas rétrécir, 100% définit la taille de base de l'élément
-column-gap: 16px : espace entre les petits points 
-transition: opacity ease 250ms : pour l'instant il me sert à rien mais il sert à creer des transitions en douceur entre les images 
-scroll-behavior: smooth : Fluidité mais ne marche pas encore
+
+transition: transform 0.5s ease-in-out; ease in out c'est le nom de la transition
+
+background-size: cover; Prend toute la place
 
 * : pour sélectionner tout les éléments de la page
+
 header : Contient le contenu en haut de page
-le # sert à sélectionner l'élément par son ID
+
+# sert à sélectionner l'élément par son ID
+
 . : sert à sélectionner des éléments par leur classe. Classe car on veut appliquer les mêmes styles à plusieurs éléments
 
 
