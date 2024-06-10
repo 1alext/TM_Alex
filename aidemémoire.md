@@ -10,6 +10,7 @@
 
 <img src="" id="image"> Je l'avais ajouté sans comprendre ce qu'il fait, img src est une balise pour insérer une image et un url, src contient l'image e et le id ="image" a comme identifiant image et du coup il va selectioner img en utilisant l'id image et le stock dans la variable image. Mais en fait javascript le fait déjà donc c'est pourquoi il a été supprimé
 
+
 CSS
 
 Padding : sert à créer des espaces autour de l'élément
@@ -31,11 +32,13 @@ header : Contient le contenu en haut de page
 le # sert à sélectionner l'élément par son ID
 . : sert à sélectionner des éléments par leur classe. Classe car on veut appliquer les mêmes styles à plusieurs éléments
 
+
+
 javascript animation
 
 document.addEventListener("DOMContentLoaded", function() {          vérifie que la page est chargée pour que la fonction soit exécutée
     const slider = document.querySelector(".slider");               Selectionne la classe .slider dans css et le stocke dans la variable, coté transition, const veut dire  
-                                                                     qu'on ne peut pas changer la valeur de slider une fois initialisée.
+                                                                    qu'on ne peut pas changer la valeur de slider une fois initialisée.
     const slides = document.querySelectorAll(".slider img");        Selectionne la classe .slider img dans css et stocke dans slides, coté images
     const totalSlides = slides.length;                              Selectionne toutes les images de la classe slider et renvoie le nmbre d'images (3)
     let index = 0;                                                  Initialise variable 0
@@ -52,19 +55,21 @@ document.addEventListener("DOMContentLoaded", function() {          vérifie que
         location.reload();                                          recharge la page actuelle
     });
 
-    const header = document.querySelector('header');
-    let lastScrollY = window.scrollY;
+    const header = document.querySelector('header');                Choisit Header
+    let scroll = window.scrollY;                                    let déclare la variable scroll qui va être assigner et window.scrollY c'est la position actuelle     
 
-    window.addEventListener('scroll', function() {
-        const currentScrollY = window.scrollY;
-        const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
+    window.addEventListener('scroll', function() {                  Fonction qui est executé chaque fois qu'on défile la page
+        const scrollY = window.scrollY;                             const va stocker la valeur de la position actuelle du défilement 
+        const scrollDirection = scrollY > scroll ? 'down' : 'up';   scrollDirection va prendre la valeur down ou up en fonction de la direction du défilement, si scrolly est supérieur à scroll, alors utilisateur défile vers le bas sinon c'est vers le haut.
 
-        if (scrollDirection === 'down' && currentScrollY > 80) {
+        if (scrollDirection === 'down' && scrollY > 80) {           Si on scroll en bas en dépassant les 80 pixels, l'opacité du logo et icones passent à 0
             header.style.opacity = '0'; 
         } else {
-            header.style.opacity = '1'; 
+            header.style.opacity = '1';                             sinon on voit encore le logo et icones
         }
 
-        lastScrollY = currentScrollY;
+        scroll = scrollY;                                           Met à jour scroll avec la nouvelle position, ça permet de garder la trace de la position actuelle
     });
 });
+
+const c'est pour déclarer la variable qui ne peut pas être modifier 

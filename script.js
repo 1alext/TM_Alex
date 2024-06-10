@@ -21,19 +21,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //logo et icones disparaissent quand on scroll
     const header = document.querySelector('header');
-    let lastScrollY = window.scrollY;
+    let scroll = window.scrollY;
 
     window.addEventListener('scroll', function() {
-        const currentScrollY = window.scrollY;
-        const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
+        const scrollY = window.scrollY;
+        const scrollDirection = scrollY > scroll ? 'down' : 'up';
 
-        if (scrollDirection === 'down' && currentScrollY > 80) {
+        if (scrollDirection === 'down' && scrollY > 80) {
             header.style.opacity = '0'; 
         } else {
             header.style.opacity = '1'; 
         }
 
-        lastScrollY = currentScrollY;
+        scroll = scrollY;
     });
 }); 
 
