@@ -97,3 +97,6 @@ il y a l'animation
 ajout d'un bouton pour raffraichir la page : https://www.youtube.com/watch?v=ZJUhKP9PbHs https://www.youtube.com/watch?v=5hLbCC2YPu0
 bouton "Acheter maintenant est amélioré
 ajout section en dessous pour scroller en bas et voir les futurs produits
+ajout animation javascript pour le logo et les icones, sources : https://www.youtube.com/watch?v=JEBgqbZWYIQ https://www.youtube.com/watch?v=WuWL_BNyhfU https://www.youtube.com/watch?v=Jiwe4FKJ9R4 https://www.youtube.com/watch?v=8T1apRcKTY0
+
+

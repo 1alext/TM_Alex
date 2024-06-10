@@ -17,6 +17,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 30px 8%;
+    transition: opacity 0.25s ease;
 }
 
 #menu-icon {

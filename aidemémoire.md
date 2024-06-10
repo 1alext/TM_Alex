@@ -31,24 +31,40 @@ header : Contient le contenu en haut de page
 le # sert à sélectionner l'élément par son ID
 . : sert à sélectionner des éléments par leur classe. Classe car on veut appliquer les mêmes styles à plusieurs éléments
 
-javascript 
+javascript animation
 
-document.addEventListener("DOMContentLoaded", function() {  vérifie que la page est chargée pour que la fonction soit exécutée
-    const slider = document.querySelector(".slider");       Selectionne la classe .slider dans css et le stocke dans la variable, coté transition, const veut dire qu'on ne 
-                                                            peut pas changer la valeur de slider une fois initialisée.
-    const slides = document.querySelectorAll(".slider img");Selectionne la classe .slider img dans css et stocke dans slides, coté images
-    const totalSlides = slides.length;                      Selectionne toutes les images de la classe slider et renvoie le nmbre d'images (3)
-    let index = 0;                                          Initialise variable 0
+document.addEventListener("DOMContentLoaded", function() {          vérifie que la page est chargée pour que la fonction soit exécutée
+    const slider = document.querySelector(".slider");               Selectionne la classe .slider dans css et le stocke dans la variable, coté transition, const veut dire  
+                                                                     qu'on ne peut pas changer la valeur de slider une fois initialisée.
+    const slides = document.querySelectorAll(".slider img");        Selectionne la classe .slider img dans css et stocke dans slides, coté images
+    const totalSlides = slides.length;                              Selectionne toutes les images de la classe slider et renvoie le nmbre d'images (3)
+    let index = 0;                                                  Initialise variable 0
 
-    function nextSlide() {                                  fonction responsable de faire défiler l'image
-        index = (index + 1) % totalSlides;                  incrémente index et on utilise le modulo % pour qu'il revient à 0 et ça fait une boucle
-        slider.style.transform = `translateX(${-index * 100}%)`; Déplacement horizontale
+    function nextSlide() {                                          fonction responsable de faire défiler l'image
+        index = (index + 1) % totalSlides;                          incrémente index et on utilise le modulo % pour qu'il revient à 0 et ça fait une boucle
+        slider.style.transform = `translateX(${-index * 100}%)`;    Déplacement horizontale
     }
-    setInterval(nextSlide, 4500);  temps d'intervalle entre chaque image
-});
+    setInterval(nextSlide, 3000);                                   temps d'intervalle entre chaque image
 
-    const logo = document.getElementById("logo");           Selectionne logo 
-    logo.addEventListener("click", function(event) {        logo sera attacher avec addEventListener qui est un gestionnaire d'évenement et marchera quand on click dessus
-        event.preventDefault();                             empeche de scroller vers le haut lors qu'on refresh la page
-        location.reload();                                  recharge la page actuelle
+    const logo = document.getElementById("logo");                   Selectionne logo 
+    logo.addEventListener("click", function(event) {                logo attacher avec addEventListener qui est un gestionnaire d'évenement et marchera quand on click dessus
+        event.preventDefault();                                     empeche de scroller vers le haut lors qu'on refresh la page
+        location.reload();                                          recharge la page actuelle
+    });
+
+    const header = document.querySelector('header');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', function() {
+        const currentScrollY = window.scrollY;
+        const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
+
+        if (scrollDirection === 'down' && currentScrollY > 80) {
+            header.style.opacity = '0'; 
+        } else {
+            header.style.opacity = '1'; 
+        }
+
+        lastScrollY = currentScrollY;
+    });
 });
