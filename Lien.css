@@ -34,6 +34,7 @@ header {
     color: white;
     margin-right: 14px;
     transition: all .42s;
+    margin-top: 50px;
 }
 
 .navbar-icon i:hover {
@@ -49,6 +50,7 @@ header {
     transform: translate(-50%, -50%);
     z-index: 2;
 }
+
 
 .text h4 {
     font-size: 16px;
