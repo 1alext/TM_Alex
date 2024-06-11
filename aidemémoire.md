@@ -120,5 +120,5 @@ try {                                                               Execute le c
                                                                     utf8 car peut représenter tout les caractères et courrament utiliser
     $access->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING); Génére le message d'erreur lors que les erreurs sql se produisent
 } catch (Exception $error) {                                        intercepte toute les exceptions par le bloc try
-    $error->getMessage();                                           récupère le message 
+    $error->getMessage();                                           récupère  message 
 }
