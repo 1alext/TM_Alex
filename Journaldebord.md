@@ -101,3 +101,4 @@ ajout animation javascript pour le logo et les icones, sources : https://www.you
 
 10.06.2024 : Ajout de commentaire dans l'aide mémoire pour comprendre le javascript, sources : https://developer.mozilla.org/fr/docs/Web/JavaScript et W3School.
 
+11.06.2024 : Travaillé toute la journée, j'ai eu des difficultés avec php car j'arrivais pas à connecter le site sur le serveur mais mainetenant j'ai réussi, car c'est à cause de la synthaxe et l'ortographe, j'ai un peu modifié le site web et maintenant il faut faire la base de données
