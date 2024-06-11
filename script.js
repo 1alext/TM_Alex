@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         index = (index + 1) % totalSlides;
         slider.style.transform = `translateX(${-index * 100}%)`;
     }
-    setInterval(nextSlide, 3000); 
+    setInterval(nextSlide, 5000); 
 
 //Page raffraichissement
     const logo = document.getElementById("logo");
