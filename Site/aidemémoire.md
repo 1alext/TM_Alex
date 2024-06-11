@@ -111,3 +111,14 @@ const :  c'est pour déclarer la variable qui ne peut pas être modifier (consta
 let : déclare une variable qui peut être modifier
 document.querySelector : va renvoyer le premier élément de ce qu'on a sélectionner
 document.getElementById : c'est pour sélectionner spécifiquement l'identifiant
+
+
+PHP
+
+try {                                                               Execute le code à l'intérieur et s'il y a une erreur, catch s'execute en envoie le message d'erreur
+    $access=new pdo("mysql:host=localhost;dbname=hardvest_db;charset=utf8", "root",""); pdo c'est ce qui accéder à la base de données, initialisation de la connexion
+                                                                    utf8 car peut représenter tout les caractères et courrament utiliser
+    $access->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING); Génére le message d'erreur lors que les erreurs sql se produisent
+} catch (Exception $error) {                                        intercepte toute les exceptions par le bloc try
+    $error->getMessage();                                           récupère le message 
+}
