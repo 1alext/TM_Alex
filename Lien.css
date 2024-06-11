@@ -21,6 +21,11 @@ header {
     transition: opacity 0.25s ease;
 }
 
+header .logo img {
+    height: auto;
+    display: block; 
+    margin-top: 30px; 
+}
 #menu-icon {
     font-size: 35px;
     color: black;
