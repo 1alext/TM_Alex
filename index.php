@@ -1,3 +1,10 @@
+<?php
+
+    require("config/commandes.php"); //page contient commandes php
+
+    $Produits=afficher();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <!-- Liens avec HTML-->
@@ -50,6 +57,10 @@
 
 
 <section class="products-section">
+    <?php 
+        foreach($Produits as $produit):?>
+    
+<?php
 </section>
 
 <!--page d'accueil-->
