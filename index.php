@@ -59,7 +59,11 @@
 <section class="products-section">
     <?php 
         foreach($Produits as $produit):?>
-    
+            <div class="product">
+                <?= $produit->nom ?>
+                <img src="<?= $produit->image?>">
+                <p><?= $produit->description; ?></p>
+                <?= $produit->prix ?>
     <?php endforeach;?>
 </section>
 
