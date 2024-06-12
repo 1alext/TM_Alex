@@ -104,3 +104,5 @@ ajout animation javascript pour le logo et les icones, sources : https://www.you
 11.06.2024 : Travaillé toute la journée, j'ai eu des difficultés avec php car j'arrivais pas à connecter le site sur le serveur mais mainetenant j'ai réussi, car c'est à cause de la synthaxe et l'ortographe, j'ai un peu modifié le site web et maintenant il faut faire la base de données
 
 12.06.2024 : modification de quelques lignes de codes dans commandes.php, erreur de synthaxe et pas bien ordonées.
+
+Le site ne marchait pas sur le serveur local car en fait, il était mal lié à cause d'une erreur de syntaxe dans le fichier connexion.php, le nom de la base de données était mal écrit.
