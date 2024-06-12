@@ -60,7 +60,7 @@
     <?php 
         foreach($Produits as $produit):?>
     
-<?php
+    <?php endforeach;?>
 </section>
 
 <!--page d'accueil-->
