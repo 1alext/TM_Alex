@@ -106,3 +106,5 @@ ajout animation javascript pour le logo et les icones, sources : https://www.you
 12.06.2024 : modification de quelques lignes de codes dans commandes.php, erreur de synthaxe et pas bien ordonées.
 
 Le site ne marchait pas sur le serveur local car en fait, il était mal lié à cause d'une erreur de syntaxe dans le fichier connexion.php, le nom de la base de données était mal écrit.
+
+26.06.2024 : ajout de produit, question : est ce que pour ajouter des produits, il faut faire 1 par 1 ou on peut tout importer en 1 seul fois ?
