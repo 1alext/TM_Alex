@@ -13,5 +13,6 @@
         <h3>Salut, l'admin</h3>
         <h1>Bienvenue</h1>
         <p>A la page administrateur</p>
+        <a href="logout form.php" class="btn">logout</a>
 </body>
 </html>
