@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="Lien.css"/>
 </head>
 <body>
-    
+<div class="admin.container">   
+    <div class="content">
+        <h3>Salut, l'admin</h3>
+        <h1>Bienvenue</h1>
+        <p>A la page administrateur</p>
 </body>
 </html>
