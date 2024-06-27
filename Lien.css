@@ -130,3 +130,27 @@ section {
     background-color: white;
     padding: 20px;
 }
+
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.product {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: black;
+}

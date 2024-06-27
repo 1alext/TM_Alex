@@ -62,7 +62,7 @@
                 <?= $produit->nom ?>
                 <img src="<?= $produit->image?>">
                 <p><?= $produit->description; ?></p>
-                <?= $produit->prix ?>
+                <p class="price"><?= $produit->prix ?> CHF</p>
             </div>
     <?php endforeach;?>
 </section>
