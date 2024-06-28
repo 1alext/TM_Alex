@@ -37,7 +37,7 @@
     <a href="#" class="logo" id="logo"><img src="logo 2.png" alt="Logo"></a>
     <div class="navbar-icon">
         <a href="#"><i class='bx bx-search'></i></a>
-        <a href="page admin.php"><i class='bx bx-user'></i></a>
+        <a href="pageadmin.php"><i class='bx bx-user'></i></a>
         <a href="#"><i class='bx bx-cart'></i></a>
         <a href="#"><i class='bx bx-heart'></i></a>
     </div>
@@ -55,7 +55,7 @@
     </div>
 </div>  
 
-
+<!--affiche chaque produits dans la bd-->
 <section class="products-section">
     <?php foreach($Produits as $produit):?>
             <div class="product">
