@@ -158,3 +158,11 @@ header .logo img {
     padding:20px;
     padding-bottom: 60px;
 }
+
+.admin.container .content{
+    text-align: center;
+}
+
+.admin.container .content h3{
+    font-size: 30px;
+    color:black
