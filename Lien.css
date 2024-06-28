@@ -150,35 +150,36 @@ header .logo img {
     color: black;
 }
 
-.admin.container{
+.admin-container {
     min-height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:20px;
+    padding: 20px;
     padding-bottom: 60px;
 }
 
-.admin.container .content{
+.admin-container .content {
     text-align: center;
 }
 
-.admin.container .content h3{
+.admin-container .content h3 {
     font-size: 30px;
-    color:black
+    color: black;
 }
 
-.admin.container .content p{
+.admin-container .content p {
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.admin.container .content .btn{
+.admin-container .content .btn {
     display: inline-block;
     padding: 10px 30px;
     font-size: 20px;
     background: #333;
-    color:white;
-    margin:0 5 px;
+    color: white;
+    margin: 0 5px;
 }
+
 
