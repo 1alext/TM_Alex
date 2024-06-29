@@ -21,6 +21,13 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Enregistrement</title>
+    <?php
+    if(isset($error)){
+        foreach($error as $error){
+            echo '<span class="error-msg">'.$error.'</span>';
+        }
+    }
+    ?>
     <link rel="stylesheet" href="Lien.css"/>
 </head>
 <body>

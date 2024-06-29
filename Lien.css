@@ -234,3 +234,11 @@ header .logo img {
     color: #333;
 }
 
+.enregistrement-container .error-msg{
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
