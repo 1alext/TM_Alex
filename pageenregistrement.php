@@ -11,6 +11,13 @@ if(isset($_POST['submit'])){
 
     if(mysqli_num_rows($result) >0){
         $error[] = 'Compte déjà existant !';
+        
+    }else{
+        if($pass != $cpass){
+            $error[] = 'Mot de passe ne correspond pas !';
+        }else{
+            $insert = "INSERT INTO utilisateurs("
+        }
     }
 };
 ?>
@@ -25,8 +32,8 @@ if(isset($_POST['submit'])){
     if(isset($error)){
         foreach($error as $error){
             echo '<span class="error-msg">'.$error.'</span>';
-        }
-    }
+        };
+    };
     ?>
     <link rel="stylesheet" href="Lien.css"/>
 </head>
