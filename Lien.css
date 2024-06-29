@@ -198,9 +198,20 @@ header .logo img {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     background: white;
     text-align: center;
+    width: 500px;
 }
 
 .enregistrement-container enregistrement h3{
-    
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:#333;
+}
 
+.enregistrement-container enregistrement input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #eee;
 }
