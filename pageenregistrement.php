@@ -1,3 +1,13 @@
+<?php
+@include 'config.php';
+
+if(isset($_POST['submit'])){
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $password = mysqli_real_escape_string($conn, $_POST['password'])
+    $name = mysqli_real_escape_string($conn, $_POST['email'])
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

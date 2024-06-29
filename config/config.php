@@ -1,3 +1,5 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','hardvest',)
+$conn = mysqli_connect('localhost','root','hardvest');
+
+?>
