@@ -11,10 +11,9 @@
 
     <enregistrement action="" method="post">    
         <h3>S'enregistrer</h3>
-        <input type="text" name="nom" entre="Entrer votre nom">
         <input type="email" name="email" entre="Entrer votre email">
         <input type="password" name="password" entre="Entrer votre mot de passe">
-        <input type="submit" name="submit" value="S'enregistrer" class="enregistrement-btn">
-        <p>Déjà un compte ? <a href="pagelogin.php"></a>Se connecter</p>
+        <input type="submit" name="submit" value="Se connecter" class="enregistrement-btn">
+        <p>Déjà un compte ? <a href="pagelogin.php">Se connecter</a></p>
 </body>
 </html>

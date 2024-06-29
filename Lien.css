@@ -182,4 +182,25 @@ header .logo img {
     margin: 0 5px;
 }
 
+.enregistrement-container{
+    min-height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background: #eee;
+}
 
+.enregistrement-container enregistrement{
+    padding:20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    text-align: center;
+}
+
+.enregistrement-container enregistrement h3{
+    
+
+}
