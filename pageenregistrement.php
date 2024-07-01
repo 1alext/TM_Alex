@@ -9,18 +9,21 @@ if(isset($_POST['submit'])){
     $select = "SELECT * FROM utilisateurs WHERE email = '$email' && password = '$pass'";
     $result = mysqli_query($conn, $select);
 
-    if(mysqli_num_rows($result) >0){
+    if(mysqli_num_rows($result) > 0){
         $error[] = 'Compte déjà existant !';
         
     }else{
         if($pass != $cpass){
             $error[] = 'Mot de passe ne correspond pas !';
         }else{
-            $insert = "INSERT INTO utilisateurs("
+            $insert = "INSERT INTO utilisateurs (email, password) VALUES ('$email', '$pass')";
+            mysqli_query($conn, $insert);
+            header('location:pagelogin.php');
         }
     }
-};
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
