@@ -108,3 +108,10 @@ ajout animation javascript pour le logo et les icones, sources : https://www.you
 Le site ne marchait pas sur le serveur local car en fait, il était mal lié à cause d'une erreur de syntaxe dans le fichier connexion.php, le nom de la base de données était mal écrit.
 
 26.06.2024 : ajout de produit, question : est ce que pour ajouter des produits, il faut faire 1 par 1 ou on peut tout importer en 1 seul fois ?
+
+29.06.2024 : Ajout système de connexion qui en mettant une page pour insérer email et mot de passe.
+
+01.07: presque fini le système de connexion mais il ne marche pas, ça met des erreurs que je n'arrive pas à résoudre.
+
+à faire encore : finir ce système, et faire encore ajouter d'autres produits.
+
