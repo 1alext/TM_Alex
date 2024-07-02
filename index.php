@@ -34,7 +34,7 @@
  <!--Contient les icones et peuvent être cliquer-->   
  <header>
     <div class="bx bx-menu" id="menu-icon"></div>
-    <a href="#" class="logo" id="logo"><img src="logo 2.png" alt="Logo"></a>
+    <a href="#" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
     <div class="navbar-icon">
         <a href="#"><i class='bx bx-search'></i></a>
         <a href="pageenregistrement.php"><i class='bx bx-user'></i></a>
@@ -48,9 +48,9 @@
 <div class="container">
     <div class="slider-wrapper" id="slide-container">
         <div class="slider">
-            <img id="slide-1" src="image1.jpg"/>
-            <img id="slide-2" src="image2.jpg"/>
-            <img id="slide-3" src="image3.jpg"/>
+            <img id="slide-1" src="asset/image1.jpg"/>
+            <img id="slide-2" src="asset/image2.jpg"/>
+            <img id="slide-3" src="asset/image3.jpg"/>
         </div>    
     </div>
 </div>  

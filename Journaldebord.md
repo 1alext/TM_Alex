@@ -118,7 +118,7 @@ Le site ne marchait pas sur le serveur local car en fait, il était mal lié à 
 vidéos regardées sur les bases de données et connexion : https://www.youtube.com/watch?v=6aX6C-yqQCk https://www.youtube.com/watch?v=O0ttkT9Uc6k&t=447s https://www.youtube.com/watch?v=P5HMTv94MBo&t=1047s https://www.youtube.com/watch?v=fAPfudZF-io&t=1273s https://www.youtube.com/watch?v=U8tgZHUItkg https://www.youtube.com/watch?v=fC3j2U_UZrQ https://www.youtube.com/watch?v=nSlAEjEznhI https://www.youtube.com/watch?v=ovsJ27Jg0cw https://www.youtube.com/watch?v=X6PdTfrnUdM&t=339s https://www.youtube.com/watch?v=cmRg4qCSU9g&t=685s
 
 
-
+02.07.2024 : tutoriel session à regarder, rendre le site responsive, ajouter produits, paniers,
 
 
 
