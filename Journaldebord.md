@@ -120,7 +120,7 @@ vidéos regardées sur les bases de données et connexion : https://www.youtube.
 
 02.07.2024 : tutoriel session à regarder, rendre le site responsive, ajouter produits, paniers,
 
-
+- Création de dossier pour avoir une structure ordonnée des fichiers
 
 
 
