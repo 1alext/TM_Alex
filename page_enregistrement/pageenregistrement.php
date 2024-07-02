@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
         };
     };
     ?>
-    <link rel="stylesheet" href="Lien.css"/>
+    <link rel="stylesheet" href="../Lien.css"/>
 </head>
 <body>
 <div class="enregistrement-container">
