@@ -166,9 +166,19 @@ header .logo img {
         margin:0 auto;
     }
 
+    .home{
+        text-align: center;
+    }
+
+    .home .text{
+        text-align: center;
+        margin: 0 auto; 
+    }
+
     /* Afficher l'icône du menu */
     .menu-icon {
         display: inline-block;
+        
     }
 }
 

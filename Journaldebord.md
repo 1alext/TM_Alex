@@ -122,7 +122,7 @@ vidéos regardées sur les bases de données et connexion : https://www.youtube.
 
 - Création de dossier pour avoir une structure ordonnée des fichiers
 
-
+03.07.2024 : Ajout pour quelques parties, une fonctionalités pour la rendre responsive
 
 
 
