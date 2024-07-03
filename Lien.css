@@ -151,6 +151,28 @@ header .logo img {
     color: black;
 }
 
+.menu-icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .navbar-icon a:not(.menu-icon) {
+        display: none;
+    }
+
+    .logo{
+        margin:0 auto;
+    }
+
+    /* Afficher l'icône du menu */
+    .menu-icon {
+        display: inline-block;
+    }
+}
+
+
 /*page d'enregistrement*/
 .enregistrement-container {
     min-height: 1000px;

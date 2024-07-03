@@ -13,6 +13,8 @@
 
 CSS
 
+margin : centrer
+
 Padding : sert à créer des espaces autour de l'élément
 
 padding: 30px 8%; px c'est pour dimension et % taille

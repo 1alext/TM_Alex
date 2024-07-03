@@ -33,15 +33,16 @@
 <body>
  <!--Contient les icones et peuvent être cliquer-->   
  <header>
-    <div class="bx bx-menu" id="menu-icon"></div>
     <a href="#" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
     <div class="navbar-icon">
         <a href="#"><i class='bx bx-search'></i></a>
         <a href="page_enregistrement/pageenregistrement.php"><i class='bx bx-user'></i></a>
         <a href="#"><i class='bx bx-cart'></i></a>
         <a href="#"><i class='bx bx-heart'></i></a>
+        <a href="#" class="menu-icon"><i class='bx bx-menu'></i></a>
     </div>
-</header>    
+</header>
+   
     
     <!--Fond d'images coulissants-->
 
@@ -77,5 +78,6 @@
         <br>Capturez l'esprit de la compétition et faites briller votre équipe."</p>
         <a href="#" class="button">Acheter maintenant</a>
     </div>
+</section>
 </body>
 </html>
