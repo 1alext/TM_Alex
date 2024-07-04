@@ -125,9 +125,6 @@ header .logo img {
     height: 800px; 
     background-color: white;
     padding: 20px;
-}
-
-.products-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -156,14 +153,17 @@ header .logo img {
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
 
     .navbar-icon a:not(.menu-icon) {
         display: none;
     }
 
     .logo{
+        display: block;
         margin:0 auto;
+        height :auto;
+
     }
 
     .home{
@@ -178,7 +178,6 @@ header .logo img {
     /* Afficher l'icône du menu */
     .menu-icon {
         display: inline-block;
-        
     }
 }
 

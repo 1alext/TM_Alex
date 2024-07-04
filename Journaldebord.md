@@ -124,6 +124,10 @@ vidéos regardées sur les bases de données et connexion : https://www.youtube.
 
 03.07.2024 : Ajout pour quelques parties, une fonctionalités pour la rendre responsive
 
+vidéo regardé en lien avec la responsivité : https://www.youtube.com/watch?v=BdzKNrxLiSs https://www.youtube.com/watch?v=5CbVLaA1xBo&t=950s
+https://www.youtube.com/watch?v=HQopEEurQYE
+
+
 
 
 
