@@ -127,6 +127,9 @@ vidéos regardées sur les bases de données et connexion : https://www.youtube.
 vidéo regardé en lien avec la responsivité : https://www.youtube.com/watch?v=BdzKNrxLiSs https://www.youtube.com/watch?v=5CbVLaA1xBo&t=950s
 https://www.youtube.com/watch?v=HQopEEurQYE
 
+04.07.2024 : Continuer à ajouter parties par parties pour rendre tout responsive, il reste plus que le logo à rendre responsive et les produits, par contre il y a un petit problème maintenant car l'image de fond, il y a un petit bout de la prochaine image qui est dans la 1ere image du coup il faut enlever ce bout mais là ça ne marche pas.
+
+Essayer de le finir au plus vite la responsivité
 
 
 
