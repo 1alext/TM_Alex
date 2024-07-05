@@ -146,42 +146,47 @@ header .logo img     {
     display: none;
 }
 
-    /* Afficher l'icône du menu */
-
+/* Media query pour les écrans de moins de 1050px */
 @media screen and (max-width: 1050px) {
     .home {
         left: 50%; 
         transform: translate(-50%, -50%);
         text-align: center; 
     }
-    .navbar-icon a:not(.menu-icon) {
-        display: none;
-    }
-    .menu-icon {
-        display: inline-block;
-    }
-    .logo {
+
+    header {
         display: flex;
-        justify-content: center; 
-        align-items: flex-start; 
-        height: 100px; 
-}
-}
-
-
-@media screen and (max-width: 374px) {
-    .navbar-icon a:not(.menu-icon) {
-        display: none;
-    }
+        justify-content: space-between; 
+        align-items: center; 
 
     .navbar-icon {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
-        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-end; 
+        gap: 1px;
     }
 
+    .navbar-icon a:not(.menu-icon) {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .logo {
+        position: static; 
+        transform: none; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; 
+        height: 100px; 
+    }
 }
+}
+
+
 
 
 /*page d'enregistrement*/
