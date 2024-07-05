@@ -146,6 +146,7 @@ header .logo img     {
     display: none;
 }
 
+    /* Afficher l'icône du menu */
 
 @media screen and (max-width: 1050px) {
     .home {
@@ -155,6 +156,9 @@ header .logo img     {
     }
     .navbar-icon a:not(.menu-icon) {
         display: none;
+    }
+    .menu-icon {
+        display: inline-block;
     }
     .logo {
         display: flex;
@@ -178,11 +182,6 @@ header .logo img     {
     }
 
 }
-    /* Afficher l'icône du menu */
-    .menu-icon {
-        display: inline-block;
-    }
-
 
 
 /*page d'enregistrement*/
