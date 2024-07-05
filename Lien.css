@@ -153,12 +153,12 @@ header .logo img     {
         transform: translate(-50%, -50%);
         text-align: center; 
     }
-
+/* Concerne les icones*/
     header {
         display: flex;
         justify-content: space-between; 
         align-items: center; 
-
+    }
     .navbar-icon {
         display: flex;
         flex-direction: column;
@@ -184,9 +184,6 @@ header .logo img     {
         height: 100px; 
     }
 }
-}
-
-
 
 
 /*page d'enregistrement*/

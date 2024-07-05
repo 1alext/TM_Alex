@@ -79,5 +79,15 @@
         <a href="#" class="button">Acheter maintenant</a>
     </div>
 </section>
+<script>
+            function myFunction() {
+                var x = document.getElementById("navbar");
+                if (x.className === "navbar-icon") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar-icon";
+                }
+            }
+</script>
 </body>
 </html>
