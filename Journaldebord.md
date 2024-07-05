@@ -131,6 +131,6 @@ https://www.youtube.com/watch?v=HQopEEurQYE
 
 Essayer de le finir au plus vite la responsivité
 
-
+05.07.2024 : Bientot fini la responsivité, manque plus que régler le problème avec les images de fonds et le logo et ajouter la fonction pour cliquer sur le menu
 
 
