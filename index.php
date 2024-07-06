@@ -31,7 +31,7 @@ $Produits = afficher();
         <a href="#"><i class='bx bx-search'></i></a>
         <?php if(isset($_SESSION['user_email'])): ?>
             <a href="#"><i class='bx bx-user'></i> <?php echo $_SESSION['user_email']; ?></a>
-            <a href="logout_form.php"><i class='bx bx-log-out'></i> Déconnexion</a>
+            <a href="page_enregistrement/logout_form.php"><i class='bx bx-log-out'></i> Déconnexion</a>
         <?php else: ?>
             <a href="page_enregistrement/pageenregistrement.php"><i class='bx bx-user'></i></a>
         <?php endif; ?>

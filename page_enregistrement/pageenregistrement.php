@@ -1,4 +1,5 @@
 <?php
+session_start();
 @include '../config/config.php';
 
 if(isset($_POST['submit'])){
@@ -17,7 +18,7 @@ if(isset($_POST['submit'])){
         }else{
             $insert = "INSERT INTO utilisateurs (email, password) VALUES ('$email', '$pass')";
             mysqli_query($conn, $insert);
-            $_SESSION['user_email'] = $email;
+            $_SESSION['user_email'] = $email; // Mise à jour de la session avec l'email de l'utilisateur
             header('location: ../index.php');
         }
     }
@@ -52,3 +53,4 @@ if(isset($_POST['submit'])){
 </div>
 </body>
 </html>
+

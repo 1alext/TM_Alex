@@ -133,4 +133,4 @@ Essayer de le finir au plus vite la responsivité
 
 05.07.2024 : Bientot fini la responsivité, manque plus que régler le problème avec les images de fonds et le logo et ajouter la fonction pour cliquer sur le menu
 
-
+06.07.2024 : Modifier le style du texte de la page d'enregistrement, et ajout de la session pour que l'utilisateur peut naviguer en étant connecter.
