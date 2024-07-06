@@ -253,3 +253,48 @@ header .logo img     {
         padding: 10px; 
     }
 }
+
+/*Concerne la fenêtre pour se connecter et déconnecter*/
+.user-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+.user-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+    width: 200px;
+}
+
+
+.user-menu p {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.user-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.user-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+
+.user-menu-container:hover .user-menu {
+    display: block;
+}

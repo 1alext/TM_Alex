@@ -38,3 +38,24 @@ document.addEventListener("DOMContentLoaded", function() {
 }); 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const userIcon = document.getElementById('user-icon');
+    const userMenu = document.getElementById('user-menu');
+        
+    userIcon.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (userMenu.style.display === 'block') {
+                userMenu.style.display = 'none';
+        } else {
+            userMenu.style.display = 'block';
+        }
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!userMenu.contains(event.target) && !userIcon.contains(event.target)) {
+            userMenu.style.display = 'none';
+        }
+    });
+});
+
+

@@ -29,12 +29,17 @@ $Produits = afficher();
     <a href="#" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
     <div class="navbar-icon">
         <a href="#"><i class='bx bx-search'></i></a>
-        <?php if(isset($_SESSION['user_email'])): ?>
-            <a href="#"><i class='bx bx-user'></i> <?php echo $_SESSION['user_email']; ?></a>
-            <a href="page_enregistrement/logout_form.php"><i class='bx bx-log-out'></i> Déconnexion</a>
-        <?php else: ?>
-            <a href="page_enregistrement/pageenregistrement.php"><i class='bx bx-user'></i></a>
-        <?php endif; ?>
+        <div class="user-menu-container">
+            <a href="#" class="user-icon" id="user-icon"><i class='bx bx-user'></i></a>
+            <div class="user-menu" id="user-menu">
+                <?php if(isset($_SESSION['user_email'])): ?>
+                    <p><?php echo $_SESSION['user_email']; ?></p>
+                    <a href="page_enregistrement/logout_form.php"><i class='bx bx-log-out'></i> Déconnexion</a>
+                <?php else: ?>
+                    <a href="page_enregistrement/pageenregistrement.php"><i class='bx bx-user'></i> S'enregistrer ou se connecter</a>
+                <?php endif; ?>
+            </div>
+        </div>
         <a href="#"><i class='bx bx-cart'></i></a>
         <a href="#"><i class='bx bx-heart'></i></a>
         <a href="#" class="menu-icon"><i class='bx bx-menu'></i></a>
