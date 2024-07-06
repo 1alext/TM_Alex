@@ -34,6 +34,11 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="../Lien.css"/>
 </head>
 <body>
+    
+<header>
+    <a href="../index.php" class="logo" id="logo"><img src="../asset/logo 2.png" alt="Logo"></a>
+</header>
+
 <div class="enregistrement-container">
     <?php
     if(isset($error)){
