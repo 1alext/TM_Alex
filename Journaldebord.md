@@ -136,3 +136,4 @@ Essayer de le finir au plus vite la responsivité
 06.07.2024 : Modifier le style du texte de la page d'enregistrement, et ajout de la session pour que l'utilisateur peut naviguer en étant connecter.
 
     -Fini la page enregistrement et login, ajout de la session fini aussi.
+    -Ajout du logo pour revenir à la page d'accuil quand on est sur la page d'enregistrement et se connecter

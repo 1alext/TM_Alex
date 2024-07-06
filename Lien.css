@@ -246,3 +246,10 @@ header .logo img     {
     font-size: 20px;
     padding: 10px;
 }
+
+@media (max-width: 550px) {
+    .enregistrement {
+        width: 90%; 
+        padding: 10px; 
+    }
+}
