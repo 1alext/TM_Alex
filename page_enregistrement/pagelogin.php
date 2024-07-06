@@ -1,3 +1,24 @@
+<?php
+
+@include '../config/config.php';
+
+if(isset($_POST['submit'])){
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $pass = md5($_POST['password']);
+    $cpass = md5($_POST['cpassword']);
+
+    $select = "SELECT * FROM utilisateurs WHERE email = '$email' && password = '$pass'";
+    $result = mysqli_query($conn, $select);
+
+    if(mysqli_num_rows($result) > 0){
+
+        $row = mysqli_fetch_array($result);
+         
+
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

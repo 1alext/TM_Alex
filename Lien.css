@@ -195,6 +195,8 @@ header .logo img     {
     padding: 20px;
     padding-bottom: 60px;
     background: #eee;
+    position: relative;
+    flex-direction: column;
 }
 
 .enregistrement {
@@ -222,28 +224,25 @@ header .logo img     {
     border: none;
 }
 
-.enregistrement-container .enregistrement-btn{
-    background: #fbd0d9;
-    font-size:20px;
+.enregistrement-container .enregistrement-btn {
+    background: black;
+    color: white;
+    font-size: 20px;
     cursor: pointer;
 }
 
-.enregistrement-container .enregistrement-btn{
-    background: black;
-    color: white;
-}
-
-.enregistrement p{
-    margin-top:10px;
+.enregistrement p {
+    margin-top: 10px;
     font-size: 18px;
     color: #333;
 }
 
-.enregistrement-container .error-msg{
-    margin: 10px 0;
+.enregistrement-container .error-msg {
+    margin:10px 0;
     display: block;
     background: crimson;
     color: white;
     border-radius: 5px;
     font-size: 20px;
+    padding: 10px;
 }

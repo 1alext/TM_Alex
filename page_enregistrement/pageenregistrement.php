@@ -1,5 +1,4 @@
 <?php
-
 @include '../config/config.php';
 
 if(isset($_POST['submit'])){
@@ -12,19 +11,18 @@ if(isset($_POST['submit'])){
 
     if(mysqli_num_rows($result) > 0){
         $error[] = 'Compte déjà existant !';
-        
     }else{
         if($pass != $cpass){
             $error[] = 'Mot de passe ne correspond pas !';
         }else{
             $insert = "INSERT INTO utilisateurs (email, password) VALUES ('$email', '$pass')";
             mysqli_query($conn, $insert);
-            header('location:pagelogin.php');
+            $_SESSION['user_email'] = $email;
+            header('location: ../index.php');
         }
     }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -32,17 +30,17 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Enregistrement</title>
-    <?php
-    if(isset($error)){
-        foreach($error as $error){
-            echo '<span class="error-msg">'.$error.'</span>';
-        };
-    };
-    ?>
     <link rel="stylesheet" href="../Lien.css"/>
 </head>
 <body>
 <div class="enregistrement-container">
+    <?php
+    if(isset($error)){
+        foreach($error as $error){
+            echo '<span class="error-msg">'.$error.'</span>';
+        }
+    }
+    ?>
     <form class="enregistrement" action="" method="post">    
         <h3>S'enregistrer</h3>
         <input type="email" name="email" required placeholder="Adresse e-mail">
