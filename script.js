@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 }); 
 
-
+//Concerne la petite fenêtre qui s'affiche pour s'enregistrer et se déconnecter
 document.addEventListener('DOMContentLoaded', function() {
     const userIcon = document.getElementById('user-icon');
     const userMenu = document.getElementById('user-menu');

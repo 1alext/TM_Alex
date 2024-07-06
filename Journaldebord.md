@@ -137,3 +137,4 @@ Essayer de le finir au plus vite la responsivité
 
     -Fini la page enregistrement et login, ajout de la session fini aussi.
     -Ajout du logo pour revenir à la page d'accuil quand on est sur la page d'enregistrement et se connecter, ajout de responsivité pour la page de connexion
+    -Ajout d'une petite fenêtre pour se connecter et déconnecter en passant la souris sur l'icone utilisateur
