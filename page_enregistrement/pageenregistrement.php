@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
         }else{
             $insert = "INSERT INTO utilisateurs (email, password) VALUES ('$email', '$pass')";
             mysqli_query($conn, $insert);
-            $_SESSION['user_email'] = $email; // Mise à jour de la session avec l'email de l'utilisateur
+            $_SESSION['user_email'] = $email; // Mise à jour de la session avec l'email de l'utilisateur, permet de stocker l'adresse mail et conserve la connexion à travers les pages
             header('location: ../index.php');
         }
     }
