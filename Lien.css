@@ -31,7 +31,7 @@ header .logo img     {
 
 .navbar-icon i {
     font-size: 30px;
-    color: #333;
+    color: #f3f3f3;
     margin-right: 14px;
     transition: all .42s;
     margin-top: 50px;
@@ -266,25 +266,28 @@ header .logo img     {
     position: absolute;
     top: 80px;
     right: 40px;
-    background-color: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 15px;
+
+    border: 2px solid white;
+    padding: 5px;
     z-index: 1;
     width: 300px;
 }
 
 .user-menu a {
+    font-size : 20px;
     display: block;
-    padding: 10px;
+    padding: 30px;
     text-decoration: none;
-    color: #333;
+    color: white;
     border-radius: 5px;
 }
 
 .user-menu a:hover {
-    background-color: #998d8d;
+    background-color: #b1b1b1;
+}
+
+.user-menu i.bx {
+    color: white;
 }
 
 /* Afficher le menu utilisateur lors du survol de l'icône utilisateur */
