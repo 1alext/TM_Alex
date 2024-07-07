@@ -34,9 +34,12 @@ $Produits = afficher();
             <div class="user-menu" id="user-menu">
                 <?php if(isset($_SESSION['user_email'])): ?>
                     <p><?php echo $_SESSION['user_email']; ?></p>
+                    <a href="#">Commandes</a>
                     <a href="page_enregistrement/logout_form.php"><i class='bx bx-log-out'></i> Déconnexion</a>
                 <?php else: ?>
-                    <a href="page_enregistrement/pageenregistrement.php"><i class='bx bx-user'></i> S'enregistrer ou se connecter</a>
+                    <a href="page_enregistrement/pagelogin.php"><i class='bx bx-user'></i>Se connecter</a>
+                    <a href="page_enregistrement/pageenregistrement.php"><i class='bx bx-user'></i> S'enregistrer</a>
+                    
                 <?php endif; ?>
             </div>
         </div>

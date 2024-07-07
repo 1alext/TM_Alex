@@ -31,7 +31,7 @@ header .logo img     {
 
 .navbar-icon i {
     font-size: 30px;
-    color: white;
+    color: #333;
     margin-right: 14px;
     transition: all .42s;
     margin-top: 50px;
@@ -255,31 +255,24 @@ header .logo img     {
 }
 
 /*Concerne la fenêtre pour se connecter et déconnecter*/
+
 .user-menu-container {
     position: relative;
     display: inline-block;
 }
 
-
 .user-menu {
     display: none;
     position: absolute;
-    top: 30px;
-    right: 0;
+    top: 80px;
+    right: 40px;
     background-color: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
     z-index: 1;
-    width: 200px;
-}
-
-
-.user-menu p {
-    margin: 0;
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-    color: #333;
+    width: 300px;
 }
 
 .user-menu a {
@@ -291,10 +284,10 @@ header .logo img     {
 }
 
 .user-menu a:hover {
-    background-color: #f0f0f0;
+    background-color: #998d8d;
 }
 
-
+/* Afficher le menu utilisateur lors du survol de l'icône utilisateur */
 .user-menu-container:hover .user-menu {
     display: block;
 }
