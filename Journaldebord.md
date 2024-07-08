@@ -141,4 +141,4 @@ Essayer de le finir au plus vite la responsivité
 
 07.07.2024 : Modification de la fenêtre se connecter et s'enregister, ajout d'un cadre qui entoure les produits pour l'aspect visuel, et lors qu'on clique ça va nous envoyer vers le produit voulu.
 
-à faire : Ajouter des produits, Barre de recherche, panier, favoris, régler le problème avec les images de fond, page qui envoie vers le produit qu'on cherche, pour finir, rendre le site plus beau.
+à faire : Ajouter des produits, Barre de recherche, panier, favoris, régler le problème avec les images de fond, page qui envoie vers le produit qu'on cherche, mettre en vertical les icones quand on passe à un format inférieur à 1050px,  pour finir, rendre le site plus beau

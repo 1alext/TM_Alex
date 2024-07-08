@@ -2,6 +2,8 @@
 session_start();
 @include '../config/config.php';
 
+
+
 if(isset($_POST['submit'])){
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $pass = md5($_POST['password']);

@@ -22,13 +22,16 @@ function afficher()
     }
 }
 
-function supprimer($id)
+function afficherUnProduit($id)
 {
     if(require("connexion.php"))
     {
-        $req = $access->prepare("DELETE FROM produits WHERE id=?");
+        $req = $access->prepare("SELECT * FROM produits WHERE id = ?");
         $req->execute(array($id));
+        $produit = $req->fetch(PDO::FETCH_OBJ);
         $req->closeCursor();
+        return $produit;
     }
 }
-?>
+
+

@@ -280,12 +280,14 @@ header .logo img     {
     position: absolute;
     top: 80px;
     right: 40px;
-
     border: 2px solid white;
     padding: 5px;
     z-index: 1;
     width: 300px;
+    text-align: center;
+    color: white;
 }
+
 
 .user-menu a {
     font-size : 20px;
