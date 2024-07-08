@@ -54,7 +54,7 @@ header .logo img     {
 
 .text h4 {
     font-size: 16px;
-    color: rgb(165, 165, 150);
+    color: white;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -114,22 +114,34 @@ header .logo img     {
     object-position: center; 
     user-select: none;
 }
-/*Produits*/
+/* Produits */
 .products-section {
     width: 100%;
-    height: auto; 
+    height: auto;
     background-color: white;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     align-items: flex-start;
 }
 
+
+.product-link {
+    color: inherit; /*garde la couleur car sinon c'est bleu*/
+}
+
 .product {
+    flex: 0 0 auto;
     padding: 10px;
     margin: 10px;
     width: 200px;
     text-align: center;
+    transition: transform 0.3s ease; /*Pour avoir un effet de survol*/
+}
+
+.product:hover {
+    transform: scale(1.02); /*Agrandit légèrement le produit au survol*/
 }
 
 .product img {
@@ -283,7 +295,7 @@ header .logo img     {
 }
 
 .user-menu a:hover {
-    background-color: #b1b1b1;
+    background-color: #b8b7b771;
 }
 
 .user-menu i.bx {

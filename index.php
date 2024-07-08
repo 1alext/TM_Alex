@@ -62,15 +62,17 @@ $Produits = afficher();
 
 <!--affiche chaque produits dans la bd-->
 <section class="products-section">
-    <?php foreach($Produits as $produit):?>
-        <div class="product">
-            <?= $produit->nom ?>
-            <img src="<?= $produit->image?>">
-            <p><?= $produit->description; ?></p>
-            <button type="button">Acheter</button>
-            <p class="price"><?= $produit->prix ?> CHF</p>
-        </div>
-    <?php endforeach;?>
+    <?php foreach($Produits as $produit): ?>
+        <a href="page_produit.php?id=<?= $produit->id ?>" class="product-link">
+            <div class="product">
+                <h2><?= $produit->nom ?></h2>
+                <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
+                <p><?= $produit->description; ?></p>
+                <button type="button">Acheter</button>
+                <p class="price"><?= $produit->prix ?> CHF</p>
+            </div>
+        </a>
+    <?php endforeach; ?>
 </section>
 
 <!--page d'accueil-->
