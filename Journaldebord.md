@@ -139,6 +139,10 @@ Essayer de le finir au plus vite la responsivité
     -Ajout du logo pour revenir à la page d'accuil quand on est sur la page d'enregistrement et se connecter, ajout de responsivité pour la page de connexion
     -Ajout d'une petite fenêtre pour se connecter et déconnecter en passant la souris sur l'icone utilisateur
 
-07.07.2024 : Modification de la fenêtre se connecter et s'enregister, ajout d'un cadre qui entoure les produits pour l'aspect visuel, et lors qu'on clique ça va nous envoyer vers le produit voulu.
+07.07.2024 : 
+    - Modification de la fenêtre se connecter et s'enregister
+    - ajout d'un cadre qui entoure les produits pour l'aspect visuel,
+    - Lors qu'on clique sur le produit ça va nous envoyer vers le produit voulu.
+    - Ajout de la page_produit.php pour afficher le produit quand on a cliqué dans la page principale.
 
-à faire : Ajouter des produits, Barre de recherche, panier, favoris, régler le problème avec les images de fond, page qui envoie vers le produit qu'on cherche, mettre en vertical les icones quand on passe à un format inférieur à 1050px,  pour finir, rendre le site plus beau
+à faire : Ajouter des produits, Barre de recherche, panier, favoris, régler le problème avec les images de fond, mettre en vertical les icones quand on passe à un format inférieur à 1050px,  pour finir, rendre le site plus beau
