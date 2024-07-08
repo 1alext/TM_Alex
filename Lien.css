@@ -126,7 +126,6 @@ header .logo img     {
     align-items: flex-start;
 }
 
-
 .product-link {
     color: inherit; /*garde la couleur car sinon c'est bleu*/
 }
@@ -137,11 +136,13 @@ header .logo img     {
     margin: 10px;
     width: 200px;
     text-align: center;
-    transition: transform 0.3s ease; /*Pour avoir un effet de survol*/
+    border: 2px solid #ddd; /*Ajout de la bordure*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*pour avoir un effet de survol*/
 }
 
 .product:hover {
     transform: scale(1.02); /*Agrandit légèrement le produit au survol*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /*Augmente l'ombre au survol*/
 }
 
 .product img {
@@ -153,6 +154,7 @@ header .logo img     {
     font-weight: bold;
     color: black;
 }
+
 
 .menu-icon {
     display: none;
