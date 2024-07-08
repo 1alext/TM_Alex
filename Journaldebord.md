@@ -145,10 +145,10 @@ Essayer de le finir au plus vite la responsivité
     - Lors qu'on clique sur le produit ça va nous envoyer vers le produit voulu.
     - Ajout de la page_produit.php pour afficher le produit quand on a cliqué dans la page principale.
 
-à faire : Ajouter des produits, Barre de recherche, panier, favoris, régler le problème avec les images de fond, mettre en vertical les icones quand on passe à un format inférieur à 1050px,  pour finir, rendre le site plus beau
-
 vidéos regardés concernant page produits et fenêtre d'enregistrement : https://www.youtube.com/watch?v=kRs3aTi3pzU https://www.youtube.com/watch?v=P5HMTv94MBo&t=1048s https://www.youtube.com/watch?v=0mAL4UuVWbU&t=225s https://www.youtube.com/watch?v=B-S_o22mQ54 https://www.youtube.com/watch?v=7edcgCdiHVU https://www.youtube.com/watch?v=kHw_AVC1GGs 
 
+
+à faire : Ajouter des produits, Barre de recherche, panier, favoris, régler le problème avec les images de fond, mettre en vertical les icones quand on passe à un format inférieur à 1050px,  pour finir, rendre le site plus beau
 
 
 
