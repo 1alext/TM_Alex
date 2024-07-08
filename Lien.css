@@ -160,7 +160,7 @@ header .logo img     {
     display: none;
 }
 
-/* Media query pour les écrans de moins de 1050px */
+/*Media query pour les écrans de moins de 1050px*/
 @media screen and (max-width: 1050px) {
     .home {
         left: 50%; 
