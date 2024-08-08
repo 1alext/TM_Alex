@@ -278,35 +278,35 @@ header .logo img     {
 .user-menu {
     display: none;
     position: absolute;
-    top: 80px;
-    right: 40px;
+    top: 80px; 
+    right: 0;
     border: 2px solid white;
-    padding: 5px;
+    padding: 10px;
     z-index: 1;
-    width: 300px;
+    
     text-align: center;
     color: white;
+    border-radius: 7px;
+    white-space: nowrap; 
 }
 
-
-.user-menu a {
-    font-size : 20px;
-    display: block;
-    padding: 30px;
+.user-menu .user-button {
+    font-size: 18px;
+    display: inline-block; 
+    padding: 10px 20px;
     text-decoration: none;
     color: white;
-    border-radius: 5px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; 
+    border-radius: 8px; 
 }
 
-.user-menu a:hover {
-    background-color: #b8b7b771;
+.user-menu .user-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 12px; 
 }
 
-.user-menu i.bx {
-    color: white;
-}
 
-/* Afficher le menu utilisateur lors du survol de l'icône utilisateur */
+/*Affiche le menu utilisateur lors du survol de l'icône utilisateur*/
 .user-menu-container:hover .user-menu {
     display: block;
 }

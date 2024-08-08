@@ -150,5 +150,7 @@ vidéos regardés concernant page produits et fenêtre d'enregistrement : https:
 
 à faire : Ajouter des produits, Barre de recherche, panier, favoris, régler le problème avec les images de fond, mettre en vertical les icones quand on passe à un format inférieur à 1050px,  pour finir, rendre le site plus beau
 
+08.08.2024 : re travailler la fenetre quand on survole le l'icone utilisateur, fenetre est devenu plus petite, a la forme d'un rectangle et il y a un fond transparent qui apparait quand on survole s'enregistrer ou se connecter.
+
 
 
