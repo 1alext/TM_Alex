@@ -48,6 +48,7 @@ $Produits = afficher();
     </div>
 </header>
 
+
    
 <!--Fond d'images coulissants-->
 <div class="container">
