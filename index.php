@@ -27,7 +27,7 @@ $Produits = afficher();
  <!--Contient les icones et peuvent être cliquer-->   
  <header>
     <a href="#" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
-    <div class="navbar-icon">
+    <div class="navbar-icon" id="navbar">
         <a href="#"><i class='bx bx-search'></i></a>
         <div class="user-menu-container">
             <a href="#" class="user-icon" id="user-icon"><i class='bx bx-user'></i></a>
@@ -39,16 +39,15 @@ $Produits = afficher();
                 <?php else: ?>
                     <a href="page_enregistrement/pagelogin.php" class="user-button">Se connecter</a>
                     <a href="page_enregistrement/pageenregistrement.php" class="user-button">S'enregistrer</a>
-
-                    
                 <?php endif; ?>
             </div>
         </div>
         <a href="#"><i class='bx bx-cart'></i></a>
         <a href="#"><i class='bx bx-heart'></i></a>
-        <a href="#" class="menu-icon"><i class='bx bx-menu'></i></a>
+        <a href="#" class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></a>
     </div>
 </header>
+
    
 <!--Fond d'images coulissants-->
 <div class="container">
@@ -87,15 +86,16 @@ $Produits = afficher();
     </div>
 </section>
 
+<!--icon menu qui affiche les icones à la vertical lors qu'on est en responsive-->
 <script>
-    function myFunction() {
-        var x = document.getElementById("navbar");
-        if (x.className === "navbar-icon") {
-            x.className += " responsive";
-        } else {
-            x.className = "navbar-icon";
-        }
+document.getElementById("menu-icon").addEventListener("click", function() {
+    var navbar = document.getElementById("navbar");
+    if (navbar.className === "navbar-icon") {
+        navbar.className += " responsive";
+    } else {
+        navbar.className = "navbar-icon";
     }
+});
 </script>
 </body>
 </html>

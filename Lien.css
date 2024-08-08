@@ -136,13 +136,13 @@ header .logo img     {
     margin: 10px;
     width: 200px;
     text-align: center;
-    border: 2px solid #ddd; /*Ajout de la bordure*/
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /*pour avoir un effet de survol*/
+    border: 2px solid #ddd; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .product:hover {
-    transform: scale(1.02); /*Agrandit légèrement le produit au survol*/
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /*Augmente l'ombre au survol*/
+    transform: scale(1.02); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .product img {
@@ -162,43 +162,37 @@ header .logo img     {
 
 /*Media query pour les écrans de moins de 1050px*/
 @media screen and (max-width: 1050px) {
-    .home {
-        left: 50%; 
-        transform: translate(-50%, -50%);
-        text-align: center; 
-    }
-/* Concerne les icones*/
-    header {
+
+    /*centrer le logo*/
+    .logo {
         display: flex;
-        justify-content: space-between; 
-        align-items: center; 
-    }
-    .navbar-icon {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end; 
-        gap: 1px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 
+    /*menu déroulant*/
     .navbar-icon a:not(.menu-icon) {
         display: none;
     }
 
-    .menu-icon {
+    .navbar-icon .menu-icon {
         display: inline-block;
     }
 
-    .logo {
-        position: static; 
-        transform: none; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto; 
-        height: 100px; 
+    .navbar-icon.responsive {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-icon.responsive a {
+        display: block;
+        text-align: left;
+        width: 100%;
+        color: white;
+        text-decoration: none;
     }
 }
-
 
 /*page d'enregistrement*/
 .enregistrement-container {
