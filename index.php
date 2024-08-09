@@ -72,13 +72,15 @@ $Produits = afficher();
             <div class="product">
                 <h2><?= $produit->nom ?></h2>
                 <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
-                <p><?= $produit->description; ?></p>
+                <!-- Cache la description par défaut -->
+                <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
                 <button type="button">Acheter</button>
                 <p class="price"><?= $produit->prix ?> CHF</p>
             </div>
         </a>
     <?php endforeach; ?>
 </section>
+
 
 <!--page d'accueil-->
 <section class="home">
