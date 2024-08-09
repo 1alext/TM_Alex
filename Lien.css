@@ -321,10 +321,12 @@ header .logo img     {
     display: block;
 }
 
-/*Masque la barre de recherche par défaut*/
+/* Masque la barre de recherche par défaut */
 .search-bar-container {
-    position: relative;
-    margin-right: 20px;
+    position: absolute;
+    right: 350px; /* Augmente cette valeur pour déplacer la barre plus à gauche */
+    top: 63%;
+    transform: translateY(-50%);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
