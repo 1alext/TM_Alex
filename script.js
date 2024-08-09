@@ -58,4 +58,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//barre de recherche s'affiche quand on clique dessus
+document.addEventListener('DOMContentLoaded', function() {
+    const searchIcon = document.getElementById('search-icon');
+    const searchBarContainer = document.getElementById('search-bar-container');
 
+    searchIcon.addEventListener('click', function(event) {
+        event.preventDefault();
+        searchBarContainer.classList.toggle('show-search-bar');
+    });
+});

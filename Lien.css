@@ -320,3 +320,27 @@ header .logo img     {
 .user-menu-container:hover .user-menu {
     display: block;
 }
+
+/*Masque la barre de recherche par défaut*/
+.search-bar-container {
+    position: relative;
+    margin-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#search-bar {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+/*Affiche la barre de recherche quand la classe show-search-bar est active (lier avec javascript)*/
+.show-search-bar {
+    opacity: 1;
+    visibility: visible;
+}
