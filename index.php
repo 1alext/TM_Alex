@@ -28,7 +28,10 @@ $Produits = afficher();
  <header>
     <a href="#" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
     <div class="navbar-icon" id="navbar">
-        <a href="#"><i class='bx bx-search'></i></a>
+        <div class="search-bar-container" id="search-bar-container">
+            <input type="text" id="search-bar" placeholder="Rechercher">
+        </div>
+        <a href="#" id="search-icon"><i class='bx bx-search'></i></a>
         <div class="user-menu-container">
             <a href="#" class="user-icon" id="user-icon"><i class='bx bx-user'></i></a>
             <div class="user-menu" id="user-menu">
@@ -47,6 +50,7 @@ $Produits = afficher();
         <a href="#" class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></a>
     </div>
 </header>
+
 
 
    
