@@ -67,18 +67,32 @@ $Produits = afficher();
 
 <!--affiche chaque produits dans la bd-->
 <section class="products-section">
-    <?php foreach($Produits as $produit): ?>
-        <a href="page_produit.php?id=<?= $produit->id ?>" class="product-link">
-            <div class="product">
-                <h2><?= $produit->nom ?></h2>
-                <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
-                <!-- Cache la description par défaut -->
-                <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
-                <p class="price"><?= $produit->prix ?> CHF</p>
-            </div>
-        </a>
-    <?php endforeach; ?>
+    <div class="products-wrapper">
+        <!-- Les produits originaux -->
+        <?php foreach($Produits as $produit): ?>
+            <a href="page_produit.php?id=<?= $produit->id ?>" class="product-link">
+                <div class="product">
+                    <h2><?= $produit->nom ?></h2>
+                    <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
+                    <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
+                    <p class="price"><?= $produit->prix ?> CHF</p>
+                </div>
+            </a>
+        <?php endforeach; ?>
+        <!-- Copie des produits pour le défilement infini -->
+        <?php foreach($Produits as $produit): ?>
+            <a href="page_produit.php?id=<?= $produit->id ?>" class="product-link">
+                <div class="product">
+                    <h2><?= $produit->nom ?></h2>
+                    <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
+                    <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
+                    <p class="price"><?= $produit->prix ?> CHF</p>
+                </div>
+            </a>
+        <?php endforeach; ?>
+    </div>
 </section>
+
 
 
 <!--page d'accueil-->

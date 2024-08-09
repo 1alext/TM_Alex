@@ -114,16 +114,36 @@ header .logo img     {
     object-position: center; 
     user-select: none;
 }
+
+
 /* Produits */
 .products-section {
+    overflow: hidden;
     width: 100%;
-    height: auto;
+    position: relative;
     background-color: white;
-    padding: 20px;
+    padding: 20px 0;
+}
+
+/*Animation des produits */
+.products-wrapper {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
-    align-items: flex-start;
+    width: 200%; 
+    animation: scroll 6s linear infinite; 
+}
+
+.products-wrapper {
+    will-change: transform;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .product-link {
@@ -135,7 +155,7 @@ header .logo img     {
     padding: 10px;
     margin: 10px;
     width: 200px;
-    height: 500px; 
+    height: 400px; 
     text-align: center;
     border: 2px solid #ddd;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
