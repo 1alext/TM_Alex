@@ -49,7 +49,6 @@ $produit = afficherUnProduit($id);
     <img src="<?= htmlspecialchars($produit->image) ?>" alt="<?= htmlspecialchars($produit->nom) ?>">
     <p><?= htmlspecialchars($produit->description) ?></p>
     <p class="price"><?= htmlspecialchars($produit->prix) ?> CHF</p>
-    <button type="button">Acheter</button>
 </section>
 
 <script>

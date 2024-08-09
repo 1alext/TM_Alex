@@ -74,7 +74,6 @@ $Produits = afficher();
                 <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
                 <!-- Cache la description par défaut -->
                 <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
-                <button type="button">Acheter</button>
                 <p class="price"><?= $produit->prix ?> CHF</p>
             </div>
         </a>

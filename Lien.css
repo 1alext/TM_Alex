@@ -135,10 +135,15 @@ header .logo img     {
     padding: 10px;
     margin: 10px;
     width: 200px;
+    height: 500px; 
     text-align: center;
-    border: 2px solid #ddd; /*Ajout de la bordure*/
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /*pour avoir un effet de survol*/
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
+
 
 .product:hover {
     transform: scale(1.02); /*Agrandit légèrement le produit au survol*/
