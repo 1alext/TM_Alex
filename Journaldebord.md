@@ -152,5 +152,7 @@ vidéos regardés concernant page produits et fenêtre d'enregistrement : https:
 
 08.08.2024 : re travailler la fenetre quand on survole le l'icone utilisateur, fenetre est devenu plus petite, a la forme d'un rectangle et il y a un fond transparent qui apparait quand on survole s'enregistrer ou se connecter.
 
+09.08.2024 : ajout d'une barre de recherche, elle ne fonctionne pas encore, ajout de produits ainsi qu'une boucle animation qui affiche les produits en défilant. Mais après 6 sec, il y a un petit freeze que je n'ai pas pour l'instant trouvé comment enlever ce freeze
+
 
 
