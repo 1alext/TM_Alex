@@ -384,3 +384,41 @@ header .logo img     {
     font-weight: bold; 
     text-transform: uppercase; 
 }
+
+.continent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Grille flexible */
+    gap: 20px; /* Espace entre les cadres */
+    padding: 20px;
+    justify-items: center; /* Centre les éléments horizontalement */
+}
+
+.continent-card {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 2px solid #ddd; /* Bordure autour des cadres */
+    border-radius: 8px;
+    overflow: hidden; /* Masque les débordements d'image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 200px;
+}
+
+.continent-card img {
+    width: 100%;
+    height: auto; /* Ajuste la taille de l'image pour remplir le cadre */
+    display: block;
+}
+
+.continent-card p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.continent-card:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre au survol */
+}
+

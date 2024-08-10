@@ -95,6 +95,23 @@ $Produits = afficher();
 
 <section class="continent-section">
     <h2>Maillot par continent</h2>
+    <a href="page_europe.php" class="continent-card">
+        <img src="asset/europecart.jpg" alt="Europe">
+        <p>Europe</p>
+        
+    <a href="page_ameriquesud.php" class="continent-card">
+        <img src="asset/ameriquesud.jpg" alt="ameriquesud">
+        <p>Amerique du Sud</p>
+    
+    <a href="page_ameriquenord.php" class="continent-card">
+        <img src="asset/ameriquenord.jpg" alt="ameriquenord">
+        <p>Amerique du Nord</p>
+    
+    <a href="asie.php" class="continent-card">
+        <img src="asset/asie.jpg" alt="asie">
+        <p>Asie</p>
+    
+    
 </section>
 
 
