@@ -378,16 +378,22 @@ header .logo img     {
     margin: 40px; 
 }
 
+/*aligner les cadres horizontalement */
+.continent-grid {
+    display: flex; /*un alignement horizontal */
+    justify-content: center; /*Centre les cadres horizontalement*/
+    gap: 50px; /* Espace entre chaque cadre*/
+}
+
 /*Cadre de chaque continent*/
 .continent-card {
-    display: block; /*rend cadre petit*/
     text-align: center;
     text-decoration: none;
     color: black; 
-    border: 2px solid #ddd; /* Bordure autour des cadres */
+    border: 2px solid #ddd; /*Bordure autour des cadres */
     border-radius: 8px; 
-    overflow: hidden; /* Masque les débordements d'image */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /*survol plus fluide*/
+    overflow: hidden; /*Masque les débordements d'image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Survol plus fluide */
     max-width: 200px;
 }
 
