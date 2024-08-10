@@ -93,6 +93,9 @@ $Produits = afficher();
     </div>
 </section>
 
+<section class="continent-section">
+    <h2>Maillot par continent</h2>
+</section>
 
 
 <!--page d'accueil-->

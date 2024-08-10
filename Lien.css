@@ -371,3 +371,16 @@ header .logo img     {
     opacity: 1;
     visibility: visible;
 }
+
+/*Nouvelle section pour bas de page*/
+.continent-section {
+    text-align: center;
+    margin: 40px; 
+}
+
+.continent-section h2 {
+    font-size: 24px; 
+    color: black;    
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
