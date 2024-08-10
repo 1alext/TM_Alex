@@ -93,6 +93,7 @@ $Produits = afficher();
     </div>
 </section>
 
+<!--Bas page catégorie-->
 <section class="continent-section">
     <h2>Maillot par continent</h2>
     <a href="page_europe.php" class="continent-card">

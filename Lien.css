@@ -378,45 +378,34 @@ header .logo img     {
     margin: 40px; 
 }
 
-.continent-section h2 {
-    font-size: 24px; 
-    color: black;    
-    font-weight: bold; 
-    text-transform: uppercase; 
-}
-
-.continent-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Grille flexible */
-    gap: 20px; /* Espace entre les cadres */
-    padding: 20px;
-    justify-items: center; /* Centre les éléments horizontalement */
-}
-
+/*Cadre de chaque continent*/
 .continent-card {
-    display: block;
+    display: block; /*rend cadre petit*/
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: black; 
     border: 2px solid #ddd; /* Bordure autour des cadres */
-    border-radius: 8px;
+    border-radius: 8px; 
     overflow: hidden; /* Masque les débordements d'image */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*survol plus fluide*/
     max-width: 200px;
 }
 
+/*Parametre des images*/
 .continent-card img {
-    width: 100%;
+    width: 100%; 
     height: auto; /* Ajuste la taille de l'image pour remplir le cadre */
     display: block;
 }
 
+/* Texte de chaque cadre*/
 .continent-card p {
     margin: 10px 0;
     font-size: 16px;
     font-weight: bold;
 }
 
+/*petite animation sur le survol*/
 .continent-card:hover {
     transform: scale(1.05); /* Effet de zoom au survol */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre au survol */
