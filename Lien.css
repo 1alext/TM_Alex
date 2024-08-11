@@ -130,7 +130,7 @@ header .logo img     {
     display: flex;
     flex-wrap: nowrap;
     width: 200%; 
-    animation: scroll 6s linear infinite; 
+    animation: scroll 30s linear infinite; 
 }
 
 .products-wrapper {
@@ -441,3 +441,83 @@ header .logo img     {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre au survol */
 }
 
+/*Section Best Sellers*/
+.best-sellers-section {
+    padding: 40px 20px;
+}
+
+/*Titre "Meilleures ventes"*/
+.best-sellers-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #000000;
+}
+
+/*Mise en horizontale des articles*/
+.best-sellers-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*Style des cadres des articles*/
+.best-seller {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #333333;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    height: 400px;
+}
+
+/*images à l'intérieur des cadres*/
+.best-seller img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
+}
+
+/*titre des articles*/
+.best-seller h2 {
+    margin: 5px 0; 
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/*prix des articles*/
+.best-seller .price {
+    font-weight: bold;
+    color: black;
+    margin: 5px 0; /*réduit l'espace entre le prix et le titre*/
+}
+
+/*Bouton "Ajouter au panier"*/
+.best-seller .add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    margin-top: auto; 
+}
+
+/*effet de survol sur le bouton*/
+.best-seller .add-to-cart:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}

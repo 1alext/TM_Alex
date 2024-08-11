@@ -154,5 +154,7 @@ vidéos regardés concernant page produits et fenêtre d'enregistrement : https:
 
 09.08.2024 : ajout d'une barre de recherche, elle ne fonctionne pas encore, ajout de produits ainsi qu'une boucle animation qui affiche les produits en défilant. Mais après 6 sec, il y a un petit freeze que je n'ai pas pour l'instant trouvé comment enlever ce freeze
 
+10.08.2024 : ajout catégorie choisir quel continent et en suite le maillot
 
+11.08.2024 : ajout section des meilleures ventes, ajout page panier et favoris 
 

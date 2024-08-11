@@ -126,6 +126,44 @@ $Produits = afficher();
     </div>
 </section>
 
+<!--Section Best Sellers-->
+<section class="best-sellers-section">
+    <h2>Meilleures ventes</h2>
+    <div class="best-sellers-wrapper">
+        <!--Best Seller 1-->
+        <div class="best-seller">
+            <img src="asset/all.jpg" alt="Allemagne">
+            <h2>Maillot domicile Allemagne 2024/25</h2>
+            <p class="price">80 CHF</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+
+        <!--Best Seller 2-->
+        <div class="best-seller">
+            <img src="asset/fr.jpg" alt="France">
+            <h2>Maillot domicile France 2024/25</h2>
+            <p class="price">80 CHF</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+
+        <!--Best Seller 3-->
+        <div class="best-seller">
+            <img src="asset/ang.jpg" alt="Angleterre">
+            <h2>Maillot domicile Angleterre 2024/25</h2>
+            <p class="price">80 CHF</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+
+        <!--Best Seller 4-->
+        <div class="best-seller">
+            <img src="asset/br.jpg" alt="Bresil">
+            <h2>Maillot Domicile Brésil 2024/25</h2>
+            <p class="price">80 CHF</p>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+    </div>
+</section>
+
 <!-- Page d'accueil -->
 <section class="home">
     <div class="text">
