@@ -72,10 +72,11 @@ $Produits = afficher();
         <?php foreach($Produits as $produit): ?>
             <a href="page_produit.php?id=<?= $produit->id ?>" class="product-link">
                 <div class="product">
-                    <h2><?= $produit->nom ?></h2>
                     <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
-                    <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
+                    <h2><?= $produit->nom ?></h2>
                     <p class="price"><?= $produit->prix ?> CHF</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                    <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
                 </div>
             </a>
         <?php endforeach; ?>
@@ -83,10 +84,11 @@ $Produits = afficher();
         <?php foreach($Produits as $produit): ?>
             <a href="page_produit.php?id=<?= $produit->id ?>" class="product-link">
                 <div class="product">
-                    <h2><?= $produit->nom ?></h2>
                     <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
-                    <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
+                    <h2><?= $produit->nom ?></h2>
                     <p class="price"><?= $produit->prix ?> CHF</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                    <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
                 </div>
             </a>
         <?php endforeach; ?>
