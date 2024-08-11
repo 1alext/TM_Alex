@@ -375,7 +375,7 @@ header .logo img     {
 /*Nouvelle section pour bas de page*/
 .continent-section {
     text-align: center;
-    margin: 40px; 
+    margin: 20px; 
 }
 
 /*aligner les cadres horizontalement */
@@ -383,6 +383,7 @@ header .logo img     {
     display: flex; /*un alignement horizontal */
     justify-content: center; /*Centre les cadres horizontalement*/
     gap: 50px; /* Espace entre chaque cadre*/
+    padding-top: 40px; /*pour déplacer les cadres verticalement*/
 }
 
 /*Cadre de chaque continent*/
