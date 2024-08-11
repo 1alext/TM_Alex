@@ -474,14 +474,14 @@ header .logo img     {
     align-items: center;
     box-sizing: border-box;
     position: relative;
-    height: 400px;
+    height: 550px;
 }
 
 /*images à l'intérieur des cadres*/
 .best-seller img {
     width: 100%;
     height: auto;
-    max-height: 250px; 
+    max-height: 400px; 
     object-fit: cover; 
     margin-bottom: 10px; 
 }
