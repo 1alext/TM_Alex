@@ -204,6 +204,10 @@ header .logo img     {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.menu-icon {
+    display: none;
+}
+
 /* Media query pour les écrans de moins de 1050px */
 @media screen and (max-width: 1050px) {
     .navbar-icon {

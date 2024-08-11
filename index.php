@@ -44,9 +44,9 @@ $Produits = afficher();
                     <a href="page_enregistrement/pageenregistrement.php" class="user-button">S'enregistrer</a>
                 <?php endif; ?>
             </div>
-        </div>
-        <a href="#"><i class='bx bx-cart'></i></a>
-        <a href="#"><i class='bx bx-heart'></i></a>
+        </div>  
+        <a href="pagepanier.php"><i class='bx bx-cart'></i></a>
+        <a href="pagefavoris.php"><i class='bx bx-heart'></i></a>
         <a href="#" class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></a>
     </div>
 </header>
