@@ -77,6 +77,7 @@ header .logo img     {
     margin: 10px 0 20px 0;
 }
 
+/*cadre noir "Découvrir maintenant"*/
 .discover-now {
     display: inline-block;
     color: rgb(255, 255, 255);
