@@ -158,3 +158,5 @@ vidéos regardés concernant page produits et fenêtre d'enregistrement : https:
 
 11.08.2024 : ajout section des meilleures ventes, ajout page panier et favoris 
 
+quoi faire : enlever bouton acheter maintenant et remplacer par qqch d'autre, bouton ajouter au panier, quand on clique dessus, ça ajoute le produit dans le panier, quand on clique sur le produit, on peut le consulter et ainsi voir la description, page pour chaque continent, section meilleures ventes : rendre plus proche les cadres et faire qu'on peut les consulters, faire section contenant aide contact/à propos..., faire fonctionner barre de recherche, faire fonctionner panier, faire fonctionner les favoris. Régler le problème avec les images de fond qui défilent, car il y a une coupure et les images deviennent blanches, régler problème avec les produits qui défilent car après 30 sec, il y a un freeze. ajouter des produits 
+
