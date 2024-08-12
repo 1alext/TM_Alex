@@ -52,8 +52,25 @@ $Produits = afficher();
 </header>
 
 
+<!-- Page d'accueil -->
+<section class="home">
+    <div class="text">
+        <h4>Nouveaux maillots</h4>
+        <h1>Saison 2023/24 <br> Et précédents</h1>   
+        <p>"Faites vibrer les tribunes avec notre gamme de maillots de foot. 
+        <br>Capturez l'esprit de la compétition et faites briller votre équipe."</p>
+        
+        <!-- Texte "Découvrez maintenant" avec flèches -->
+        <div class="discover-now">
+            Découvrez maintenant
+            <div class="arrows">
+                <span class="arrow">&#8595;</span> <!-- Flèche vers le bas -->
+                <span class="arrow">&#8595;</span> <!-- Flèche vers le bas -->
+            </div>
+        </div>
+    </div>
+</section>
 
-   
 <!--Fond d'images coulissants-->
 <div class="container">
     <div class="slider-wrapper" id="slide-container">
@@ -164,34 +181,19 @@ $Produits = afficher();
     </div>
 </section>
 
-<!-- Page d'accueil -->
-<section class="home">
-    <div class="text">
-        <h4>Nouveaux maillots</h4>
-        <h1>Saison 2023/24 <br> Et précédents</h1>   
-        <p>"Faites vibrer les tribunes avec notre gamme de maillots de foot. 
-        <br>Capturez l'esprit de la compétition et faites briller votre équipe."</p>
-        
-        <!-- Texte "Découvrez maintenant" avec flèches -->
-        <div class="discover-now">
-            Découvrez maintenant
-            <div class="arrows">
-                <span class="arrow">&#8595;</span> <!-- Flèche vers le bas -->
-                <span class="arrow">&#8595;</span> <!-- Flèche vers le bas -->
+<!--A propos-->
+
+<section id="about">
+    <div class="contenubas">
+
+            <div>
+                <h3>A <span> propos</span></h3>
+                <p>Hardvest est votre boutique en ligne dédiée aux maillots de football, des dernières saisons aux classiques incontournables. Nous sélectionnons des produits authentiques et de qualité pour satisfaire les passionnés et les collectionneurs.
+                <p>Notre objectif est de vous offrir une expérience d'achat unique avec des maillots qui combinent confort, style et performance. Explorez notre sélection et rejoignez notre communauté de fans de football.
+                Merci de choisir Hardvest !
             </div>
-        </div>
-    </div>
-</section>
-<!--icon menu qui affiche les icones à la vertical lors qu'on est en responsive-->
-<script>
-document.getElementById("menu-icon").addEventListener("click", function() {
-    var navbar = document.getElementById("navbar");
-    if (navbar.className === "navbar-icon") {
-        navbar.className += " responsive";
-    } else {
-        navbar.className = "navbar-icon";
-    }
-});
-</script>
+            <div class="truck"><i class='bx bxs-truck'></i>
+            <div class="time"><i class='bx bxs-timer'></i>
+            <div class="shirt"><i class='bx bxs-t-shirt' ></i>
 </body>
 </html>

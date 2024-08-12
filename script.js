@@ -68,3 +68,14 @@ document.addEventListener('DOMContentLoaded', function() {
         searchBarContainer.classList.toggle('show-search-bar');
     });
 });
+
+//icon menu qui affiche les icones à la vertical lors qu'on est en responsive//
+
+document.getElementById("menu-icon").addEventListener("click", function() {
+    var navbar = document.getElementById("navbar");
+    if (navbar.className === "navbar-icon") {
+        navbar.className += " responsive";
+    } else {
+        navbar.className = "navbar-icon";
+    }
+});
