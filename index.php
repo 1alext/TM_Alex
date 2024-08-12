@@ -38,7 +38,7 @@ $Produits = afficher();
                 <?php if(isset($_SESSION['user_email'])): ?>
                     <p><?php echo $_SESSION['user_email']; ?></p>
                     <a href="#">Commandes</a>
-                    <a href="page_enregistrement/logout_form.php"><i class='bx bx-log-out'></i> Déconnexion</a>
+                    <a href="page_enregistrement/logout_form.php">Déconnexion</a>
                 <?php else: ?>
                     <a href="page_enregistrement/pagelogin.php" class="user-button">Se connecter</a>
                     <a href="page_enregistrement/pageenregistrement.php" class="user-button">S'enregistrer</a>
@@ -171,10 +171,17 @@ $Produits = afficher();
         <h1>Saison 2023/24 <br> Et précédents</h1>   
         <p>"Faites vibrer les tribunes avec notre gamme de maillots de foot. 
         <br>Capturez l'esprit de la compétition et faites briller votre équipe."</p>
-        <a href="#" class="button">Acheter maintenant</a>
+        
+        <!-- Texte "Découvrez maintenant" avec flèches -->
+        <div class="discover-now">
+            Découvrez maintenant
+            <div class="arrows">
+                <span class="arrow">&#8595;</span> <!-- Flèche vers le bas -->
+                <span class="arrow">&#8595;</span> <!-- Flèche vers le bas -->
+            </div>
+        </div>
     </div>
 </section>
-
 <!--icon menu qui affiche les icones à la vertical lors qu'on est en responsive-->
 <script>
 document.getElementById("menu-icon").addEventListener("click", function() {

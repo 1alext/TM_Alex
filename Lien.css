@@ -77,20 +77,30 @@ header .logo img     {
     margin: 10px 0 20px 0;
 }
 
-.button {
+.discover-now {
     display: inline-block;
-    color: white;
-    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-size: 22px; 
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
-    background-color: black;
-    padding: 12px 40px;
-    transition: all .42s;
     margin-top: 10px;
+    text-align: center; 
+    padding: 5px 25px;
+    background-color: black; 
+
 }
-.button:hover {
-    background-color: rgb(61, 61, 61);
+
+.arrows {
+    margin-top: 1px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.arrow {
+    font-size: 30px; 
+    color: rgb(255, 255, 255); 
+    margin: 0 10px; 
 }
 
 /*Concerne les images de fonds*/
