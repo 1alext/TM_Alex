@@ -534,6 +534,9 @@ header .logo img     {
 /*Style pour la section À propos*/
 #about {
     padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .contenubas {
