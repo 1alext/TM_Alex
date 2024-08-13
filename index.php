@@ -185,15 +185,19 @@ $Produits = afficher();
 
 <section id="about">
     <div class="contenubas">
+        <!-- Section A propos -->
+        <div class="about-text">
+            <h3>À propos</h3>
+            <p>Hardvest est votre boutique en ligne dédiée aux maillots de football, des dernières saisons aux classiques incontournables. Nous sélectionnons des produits authentiques et de qualité pour satisfaire les passionnés et les collectionneurs.
+            Notre objectif est de vous offrir une expérience d'achat unique avec des maillots qui combinent confort, style et performance. Explorez notre sélection et rejoignez notre communauté de fans de football.</p>
+            <p>Merci de choisir Hardvest !</p>
+        </div>
 
-            <div>
-                <h3>A <span> propos</span></h3>
-                <p>Hardvest est votre boutique en ligne dédiée aux maillots de football, des dernières saisons aux classiques incontournables. Nous sélectionnons des produits authentiques et de qualité pour satisfaire les passionnés et les collectionneurs.
-                <p>Notre objectif est de vous offrir une expérience d'achat unique avec des maillots qui combinent confort, style et performance. Explorez notre sélection et rejoignez notre communauté de fans de football.
-                Merci de choisir Hardvest !
-            </div>
-            <div class="truck"><i class='bx bxs-truck'></i>
-            <div class="time"><i class='bx bxs-timer'></i>
-            <div class="shirt"><i class='bx bxs-t-shirt' ></i>
-</body>
-</html>
+        <!-- Section des icônes -->
+        <div class="icon-section">
+            <div class="icon-circle"><i class='bx bxs-truck'></i></div>
+            <div class="icon-circle"><i class='bx bxs-timer'></i></div>
+                <div class="icon-circle"><i class='bx bxs-t-shirt'></i></div>
+        </div>
+    </div>
+</section>
