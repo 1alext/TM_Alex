@@ -597,3 +597,45 @@ header .logo img     {
     margin-right: 10px; 
     color: black; 
 }
+
+/*contact*/
+
+section#contact {
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+section#contact .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    border-radius: 15px;
+}
+
+section#contact .container form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+section#contact .container form input{
+    width: 47%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+    border-bottom: 2px solid #e4e4ec;
+    transition: 0.2s;
+}
+
+section#contact .container form textarea{
+    width: 100%;
+    margin-bottom: 20px;
+}   
