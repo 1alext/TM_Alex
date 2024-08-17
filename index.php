@@ -216,4 +216,8 @@ $Produits = afficher();
     <form action="#" method="post">
         <input type="email" name="email" placeholder="Entrer votre email" required="">  
         <input type="text" name="subject" placeholder="Entrer le sujet" required="">
+        <textarea name="message" placeholder="Entrer votre message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
 
