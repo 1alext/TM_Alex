@@ -200,5 +200,20 @@ $Produits = afficher();
             <div class="icon-circle"><i class='bx bxs-timer'></i></div>
                 <div class="icon-circle"><i class='bx bxs-t-shirt'></i></div>
         </div>
+        <div class="social">
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-tiktok' ></i>
+            <i class='bx bxl-pinterest' ></i>
+        </div>
     </div>
 </section>
+
+<section id="contact">
+    <div>
+        <h6>Une question ? un conseil ?</h6>
+        <h3>Contactez-nous</h3>
+    </div>
+    <form action="#" method="post">
+        <input type="email" name="email" placeholder="Entrer votre email" required="">  
+        <input type="text" name="subject" placeholder="Entrer le sujet" required="">
+

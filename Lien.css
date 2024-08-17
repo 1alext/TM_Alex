@@ -578,3 +578,22 @@ header .logo img     {
 .icon-circle i {
     font-size: 40px;
 }
+
+/*réseaux sociaux*/
+#about {
+    position: relative;
+}
+
+
+.social {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50px; 
+}
+
+
+.social i {
+    font-size: 40px; 
+    margin-right: 10px; 
+    color: black; 
+}
