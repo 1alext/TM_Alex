@@ -112,37 +112,6 @@ $Produits = afficher();
     </div>
 </section>
 
-<!-- Bas page catégorie -->
-<section class="continent-section">
-    <h2>Maillot par continent</h2>
-    <div class="continent-grid">
-        <a href="page_europe.php" class="continent-card">
-            <img src="asset/europecart.jpg" alt="Europe">
-            <p>Europe</p>
-        </a>
-        
-        <a href="page_ameriquesud.php" class="continent-card">
-            <img src="asset/ameriquesud.jpg" alt="Amerique du Sud">
-            <p>Amérique du Sud</p>
-        </a>
-    
-        <a href="page_ameriquenord.php" class="continent-card">
-            <img src="asset/ameriquenord.jpg" alt="Amerique du Nord">
-            <p>Amérique du Nord</p>
-        </a>
-    
-        <a href="asie.php" class="continent-card">
-            <img src="asset/asie.jpg" alt="Asie">
-            <p>Asie</p>
-        </a>
-    
-        <a href="afrique.php" class="continent-card">
-            <img src="asset/afrique.jpg" alt="Afrique">
-            <p>Afrique</p>
-        </a>
-    </div>
-</section>
-
 <!--Section Best Sellers-->
 <section class="best-sellers-section">
     <h2>Meilleures ventes</h2>
@@ -180,6 +149,38 @@ $Produits = afficher();
         </div>
     </div>
 </section>
+
+<!-- Bas page catégorie -->
+<section class="continent-section">
+    <h2>Maillot par continent</h2>
+    <div class="continent-grid">
+        <a href="page_europe.php" class="continent-card">
+            <img src="asset/europecart.jpg" alt="Europe">
+            <p>Europe</p>
+        </a>
+        
+        <a href="page_ameriquesud.php" class="continent-card">
+            <img src="asset/ameriquesud.jpg" alt="Amerique du Sud">
+            <p>Amérique du Sud</p>
+        </a>
+    
+        <a href="page_ameriquenord.php" class="continent-card">
+            <img src="asset/ameriquenord.jpg" alt="Amerique du Nord">
+            <p>Amérique du Nord</p>
+        </a>
+    
+        <a href="asie.php" class="continent-card">
+            <img src="asset/asie.jpg" alt="Asie">
+            <p>Asie</p>
+        </a>
+    
+        <a href="afrique.php" class="continent-card">
+            <img src="asset/afrique.jpg" alt="Afrique">
+            <p>Afrique</p>
+        </a>
+    </div>
+</section>
+
 
 <!--A propos-->
 

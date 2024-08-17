@@ -409,7 +409,8 @@ header .logo img     {
 /*Nouvelle section pour bas de page*/
 .continent-section {
     text-align: center;
-    margin: 20px; 
+    margin: 20px;
+    padding-bottom: 60px;
 }
 
 /*aligner les cadres horizontalement */
