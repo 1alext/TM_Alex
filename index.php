@@ -193,17 +193,16 @@ $Produits = afficher();
             Notre objectif est de vous offrir une expérience d'achat unique avec des maillots qui combinent confort, style et performance. Explorez notre sélection et rejoignez notre communauté de fans de football.</p>
             <p>Merci de choisir Hardvest !</p>
         </div>
-
+        <div class="social">
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-tiktok' ></i>
+            <i class='bx bxl-pinterest' ></i>
+        </div>
         <!-- Section des icônes -->
         <div class="icon-section">
             <div class="icon-circle"><i class='bx bxs-truck'></i></div>
             <div class="icon-circle"><i class='bx bxs-timer'></i></div>
                 <div class="icon-circle"><i class='bx bxs-t-shirt'></i></div>
-        </div>
-        <div class="social">
-            <i class='bx bxl-instagram'></i>
-            <i class='bx bxl-tiktok' ></i>
-            <i class='bx bxl-pinterest' ></i>
         </div>
     </div>
 </section>
@@ -211,7 +210,7 @@ $Produits = afficher();
 <section id="contact">
     <div class="container">
         <div>
-            <h6>Une question ? un conseil ?</h6>
+            <h6>Une question ?</h6>
             <h3>Contactez-nous</h3>
         </div>
         <form action="#" method="post">
