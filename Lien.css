@@ -440,7 +440,7 @@ header .logo img     {
     padding-left: 300px;
     margin: 30px auto;
     max-width: 2000px; 
-    position: relative; /* Nécessaire pour le positionnement absolu de l'image */
+    position: relative; /* Nécessaire pour le positionnement absolu de l'image sinon image n'est pas dans la bonne section */
 }
 
 .espagne-section h2 {
