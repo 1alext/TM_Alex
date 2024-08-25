@@ -440,10 +440,11 @@ header .logo img     {
     padding-left: 300px;
     margin: 30px auto;
     max-width: 2000px; 
+    position: relative; /* Nécessaire pour le positionnement absolu de l'image */
 }
 
 .espagne-section h2 {
-    font-size: 32px; 
+    font-size: 30px; 
     color: #000000; 
     margin-bottom: 20px; 
 }
@@ -458,8 +459,29 @@ header .logo img     {
     font-size: 17px; 
     color: #000000; 
     font-weight: 500; 
+    margin-top: 30px; 
+    display: inline-block; 
 }
 
+.espagne-section .discover-text:hover {
+    text-decoration: underline;
+}
+
+.espagne-section .espagne-image {
+    width: 30%; 
+    max-width: 600px; 
+    height: auto; 
+    position: absolute; 
+    bottom: 0; 
+    right: 20%; 
+    margin: 0; 
+    transform: translateX(0%); 
+}
+
+.break {
+    display: block;
+}
+  
 .espagne-content {
 }
 
