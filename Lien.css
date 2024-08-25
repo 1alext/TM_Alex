@@ -409,16 +409,17 @@ header .logo img     {
 /*Nouvelle section pour bas de page*/
 .continent-section {
     text-align: center;
-    margin: 20px;
-    padding-bottom: 60px;
+    margin: 40px auto;
+    padding-bottom: 60px;  
 }
+
 
 /*aligner les cadres horizontalement */
 .continent-grid {
     display: flex; /*un alignement horizontal */
     justify-content: center; /*Centre les cadres horizontalement*/
     gap: 50px; /* Espace entre chaque cadre*/
-    padding-top: 40px; /*pour déplacer les cadres verticalement*/
+    padding-top: 23px; /*pour déplacer les cadres verticalement*/
 }
 
 /*Cadre de chaque continent*/
@@ -431,6 +432,35 @@ header .logo img     {
     overflow: hidden; /*Masque les débordements d'image */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Survol plus fluide */
     max-width: 200px;
+}
+
+.espagne-section {
+    background-color: #c5c5c5;
+    padding: 120px;
+    padding-left: 300px;
+    margin: 30px auto;
+    max-width: 2000px; 
+}
+
+.espagne-section h2 {
+    font-size: 32px; 
+    color: #000000; 
+    margin-bottom: 20px; 
+}
+
+.espagne-section h3 {
+    font-size: 20px; 
+    color: #000000;
+    font-weight: 400;
+}
+
+.espagne-section .discover-text {
+    font-size: 17px; 
+    color: #000000; 
+    font-weight: 500; 
+}
+
+.espagne-content {
 }
 
 /*Parametre des images*/

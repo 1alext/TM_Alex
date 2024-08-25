@@ -152,7 +152,7 @@ $Produits = afficher();
 
 <!-- Bas page catégorie -->
 <section class="continent-section">
-    <h2>Maillot par continent</h2>
+    <h2>Sélectionnez un continent pour trouver votre maillot</h2>
     <div class="continent-grid">
         <a href="page_europe.php" class="continent-card">
             <img src="asset/europecart.jpg" alt="Europe">
@@ -178,6 +178,15 @@ $Produits = afficher();
             <img src="asset/afrique.jpg" alt="Afrique">
             <p>Afrique</p>
         </a>
+    </div>
+</section>
+
+<section class="espagne-section">
+    <h2>Champions d'Europe</h2>
+    <h3>Le maillot de l'Espagne</h3>
+    <h3 class="discover-text">Découvrir</h3>
+    <div class="espagne-content">
+        <!--Contenu des maillots d'Espagne-->
     </div>
 </section>
 
