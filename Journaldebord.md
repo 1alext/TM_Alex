@@ -163,3 +163,7 @@ quoi faire : enlever bouton acheter maintenant et remplacer par qqch d'autre, bo
 12.08.2024 : modification du bouton "Acheter maintenant" à un simple cadre avec des flèches vers le bas, modification des images dans la section "meilleures ventes" les images sont à la même taille maintenant, les cadres sont plus proches, ajout section "à propos"
 
 17.08.2024 : Inverser l'emplacement de section meilleures ventes et cadres continents
+
+26.08.2024 : Création section concernant l'espagne
+
+27.08.2024 : ajout couleur 

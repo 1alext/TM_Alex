@@ -197,7 +197,7 @@ header .logo img     {
 
 /*bouton ajouter panier*/
 .add-to-cart {
-    background-color: #28a745;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 10px;
@@ -408,9 +408,10 @@ header .logo img     {
 
 /*Nouvelle section pour bas de page*/
 .continent-section {
+    background-color: rgb(75, 107, 136);;
     text-align: center;
-    margin: 40px auto;
-    padding-bottom: 60px;  
+    margin: 30px auto;
+    padding-bottom: 50px;  
 }
 
 
@@ -435,7 +436,7 @@ header .logo img     {
 }
 
 .espagne-section {
-    background-color: #c5c5c5;
+    background-color: #3180b4;
     padding: 120px;
     padding-left: 300px;
     margin: 30px auto;
@@ -444,7 +445,7 @@ header .logo img     {
 }
 
 .espagne-section h2 {
-    font-size: 30px; 
+    font-size: 40px; 
     color: #000000; 
     margin-bottom: 20px; 
 }
@@ -508,6 +509,7 @@ header .logo img     {
 /*Section Best Sellers*/
 .best-sellers-section {
     padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /*Titre "Meilleures ventes"*/
@@ -537,6 +539,7 @@ header .logo img     {
     box-sizing: border-box;
     position: relative;
     height: 550px;
+    background-color: rgb(255, 255, 255);
 }
 
 /*images à l'intérieur des cadres*/
@@ -565,7 +568,7 @@ header .logo img     {
 
 /*Bouton "Ajouter au panier"*/
 .best-seller .add-to-cart {
-    background-color: #28a745;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 10px;
@@ -606,7 +609,8 @@ header .logo img     {
 
 .about-text p {
     margin-bottom: 20px;
-    text-align: left; 
+    text-align: left;
+    font-size: 18px;
 }
 
 
