@@ -166,4 +166,4 @@ quoi faire : enlever bouton acheter maintenant et remplacer par qqch d'autre, bo
 
 26.08.2024 : Création section concernant l'espagne
 
-27.08.2024 : ajout couleur 
+27.08.2024 : ajout couleur, modifier les couleurs de fond des sections, régler le problème avec les images de fonds qui défilent
