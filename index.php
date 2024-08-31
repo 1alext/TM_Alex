@@ -223,12 +223,15 @@ $Produits = afficher();
             <h6>Une question ?</h6>
             <h3>Contactez-nous</h3>
         </div>
-        <form action="#" method="post">
+
+        <form id="contactForm" action="#contact" method="post">
             <input type="email" name="email" placeholder="Entrer votre email" required>
             <input type="text" name="subject" placeholder="Entrer le sujet" required>
             <textarea name="message" placeholder="Entrer votre message" required></textarea>
             <button type="submit" name="submit">Envoyer</button>
         </form>
+
+        <div id="response">
 
     <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
