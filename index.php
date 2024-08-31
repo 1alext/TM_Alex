@@ -224,11 +224,55 @@ $Produits = afficher();
             <h3>Contactez-nous</h3>
         </div>
         <form action="#" method="post">
-            <input type="email" name="email" placeholder="Entrer votre email" required="">  
-            <input type="text" name="subject" placeholder="Entrer le sujet" required="">
-            <textarea name="message" placeholder="Entrer votre message"></textarea>
-            <button type="submit">Envoyer</button>
+            <input type="email" name="email" placeholder="Entrer votre email" required>
+            <input type="text" name="subject" placeholder="Entrer le sujet" required>
+            <textarea name="message" placeholder="Entrer votre message" required></textarea>
+            <button type="submit" name="submit">Envoyer</button>
         </form>
+
+    <?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $sujet = $_POST['subject'];
+    $message = $_POST['message'];
+
+    //Liste des mails autorisés
+    $allowedDomains = ['gmail.com', 'yahoo.com', 'outlook.com', 'gbjb.ch', 'icloud.com', 'hotmail.com']; 
+
+    //Valider l'adresse email avec FILTER_VALIDATE_EMAIL qui est un filtre spécifique
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Adresse email invalide.";
+    } else {
+        //Extraire le domaine de l'email donc garde seulement après le @ pour en suite vérifier avec la liste
+        $domain = substr(strrchr($email, "@"), 1);
+
+        //Vérifier si le domaine est dans la liste des domaines autorisés
+        if (!in_array($domain, $allowedDomains)) {
+            echo "Adresse email invalide.";
+        } else {
+            try {
+                //Connexion à la base de données
+                $access = new PDO("mysql:host=localhost;dbname=hardvest;charset=utf8", "root", "");
+                $access->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                //Exécute la requête d'insertion
+                $sql = "INSERT INTO contacts (email, sujet, message) VALUES (:email, :sujet, :message)";
+                $stmt = $access->prepare($sql);
+                $stmt->execute([
+                    ':email' => $email,
+                    ':sujet' => $sujet,
+                    ':message' => $message
+                ]);
+
+                echo "Message envoyé avec succès!";
+            } catch (Exception $e) {
+                echo "Erreur : " . $e->getMessage();
+            }
+        }
+    }
+    //Exit sert à éviter d'autres execution de codes
+    exit();
+}
+?>
     </div>
 </section>
-
