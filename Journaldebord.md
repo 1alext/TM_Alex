@@ -173,3 +173,5 @@ quoi faire : enlever bouton acheter maintenant et remplacer par qqch d'autre, bo
 - Ajout d'une table pour la section "contact" et un filtre php pour vérifier si c'est bien un mail et qu'il fait parti de la liste de mail autorisés
 
 - ajout d'un id dans la section "contact" pour ancrer le bouton envoyer pour qu'il ne refresh pas la page quand on appuye sur envoyer
+
+vidéo regardé pour formulaire de contact : https://www.youtube.com/watch?v=XYJHoPoU0xQ
