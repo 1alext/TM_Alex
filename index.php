@@ -242,14 +242,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     //Valider l'adresse email avec FILTER_VALIDATE_EMAIL qui est un filtre spécifique
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Adresse email invalide.";
+        echo '<div style="color: black; margin-top: 20px; font-size: 18px;">Adresse email invalide.</div>';
+
     } else {
         //Extraire le domaine de l'email donc garde seulement après le @ pour en suite vérifier avec la liste
         $domain = substr(strrchr($email, "@"), 1);
 
         //Vérifier si le domaine est dans la liste des domaines autorisés
         if (!in_array($domain, $allowedDomains)) {
-            echo "Adresse email invalide.";
+            echo '<div style="color: black; margin-top: 20px; font-size: 18px;">Adresse email invalide.</div>';
+
         } else {
             try {
                 //Connexion à la base de données
@@ -265,7 +267,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     ':message' => $message
                 ]);
 
-                echo "Message envoyé avec succès!";
+                echo '<div style="color: black; margin-top: 20px; font-size: 18px;">Message envoyé avec succès !</div>';
+
             } catch (Exception $e) {
                 echo "Erreur : " . $e->getMessage();
             }
