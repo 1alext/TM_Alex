@@ -56,17 +56,13 @@ $Produits = afficher();
 <section class="home">
     <div class="text">
         <h4>Nouveaux maillots</h4>
-        <h1>Saison 2023/24 <br> Et précédents</h1>   
+        <h1>Saison 2023/24 <br> Et précédents</h1>
         <p>"Faites vibrer les tribunes avec notre gamme de maillots de foot. 
         <br>Capturez l'esprit de la compétition et faites briller votre équipe."</p>
         
         <!-- Texte "Découvrez maintenant" avec flèches -->
-        <div class="discover-now">
-            Découvrez maintenant
-            <div class="arrows">
-                <span class="arrow">&#8595;</span> <!-- Flèche vers le bas -->
-                <span class="arrow">&#8595;</span> <!-- Flèche vers le bas -->
-            </div>
+        <div class="discover-now" id="discover-button">
+            Découvrir
         </div>
     </div>
 </section>
@@ -113,7 +109,7 @@ $Produits = afficher();
 </section>
 
 <!--Section Best Sellers-->
-<section class="best-sellers-section">
+<section class="best-sellers-section" id="best-sellers-section">
     <h2>Meilleures ventes</h2>
     <div class="best-sellers-wrapper">
         <!--Best Seller 1-->

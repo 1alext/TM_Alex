@@ -79,3 +79,35 @@ document.getElementById("menu-icon").addEventListener("click", function() {
         navbar.className = "navbar-icon";
     }
 });
+
+function smoothScrollTo(target) { //appel fonction qui prend target
+    const targetElement = document.getElementById(target); //target prend l'id best-sellers-section
+    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset; //calcule position de l'id best seller
+    const startPosition = window.pageYOffset; //prend la position actuelle 
+    const distance = targetPosition - startPosition; //Calcule la distance totale à parcourir pour atteindre la section.
+    const duration = 1000; //temps animations
+    let startTime = null; //L'animation n'a pas encore commencé
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime; //initialise l'animation
+        const timeElapsed = currentTime - startTime; //Calcule le temps écoulé depuis le début de l'animation.
+        const run = ease(timeElapsed, startPosition, distance, duration); //ease permet le mvmt fluide en fonction des informations récoltées
+        window.scrollTo(0, run); //Défile la fenêtre à la position verticale calculée par run
+        if (timeElapsed < duration) requestAnimationFrame(animation); //Re appel la fonction si l'animation n'est pas terminée
+    }
+
+//Fonction qui calcule l'accélération et vitesse de l'animation
+    function ease(t, b, c, d) { //t = temps écoulé b = valeur de départ c = chgmt de valeur d = durée
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation); //Démarre l'animation
+}
+
+document.getElementById('discover-button').addEventListener('click', function() {
+    smoothScrollTo('best-sellers-section'); //Permet avec le clique d'effectuer l'animation et déclenche la fonction smoothcrollto ce qui va amener à la secton best-sellers-secton
+});
+

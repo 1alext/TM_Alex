@@ -175,3 +175,7 @@ quoi faire : enlever bouton acheter maintenant et remplacer par qqch d'autre, bo
 - ajout d'un id dans la section "contact" pour ancrer le bouton envoyer pour qu'il ne refresh pas la page quand on appuye sur envoyer
 
 vidéo regardé pour formulaire de contact : https://www.youtube.com/watch?v=XYJHoPoU0xQ
+
+Code javascript pour "l'animation scroll vers le bas" provient de ces différents sites : https://www.makeuseof.com/javascript-smooth-scrolling-guide-web-developers/  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery#section2 https://css-tricks.com/snippets/jquery/smooth-scrolling/ https://medium.com/@amr.abdelkarem/a-guide-to-accessible-smooth-scroll-with-javascript-3f3e058b3f97
+
+
