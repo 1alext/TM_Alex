@@ -113,16 +113,16 @@ $Produits = afficher();
     <h2>Meilleures ventes</h2>
     <div class="best-sellers-wrapper">
         <?php
-        // Inclure le fichier commandes.php pour accéder aux fonctions
+        //Inclure le fichier commandes.php pour accéder aux fonctions
         require_once("config/commandes.php");
 
-        // Définir les IDs des produits à récupérer
+        //Définir les IDs des produits à récupérer
         $ids = [4, 5, 3, 10];
 
-        // Récupérer les produits depuis la base de données
+        //récupére les produits depuis la base de données
         $produits = afficherProduitsParIds($ids);
 
-        // Vérifier si des produits ont été trouvés
+        //Vérifie si des produits ont été trouvés
         if ($produits):
             foreach ($produits as $produit): ?>
                 <div class="best-seller">
