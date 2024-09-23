@@ -112,39 +112,35 @@ $Produits = afficher();
 <section class="best-sellers-section" id="best-sellers-section">
     <h2>Meilleures ventes</h2>
     <div class="best-sellers-wrapper">
-        <!--Best Seller 1-->
-        <div class="best-seller">
-            <img src="asset/all.jpg" alt="Allemagne">
-            <h2>Maillot domicile Allemagne 2024/25</h2>
-            <p class="price">80 CHF</p>
-            <button class="add-to-cart">Ajouter au panier</button>
-        </div>
+        <?php
+        // Inclure le fichier commandes.php pour accéder aux fonctions
+        require_once("config/commandes.php");
 
-        <!--Best Seller 2-->
-        <div class="best-seller">
-            <img src="asset/fr.jpg" alt="France">
-            <h2>Maillot domicile France 2024/25</h2>
-            <p class="price">80 CHF</p>
-            <button class="add-to-cart">Ajouter au panier</button>
-        </div>
+        // Définir les IDs des produits à récupérer
+        $ids = [4, 5, 3, 10];
 
-        <!--Best Seller 3-->
-        <div class="best-seller">
-            <img src="asset/ang.jpg" alt="Angleterre">
-            <h2>Maillot domicile Angleterre 2024/25</h2>
-            <p class="price">80 CHF</p>
-            <button class="add-to-cart">Ajouter au panier</button>
-        </div>
+        // Récupérer les produits depuis la base de données
+        $produits = afficherProduitsParIds($ids);
 
-        <!--Best Seller 4-->
-        <div class="best-seller">
-            <img src="asset/br.jpg" alt="Bresil">
-            <h2>Maillot Domicile Brésil 2024/25</h2>
-            <p class="price">80 CHF</p>
-            <button class="add-to-cart">Ajouter au panier</button>
-        </div>
+        // Vérifier si des produits ont été trouvés
+        if ($produits):
+            foreach ($produits as $produit): ?>
+                <div class="best-seller">
+                    <a href="produit.php?id=<?= $produit->id ?>"> <!-- Lien vers la page produit -->
+                        <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
+                        <h2><?= $produit->nom ?></h2>
+                    </a>
+                    <p class="price"><?= $produit->prix ?> CHF</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            <?php endforeach;
+        else: ?>
+            <p>Aucun produit trouvé.</p>
+        <?php endif; ?>
     </div>
 </section>
+
+
 
 <!-- Bas page catégorie -->
 <section class="continent-section">
