@@ -183,7 +183,6 @@ $Produits = afficher();
     <a href="produit.php?id=6" class="discover-text">Découvrir</a>
     <img src="asset/pubespagne.jpg" alt="Maillot de l'Espagne" class="espagne-image">
     <div class="espagne-content">
-        <!--Contenu des maillots d'Espagne-->
     </div>
 </section>
 
