@@ -180,7 +180,7 @@ $Produits = afficher();
 <section class="espagne-section">
     <h2>Champions d'Europe</h2>
     <h3>Il est temps de célébrer en style avec les <span class="break">maillots de l'équipe nationale et la collection gagnants!</span></h3>
-    <a href="" class="discover-text">Découvrir</a>
+    <a href="produit.php?id=6" class="discover-text">Découvrir</a>
     <img src="asset/pubespagne.jpg" alt="Maillot de l'Espagne" class="espagne-image">
     <div class="espagne-content">
         <!--Contenu des maillots d'Espagne-->
