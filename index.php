@@ -81,8 +81,17 @@ $Produits = afficher();
 <!--affiche chaque produits dans la bd-->
 <section class="products-section">
     <div class="products-wrapper">
-        <!-- Les produits originaux -->
-        <?php foreach($Produits as $produit): ?>
+        <!-- fonction qui prend les id de 1-10-->
+        <?php
+        $ProduitsFiltres = array_filter($Produits, function($produit) {
+            return $produit->id >= 1 && $produit->id <= 10;
+        });
+        
+        $ProduitsLimites = array_slice($ProduitsFiltres, 0, 10);
+        ?>
+
+        <!--Afficher les produits-->
+        <?php foreach($ProduitsLimites as $produit): ?>
             <a href="page_produit.php?id=<?= $produit->id ?>" class="product-link">
                 <div class="product">
                     <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
@@ -93,8 +102,9 @@ $Produits = afficher();
                 </div>
             </a>
         <?php endforeach; ?>
-        <!-- Copie des produits pour le défilement infini -->
-        <?php foreach($Produits as $produit): ?>
+
+        <!--Copie des produits pour le défilement infini-->
+        <?php foreach($ProduitsLimites as $produit): ?>
             <a href="page_produit.php?id=<?= $produit->id ?>" class="product-link">
                 <div class="product">
                     <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
@@ -107,6 +117,8 @@ $Produits = afficher();
         <?php endforeach; ?>
     </div>
 </section>
+
+
 
 <!--Section Best Sellers-->
 <section class="best-sellers-section" id="best-sellers-section">

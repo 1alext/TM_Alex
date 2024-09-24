@@ -181,3 +181,7 @@ Code javascript pour "l'animation scroll vers le bas" provient de ces différent
 01.09.2024 : Création d'un fichier Word pour la partie écrite du TM et rédigé la partie introduction.
 
 23.09.2024 : ajout fichier produit.php qui récupère le produit que l'on souhaite, dans mon cas, je l'utilise car il y a une section en lien avec les maillots de l'Espagne et je voudrai que lors qu'on clique sur le bouton "Découvrir", ça nous enmène directement sur le produit
+
+sources pour afficher les produits et choisir lesquels on souhaite afficher : https://www.youtube.com/watch?v=pFmGRGs8FHM https://www.youtube.com/watch?v=Hdo7xKdvg7Q https://www.youtube.com/watch?v=h47-k4sZ2eA https://www.youtube.com/watch?v=Tmu95os1w7g
+
+
