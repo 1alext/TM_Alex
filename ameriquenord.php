@@ -1,14 +1,14 @@
 <?php
 require("config/connexion.php");
 
-//les IDs des produits pour l'Afrique
-$idsAfrique = [17, 23, 24, 25, 30, 33, 36, 41]; // Sénégal, Maroc, Algérie, Tunisie, Ghana, Cameroun, Côte d'Ivoire, Nigeria
+//les IDs des produits pour l'Amérique du Nord
+$idsAmeriqueNord = [21, 28, 31, 45]; // USA, Canada, Mexique, Jamaïque
 
-//Requête pour récupérer les produits d'Afrique
-$placeholders = implode(',', array_fill(0, count($idsAfrique), '?'));
+//Requête pour récupérer les produits d'Amérique du Nord
+$placeholders = implode(',', array_fill(0, count($idsAmeriqueNord), '?'));
 $query = $access->prepare("SELECT * FROM produits WHERE id IN ($placeholders)");
-$query->execute($idsAfrique);
-$produitsAfrique = $query->fetchAll(PDO::FETCH_ASSOC);
+$query->execute($idsAmeriqueNord);
+$produitsAmeriqueNord = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -16,14 +16,14 @@ $produitsAfrique = $query->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produits Afrique</title>
+    <title>Produits Amérique du Nord</title>
 </head>
 <body>
-    <h1>Maillots Afrique</h1>
+    <h1>Maillots Amérique du Nord</h1>
     
-    <?php if ($produitsAfrique): ?>
+    <?php if ($produitsAmeriqueNord): ?>
         <ul>
-            <?php foreach ($produitsAfrique as $produit) : ?>
+            <?php foreach ($produitsAmeriqueNord as $produit) : ?>
                 <li>
                     <h1><?php echo htmlspecialchars($produit['nom']); ?></h1>
                     <p>Prix: <?php echo htmlspecialchars($produit['prix']); ?> CHF</p>
