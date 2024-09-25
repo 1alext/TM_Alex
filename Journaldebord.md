@@ -186,3 +186,5 @@ Code javascript pour "l'animation scroll vers le bas" provient de ces différent
 sources pour afficher les produits et choisir lesquels on souhaite afficher : https://www.youtube.com/watch?v=pFmGRGs8FHM https://www.youtube.com/watch?v=Hdo7xKdvg7Q https://www.youtube.com/watch?v=h47-k4sZ2eA https://www.youtube.com/watch?v=Tmu95os1w7g
 
 25.09.2024 : ajout produits dans la base de données et ajout filtre qui place les maillots selon leurs continents. nouvelles pages pour les continents, quand on clique sur un continent, il y a les maillots de ce continent qui s'affichent
+
+ajout css pour page europe, commence à devenir une vraie page avec des produits
