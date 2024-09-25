@@ -183,12 +183,10 @@ header .logo img     {
 .product h2 {
     margin: 10px 0 5px 0; /*Espace entre le nom et l'image*/
     font-size: 18px;
-    font-weight: bold;
-    color: #333;
+    color: #000000;
 }
 
 .price {
-    font-weight: bold;
     color: black;
     margin-bottom: 10px;
 }
@@ -555,14 +553,12 @@ header .logo img     {
 .best-seller h2 {
     margin: 5px 0; 
     font-size: 18px;
-    font-weight: bold;
-    color: #333;
+    color: #000000;
 }
 
 /*prix des articles*/
 .best-seller .price {
-    font-weight: bold;
-    color: black;
+    color: #333;
     margin: 5px 0; /*réduit l'espace entre le prix et le titre*/
 }
 
@@ -743,4 +739,53 @@ section#contact .container form button:hover{
         width: 100%;
     }
 }
+}
+
+/*europe.php*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titre "Maillot Europe"*/
+.titre-produits-europe {
+    font-size: 36px; 
+    margin: 35px 0; 
+    text-align: center; 
+}
+
+/*produits Europe*/
+.produits-europe ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*4 colonnes */
+    gap: 20px; 
+    list-style-type: none;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+/*cadre produits*/
+.produits-europe li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/*titre produit*/
+.produits-europe li h1 {
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+
+.produits-europe li p {
+    font-size: 18px;
+    color: #333;
+}
+
+.produits-europe img {
+    max-width: 100%;
+    height: auto;
 }

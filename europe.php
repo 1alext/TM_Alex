@@ -16,23 +16,26 @@ $produitsEurope = $query->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lien.css">
     <title>Produits Europe</title>
 </head>
 <body>
-    <h1>Maillots Europe</h1>
+<h1 class="titre-produits-europe">Maillots Europe</h1>
     
-    <?php if ($produitsEurope): ?>
-        <ul>
+    <div class="produits-europe"> 
+        <?php if ($produitsEurope): ?>
+            <ul>
             <?php foreach ($produitsEurope as $produit) : ?>
-                <li>
-                    <h1><?php echo htmlspecialchars($produit['nom']); ?></h1>
-                    <p>Prix: <?php echo htmlspecialchars($produit['prix']); ?> CHF</p>
-                    <img src="<?php echo htmlspecialchars($produit['image']); ?>" alt="Image du produit" style="width:150px;"/>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-    <?php else: ?>
-        <p>Aucun produit trouvé.</p>
-    <?php endif; ?>
+                    <li>
+                        <img src="<?php echo htmlspecialchars($produit['image']); ?>" alt="Image du produit" style="width:150px;"/>
+                        <h1><?php echo htmlspecialchars($produit['nom']); ?></h1>
+                        <p><?php echo htmlspecialchars($produit['prix']); ?> CHF</p>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php else: ?>
+            <p>Aucun produit trouvé.</p>
+        <?php endif; ?>
+    </div>
 </body>
 </html>
