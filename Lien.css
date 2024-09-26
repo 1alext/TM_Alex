@@ -763,7 +763,7 @@ body {
     list-style-type: none;
     padding: 0;
     max-width: 1200px;
-    margin: 0 auto;
+    margin:  auto;
     justify-content: center;
 }
 
@@ -824,3 +824,19 @@ body {
     left: 50%; 
     transform: translateX(-50%); /*Centre le texte*/
 }
+
+.navigation {
+    position: absolute;
+    top: 140px; 
+    right: 75%;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: black; 
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 2px; 
+    color: #000000; 
+}
+
+

@@ -18,11 +18,11 @@ $produitsEurope = $query->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Lien.css">
     <script defer src="script.js"></script>
-    <title>Produits Europe</title>
+    <p class="navigation"><a href="index.php" class="underline">Accueil</a> / Europe</p>
     <p class="description-maillot">
     Montre ta passion du football avec ce maillot, parfait pour les entraînements <br>
     et la vie de tous les jours. Technique et durable, il fait ressortir tes couleurs sur le terrain.
-</p>
+    </p>
 </head>
 
 <header id="produits-europe">
