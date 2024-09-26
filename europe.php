@@ -19,9 +19,13 @@ $produitsEurope = $query->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="Lien.css">
     <script defer src="script.js"></script>
     <title>Produits Europe</title>
+    <p class="description-maillot">
+    Montre ta passion du football avec ce maillot, parfait pour les entraînements <br>
+    et la vie de tous les jours. Technique et durable, il fait ressortir tes couleurs sur le terrain.
+</p>
 </head>
 
-<header>
+<header id="produits-europe">
     <a href="index.php" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
     <div class="navbar-icon" id="navbar">
         <div class="search-bar-container" id="search-bar-container">
