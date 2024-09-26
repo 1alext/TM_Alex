@@ -17,8 +17,36 @@ $produitsEurope = $query->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Lien.css">
+    <script defer src="script.js"></script>
     <title>Produits Europe</title>
 </head>
+
+<header>
+    <a href="index.php" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
+    <div class="navbar-icon" id="navbar">
+        <div class="search-bar-container" id="search-bar-container">
+            <input type="text" id="search-bar" placeholder="Rechercher">
+        </div>
+        <a href="#" id="search-icon"><i class='bx bx-search'></i></a>
+        <div class="user-menu-container">
+            <a href="#" class="user-icon" id="user-icon"><i class='bx bx-user'></i></a>
+            <div class="user-menu" id="user-menu">
+                <?php if(isset($_SESSION['user_email'])): ?>
+                    <p><?php echo $_SESSION['user_email']; ?></p>
+                    <a href="#">Commandes</a>
+                    <a href="page_enregistrement/logout_form.php">Déconnexion</a>
+                <?php else: ?>
+                    <a href="page_enregistrement/pagelogin.php" class="user-button">Se connecter</a>
+                    <a href="page_enregistrement/pageenregistrement.php" class="user-button">S'enregistrer</a>
+                <?php endif; ?>
+            </div>
+        </div>  
+        <a href="pagepanier.php"><i class='bx bx-cart'></i></a>
+        <a href="pagefavoris.php"><i class='bx bx-heart'></i></a>
+        <a href="#" class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></a>
+    </div>
+</header>
+
 <body>
 <h1 class="titre-produits-europe">Maillots Europe</h1>
     

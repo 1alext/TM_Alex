@@ -12,14 +12,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     setInterval(nextSlide, 7000); 
 
-//Page raffraichissement
+// Page rafraichissement
     const logo = document.getElementById("logo");
     logo.addEventListener("click", function(event) {
-        event.preventDefault(); 
-        location.reload();
+        location.reload(); 
     });
 
-//logo et icones disparaissent quand on scroll
+    // logo et icones disparaissent quand on scroll
     const header = document.querySelector('header');
     let scroll = window.scrollY;
 
@@ -32,10 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             header.style.opacity = '1'; 
         }
-
         scroll = scrollY;
     });
-}); 
+});
 
 //Concerne la petite fenêtre qui s'affiche pour s'enregistrer et se déconnecter
 document.addEventListener('DOMContentLoaded', function() {

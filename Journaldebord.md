@@ -188,3 +188,5 @@ sources pour afficher les produits et choisir lesquels on souhaite afficher : ht
 25.09.2024 : ajout produits dans la base de données et ajout filtre qui place les maillots selon leurs continents. nouvelles pages pour les continents, quand on clique sur un continent, il y a les maillots de ce continent qui s'affichent
 
 ajout css pour page europe, commence à devenir une vraie page avec des produits
+
+26.09.2024 : ajout de style pour la page europe et ajout du logo pour revenir à la page principale, 
