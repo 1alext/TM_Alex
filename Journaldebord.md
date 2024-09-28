@@ -192,3 +192,6 @@ ajout css pour page europe, commence à devenir une vraie page avec des produits
 26.09.2024 : ajout de style pour la page europe et ajout du logo pour revenir à la page principale, 
 
 28.09.2024 : ajout des icones dans page europe.php, modification de la page enregistrement et login car il y avait une erreur à cause des 2 méthodes de connexion à la base de données
+ajout des styles de page europe.php dans tout les autres catégories. On peut à présent cliquer sur le produit
+
+29.09.2024 : mettre des styles aux produits et faire une belle description et ajouter au panier

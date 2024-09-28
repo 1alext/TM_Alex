@@ -1,4 +1,5 @@
 <?php
+session_start();
 require("config/connexion.php");
 
 //les IDs des produits pour l'Europe
@@ -21,8 +22,8 @@ $produitsEurope = $query->fetchAll(PDO::FETCH_ASSOC);
     <script defer src="script.js"></script>
     <p class="navigation"><a href="index.php" class="underline">Accueil</a> / Europe</p>
     <p class="description-maillot">
-    Montre ta passion du football avec ce maillot, parfait pour les entraînements <br>
-    et la vie de tous les jours. Technique et durable, il fait ressortir tes couleurs sur le terrain.
+    Montre ta passion pour le football européen avec ces maillots, parfaits pour les entraînements <br>
+    et la vie de tous les jours. Techniques et durables, ils font ressortir tes couleurs sur le terrain.
     </p>
 </head>
 
@@ -56,13 +57,13 @@ $produitsEurope = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
 <h1 class="titre-produits-europe">Maillots Europe</h1>
-    
     <div class="produits-europe"> 
         <?php if ($produitsEurope): ?>
             <ul>
             <?php foreach ($produitsEurope as $produit) : ?>
                     <li>
-                        <img src="<?php echo htmlspecialchars($produit['image']); ?>" alt="Image du produit" style="width:150px;"/>
+                    <a href="page_produit.php?id=<?php echo $produit['id']; ?>">
+                        <img src="<?php echo htmlspecialchars($produit['image']); ?>" alt="Image du produit" style="width:150px;"/></a>
                         <h1><?php echo htmlspecialchars($produit['nom']); ?></h1>
                         <p><?php echo htmlspecialchars($produit['prix']); ?> CHF</p>
                     </li>

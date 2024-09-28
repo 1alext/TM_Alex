@@ -136,7 +136,7 @@ $Produits = afficher();
         if ($produits):
             foreach ($produits as $produit): ?>
                 <div class="best-seller">
-                    <a href="produit.php?id=<?= $produit->id ?>"> <!-- Lien vers la page produit -->
+                    <a href="page_produit.php?id=<?= $produit->id ?>"> <!-- Lien vers la page produit -->
                         <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
                         <h2><?= $produit->nom ?></h2>
                     </a>
@@ -186,7 +186,7 @@ $Produits = afficher();
 <section class="espagne-section">
     <h2>Champions d'Europe</h2>
     <h3>Il est temps de célébrer en style avec les <span class="break">maillots de l'équipe nationale et la collection gagnants!</span></h3>
-    <a href="produit.php?id=6" class="discover-text">Découvrir</a>
+    <a href="page_produit.php?id=6" class="discover-text">Découvrir</a>
     <img src="asset/pubespagne.jpg" alt="Maillot de l'Espagne" class="espagne-image">
     <div class="espagne-content">
     </div>
