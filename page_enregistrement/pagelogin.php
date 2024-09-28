@@ -1,26 +1,30 @@
 <?php
 session_start();
-@include '../config/config.php';
+include '../config/connexion.php';
 
-
-
-if(isset($_POST['submit'])){
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
+if (isset($_POST['submit'])) {
+    $email = $_POST['email'];
     $pass = md5($_POST['password']);
 
-    $select = "SELECT * FROM utilisateurs WHERE email = '$email' && password = '$pass'";
-    $result = mysqli_query($conn, $select);
+    //Requête préparée pour vérifier si l'utilisateur existe
+    $query = $access->prepare("SELECT * FROM utilisateurs WHERE email = :email AND password = :pass");
+    $query->execute(['email' => $email, 'pass' => $pass]);
 
-    if(mysqli_num_rows($result) > 0){
-        $row = mysqli_fetch_array($result);
-        $_SESSION['user_email'] = $row['email']; 
+    //Récupération des résultats
+    $user = $query->fetch();
+
+    if ($user) {
+        //Si l'utilisateur existe, on stocke l'email dans la session
+        $_SESSION['user_email'] = $user['email'];
         header('Location: ../index.php');
         exit();
     } else {
+        //En cas d'erreur de connexion
         $error[] = 'Email ou mot de passe incorrect';
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="fr">

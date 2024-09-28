@@ -1,25 +1,38 @@
 <?php
 session_start();
-@include '../config/config.php';
+include '../config/connexion.php'; 
+
+//Vérifie si la connexion PDO ($access) est bien définie
+if (!isset($access)) {
+    die("Connexion à la base de données échouée.");
+}
 
 if(isset($_POST['submit'])){
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    //Prépare les données de l'utilisateur
+    $email = $_POST['email'];
     $pass = md5($_POST['password']);
     $cpass = md5($_POST['cpassword']);
 
-    $select = "SELECT * FROM utilisateurs WHERE email = '$email' && password = '$pass'";
-    $result = mysqli_query($conn, $select);
+    //Requête pour vérifier si l'utilisateur existe déjà
+    $query = $access->prepare("SELECT * FROM utilisateurs WHERE email = :email AND password = :pass");
+    $query->execute(['email' => $email, 'pass' => $pass]);
+    $result = $query->fetchAll();
 
-    if(mysqli_num_rows($result) > 0){
+    if(count($result) > 0){
         $error[] = 'Compte déjà existant !';
-    }else{
+    } else {
         if($pass != $cpass){
             $error[] = 'Mot de passe ne correspond pas !';
-        }else{
-            $insert = "INSERT INTO utilisateurs (email, password) VALUES ('$email', '$pass')";
-            mysqli_query($conn, $insert);
-            $_SESSION['user_email'] = $email; // Mise à jour de la session avec l'email de l'utilisateur, permet de stocker l'adresse mail et conserve la connexion à travers les pages
-            header('location: ../index.php');
+        } else {
+            //Insertion du nouvel utilisateur
+            $insert = $access->prepare("INSERT INTO utilisateurs (email, password) VALUES (:email, :pass)");
+            $insert->execute(['email' => $email, 'pass' => $pass]);
+
+            //Mise à jour de la session avec l'email de l'utilisateur
+            $_SESSION['user_email'] = $email;
+
+            //Redirige vers la page d'accueil
+            header('Location: ../index.php');
         }
     }
 }
