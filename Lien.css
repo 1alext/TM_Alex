@@ -769,7 +769,7 @@ body {
 
 /*cadre produits*/
 .produits-europe li {
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     padding: 25px; /*Augmente l'espace interne pour agrandir le cadre*/
     text-align: center;
     border-radius: 8px;
@@ -837,6 +837,66 @@ body {
     text-decoration-thickness: 2px; 
     text-underline-offset: 2px; 
     color: #000000; 
+}
+
+/*icones*/
+#europe-page #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    top: 25px; /*Décale vers le bas*/
+    left: -110px; /*Décale vers la gauche*/
+}
+/*Couleur des icônes dans la page europe.php */
+#europe-page #navbar i {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+/*couleur survol pour les icônes*/
+#europe-page #navbar i:hover {
+    color: rgb(87, 87, 87);
+}
+
+/*Styles pour le menu utilisateur*/
+#europe-page .user-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+/*grand cadre*/
+#europe-page .user-menu {
+    display: none;
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    z-index: 1;
+    text-align: center;
+    border-radius: 7px;
+}
+
+/*texte à l'intérieur du cadre*/
+#europe-page .user-menu .user-button {
+    display: inline-block; 
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease, border-radius 0.3s ease; 
+    border-radius: 8px; 
+}
+
+/*cadre noir transparent*/
+#europe-page .user-menu .user-button:hover {
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 12px; 
+}
+
+/* Affiche le menu utilisateur lors du survol de l'icône utilisateur */
+#europe-page .user-menu-container:hover .user-menu {
+    display: block;
 }
 
 
