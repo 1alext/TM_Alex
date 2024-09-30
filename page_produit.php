@@ -19,7 +19,7 @@ $produit = afficherUnProduit($id);
     <title>Produit - <?= htmlspecialchars($produit->nom) ?></title>
     <link rel="stylesheet" href="Lien.css">
 </head>
-<body>
+<body id="product-page">
     
 <header>
     <a href="index.php" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
@@ -51,24 +51,5 @@ $produit = afficherUnProduit($id);
     <p class="price"><?= htmlspecialchars($produit->prix) ?> CHF</p>
 </section>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const header = document.querySelector('header');
-        let scroll = window.scrollY;
-
-        window.addEventListener('scroll', function() {
-            const scrollY = window.scrollY;
-            const scrollDirection = scrollY > scroll ? 'down' : 'up';
-
-            if (scrollDirection === 'down' && scrollY > 80) {
-                header.style.opacity = '0';
-            } else {
-                header.style.opacity = '1';
-            }
-
-            scroll = scrollY;
-        });
-    });
-</script>
 </body>
 </html>

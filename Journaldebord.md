@@ -195,3 +195,5 @@ ajout css pour page europe, commence à devenir une vraie page avec des produits
 ajout des styles de page europe.php dans tout les autres catégories. On peut à présent cliquer sur le produit
 
 29.09.2024 : mettre des styles aux produits et faire une belle description et ajouter au panier
+
+30.09.2024 : ajout de styles aux produits pas complétement fini

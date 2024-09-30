@@ -894,9 +894,62 @@ body {
     border-radius: 12px; 
 }
 
-/* Affiche le menu utilisateur lors du survol de l'icône utilisateur */
+/* Affiche la fenetre se connecter et s'enregistrer lors du survol*/
 #europe-page .user-menu-container:hover .user-menu {
     display: block;
 }
+/*barre de recherche*/
+#europe-page .search-bar-container {
+    position: absolute;
+    right: 180px;
+    top: 80%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
 
+#europe-page #search-bar {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+
+/*Style pour les produits */
+#product-page header img {
+    width: 170px; 
+    height: auto; 
+}
+
+.product-details {
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-details img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.product-details p {
+    text-align: center;
+    font-size: 19px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.product-details .price {
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
