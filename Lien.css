@@ -748,6 +748,14 @@ body {
     padding: 0;
 }
 
+/* Style spécifique pour .continent-section dans europe.php */
+#europe-page .continent-section {
+    background-color: rgb(177, 207, 238); /* Couleur spécifique pour europe.php */
+    text-align: center;
+    margin: 30px auto;
+    padding-bottom: 60px;
+}
+
 /*Titre "Maillot Europe"*/
 .titre-produits-europe {
     font-size: 36px; 
@@ -778,6 +786,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /*Distribue les éléments uniformément dans le cadre*/
+    background-color: #ffffff;
 }
 
 
