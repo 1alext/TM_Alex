@@ -748,9 +748,9 @@ body {
     padding: 0;
 }
 
-/* Style spécifique pour .continent-section dans europe.php */
+/* Style pour .continent-section dans europe.php */
 #europe-page .continent-section {
-    background-color: rgb(177, 207, 238); /* Couleur spécifique pour europe.php */
+    background-color: rgb(177, 207, 238);
     text-align: center;
     margin: 30px auto;
     padding-bottom: 60px;
