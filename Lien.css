@@ -929,8 +929,8 @@ body {
 
 /*Style pour les produits */
 #product-page header img {
-    width: 170px; 
-    height: auto; 
+    width: 150px;
+    height: auto;
 }
 
 .product-details {
@@ -943,9 +943,13 @@ body {
 
 .product-details img {
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     margin: 20px auto;
+    border: 2px solid #ccc; 
+    padding: 10px; 
+    transform: translateX(-100px); 
+    border-radius: 8px; 
 }
 
 .product-details p {
@@ -956,9 +960,60 @@ body {
 }
 
 .product-details .price {
-    font-size: 28px;
+    position: relative;
+    top: -630px; 
+    right: -228px; 
+    font-size: 20px;
     color: #000000;
-    font-weight: bold;
     text-align: center;
+}
+
+
+.product-title {
+    text-align: right;
+    margin-right: 20px; 
+    color: #000000; 
+    position: relative; 
+    top: 50px; 
+}
+
+/*formulaire choisir taille*/
+.size-selection {
+    position: relative;
+    top: -630px; 
+    right: -800px; 
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.size-selection label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.size-selection select {
+    width: 100%;
+    padding: 10px;
     margin-top: 10px;
+    font-size: 16px;
+}
+
+.size-selection button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.size-selection button:hover {
+    background-color: #2d2f31;
 }

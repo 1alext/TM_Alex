@@ -197,3 +197,7 @@ ajout des styles de page europe.php dans tout les autres catégories. On peut à
 29.09.2024 : mettre des styles aux produits et faire une belle description et ajouter au panier
 
 30.09.2024 : ajout de styles aux produits pas complétement fini
+
+1.10.2024 : ajout section dans les différentes pages continents
+
+2.10.2024 : ajout style pour les produits, ajout panier, ajout favoris, choisir la taille

@@ -19,6 +19,8 @@ $produit = afficherUnProduit($id);
     <title>Produit - <?= htmlspecialchars($produit->nom) ?></title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="Lien.css">
+    <script defer src="script.js"></script>
+    <p class="navigation"><a href="index.php" class="underline">Accueil</a> / Europe / Produit</p>
 </head>
 <body id="product-page">
     
@@ -46,10 +48,27 @@ $produit = afficherUnProduit($id);
 </header>
 
 <section class="product-details">
-    <h1><?= htmlspecialchars($produit->nom) ?></h1>
+    <h1 class="product-title"><?= htmlspecialchars($produit->nom) ?></h1> 
     <img src="<?= htmlspecialchars($produit->image) ?>" alt="<?= htmlspecialchars($produit->nom) ?>">
     <p><?= htmlspecialchars($produit->description) ?></p>
     <p class="price"><?= htmlspecialchars($produit->prix) ?> CHF</p>
+
+    <!-- Formulaire pour choisir la taille -->
+    <form action="" method="POST" class="size-selection">
+        <label for="size">Choisissez une taille :</label>
+        <select name="size" id="size" required>
+            <option value="" disabled selected>Sélectionnez une taille</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+        <input type="hidden" name="product_id" value="<?= htmlspecialchars($produit->id) ?>">
+        <button type="submit" name="action" value="add_to_cart">Ajouter au Panier</button>
+        <button type="submit" name="action" value="add_to_favorites">Ajouter aux Favoris</button>
+    </form>
 </section>
 </body>
 

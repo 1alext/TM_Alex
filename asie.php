@@ -20,7 +20,7 @@ $produitsAsie = $query->fetchAll(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="Lien.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script defer src="script.js"></script>
-    <p class="navigation"><a href="index.php" class="underline">Accueil</a> / Europe</p>
+    <p class="navigation"><a href="index.php" class="underline">Accueil</a> / Asie</p>
     <p class="description-maillot">
     Montre ta passion pour le football asiatique avec ces maillots, parfaits pour les entraînements <br>
     et la vie de tous les jours. Techniques et durables, ils font ressortir tes couleurs sur le terrain.
