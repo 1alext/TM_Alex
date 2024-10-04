@@ -41,16 +41,24 @@ $produit = afficherUnProduit($id);
                 <?php endif; ?>
             </div>
         </div>
-        <a href="#"><i class='bx bx-cart'></i></a>
+        <a href="pagepanier.php"><i class='bx bx-cart'></i></a>
         <a href="#"><i class='bx bx-heart'></i></a>
         <a href="#" class="menu-icon"><i class='bx bx-menu'></i></a>
     </div>
 </header>
 
 <section class="product-details">
-    <h1 class="product-title"><?= htmlspecialchars($produit->nom) ?></h1> 
-    <img src="<?= htmlspecialchars($produit->image) ?>" alt="<?= htmlspecialchars($produit->nom) ?>">
-    <p><?= htmlspecialchars($produit->description) ?></p>
+    <div class="title-container">
+        <h1 class="product-title"><?= htmlspecialchars($produit->nom) ?></h1>
+    </div>
+    <div class="product-info">
+        <img src="<?= htmlspecialchars($produit->image) ?>" alt="<?= htmlspecialchars($produit->nom) ?>">
+        <?php
+        //Découper la description en plusieurs lignes
+        $description = wordwrap(htmlspecialchars($produit->description), 80, "<br>\n", true);
+        echo "<p class='description'>" . $description . "</p>";
+        ?>
+    </div>
     <p class="price"><?= htmlspecialchars($produit->prix) ?> CHF</p>
 
     <!-- Formulaire pour choisir la taille -->
@@ -70,7 +78,6 @@ $produit = afficherUnProduit($id);
         <button type="submit" name="action" value="add_to_favorites">Ajouter aux Favoris</button>
     </form>
 </section>
-</body>
 
 <!--A propos-->
 
