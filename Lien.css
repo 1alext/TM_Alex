@@ -914,6 +914,72 @@ body {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
+/*Section hardvest en quelques chiffres*/
+.hardvest-stats {
+    text-align: center;
+    padding: 0;
+}
+
+.hardvest-stats h2 {
+    font-size: 2em;
+    margin-bottom: 30px; 
+    color: #000000; 
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+}
+
+.stat-box {
+    background-color: #f4f4f4;
+    padding: 40px;  
+    width: 230px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-box .stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.stat-box .stat-text {
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: bold;
+}
+
+/*Rectangle pour l'avis*/
+.avis-section {
+    background-color: #7483b4;
+    padding: 20px;
+    margin-top: 20px; 
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avis-section p {
+    font-size: 1.5em;
+    color: #000000;
+    font-style: italic;
+}
+
+.avis-image {
+    margin-top: 10px; 
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 #europe-page #search-bar {
     width: 200px;
@@ -999,7 +1065,7 @@ body {
     max-width: 300px;
     text-align: center;
     position: relative;
-    bottom: 180px; 
+    bottom: 160px; 
     left: 500px;
 }
 
@@ -1030,7 +1096,7 @@ body {
     width: 100%;
 }
 
-/* Style pour le bouton "Ajouter aux Favoris" */
+/*Style pour le bouton "Ajouter aux Favoris" */
 .size-selection button[value="add_to_favorites"] {
     background-color: white; 
     color: black;

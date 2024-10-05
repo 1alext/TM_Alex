@@ -118,6 +118,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     </form>
 </section>
 
+<!--Section Hardvest en quelques chiffres-->
+<section class="hardvest-stats">
+    <h2>Hardvest en quelques chiffres</h2>
+
+    <!-- Conteneur pour les statistiques -->
+    <div class="stats-container">
+        <!-- Carré gauche -->
+        <div class="stat-box">
+            <p class="stat-text">+200 commandes en 3 mois</p>
+        </div>
+
+        <!-- Carré droit -->
+        <div class="stat-box">
+            <p class="stat-number">536 Avis</p>
+        </div>
+    </div>
+
+    <!-- Section Avis en dessous des carrés -->
+    <div class="avis-section">
+        <p>"Les maillots de football Hardvest sont incroyables! Le design est top, et la qualité du tissu est impeccable. Confortables à porter, parfaits pour les matchs ou pour afficher votre soutien à votre équipe préférée. Je recommande vivement !"</p>
+        
+        <!-- Ajout de l'image utilisateur -->
+        <img src="asset/libre.png" alt="Avis utilisateur" class="avis-image">
+    </div>
+</section>
+
 <!--A propos-->
 
 <section id="about">
