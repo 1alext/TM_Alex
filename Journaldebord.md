@@ -174,7 +174,7 @@ quoi faire : enlever bouton acheter maintenant et remplacer par qqch d'autre, bo
 
 - ajout d'un id dans la section "contact" pour ancrer le bouton envoyer pour qu'il ne refresh pas la page quand on appuye sur envoyer
 
-vidéo regardé pour formulaire de contact : https://www.youtube.com/watch?v=XYJHoPoU0xQ
+vidéo regardé pour formulaire de contact : https://www.youtube.com/watch?v=XYJHoPoU0xQ https://www.youtube.com/watch?v=Yxr3otAWYVo https://www.youtube.com/watch?v=Dw9R0NEXuYo https://www.youtube.com/watch?v=P1dVxmyAPik 
 
 Code javascript pour "l'animation scroll vers le bas" provient de ces différents sites : https://www.makeuseof.com/javascript-smooth-scrolling-guide-web-developers/  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery#section2 https://css-tricks.com/snippets/jquery/smooth-scrolling/ https://medium.com/@amr.abdelkarem/a-guide-to-accessible-smooth-scroll-with-javascript-3f3e058b3f97
 
@@ -203,3 +203,6 @@ ajout des styles de page europe.php dans tout les autres catégories. On peut à
 2.10.2024 : ajout style pour les produits, ajout panier, ajout favoris, choisir la taille
 
 05.10.2024 : ajout page panier bientot fini, ajout section avis fini
+
+sources qui ont aidé : Section avis : https://www.youtube.com/watch?v=Pglz2SGKyRk ajout panier : https://www.youtube.com/watch?v=OX3FxGhRffc https://www.youtube.com/watch?v=HnOMoXMWF3s&t=2950s https://www.youtube.com/watch?v=-LPvL4G5sSs https://www.youtube.com/watch?v=OX3FxGhRffc&t=2184s https://www.youtube.com/watch?v=0wYSviHeRbs
+image libre d'un garcon pour la section avis : https://www.bigstockphoto.com/fr/image-477050365/stock-photo-white-background-studio-portrait-of-a-handsome-cool-boy-teenager-teen-young-adult-male-wearing-a-whi/ 
