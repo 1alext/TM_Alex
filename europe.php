@@ -37,7 +37,7 @@ $produitsEurope = $query->fetchAll(PDO::FETCH_ASSOC);
             </div>
             <a href="#" id="search-icon"><i class='bx bx-search'></i></a>
             <div class="user-menu-container">
-                <a href="#" class="user-icon" id="user-icon"><i class='bx bx-user'></i></a>
+            <span class="user-icon" id="user-icon"><i class='bx bx-user'></i></span>
                 <div class="user-menu" id="user-menu">
                     <?php if(isset($_SESSION['user_email'])): ?>
                         <p><?php echo $_SESSION['user_email']; ?></p>

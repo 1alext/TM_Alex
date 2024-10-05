@@ -30,9 +30,9 @@ $Produits = afficher();
         <div class="search-bar-container" id="search-bar-container">
             <input type="text" id="search-bar" placeholder="Rechercher">
         </div>
-        <a href="#" id="search-icon"><i class='bx bx-search'></i></a>
+        <a href="#user-icon" id="search-icon"><i class='bx bx-search'></i></a>
         <div class="user-menu-container">
-            <a href="#" class="user-icon" id="user-icon"><i class='bx bx-user'></i></a>
+        <span class="user-icon" id="user-icon"><i class='bx bx-user'></i></span>
             <div class="user-menu" id="user-menu">
                 <?php if(isset($_SESSION['user_email'])): ?>
                     <p><?php echo $_SESSION['user_email']; ?></p>
@@ -95,7 +95,6 @@ $Produits = afficher();
                     <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
                     <h2><?= $produit->nom ?></h2>
                     <p class="price"><?= $produit->prix ?> CHF</p>
-                    <button class="add-to-cart">Ajouter au panier</button>
                     <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
                 </div>
             </a>
@@ -108,7 +107,6 @@ $Produits = afficher();
                     <img src="<?= $produit->image ?>" alt="<?= $produit->nom ?>">
                     <h2><?= $produit->nom ?></h2>
                     <p class="price"><?= $produit->prix ?> CHF</p>
-                    <button class="add-to-cart">Ajouter au panier</button>
                     <p class="product-description" style="display: none;"><?= $produit->description; ?></p>
                 </div>
             </a>
@@ -141,7 +139,6 @@ $Produits = afficher();
                         <h2><?= $produit->nom ?></h2>
                     </a>
                     <p class="price"><?= $produit->prix ?> CHF</p>
-                    <button class="add-to-cart">Ajouter au panier</button>
                 </div>
             <?php endforeach;
         else: ?>
@@ -185,7 +182,7 @@ $Produits = afficher();
 
 <section class="espagne-section">
     <h2>Champions d'Europe</h2>
-    <h3>Il est temps de célébrer en style avec les <span class="break">maillots de l'équipe nationale et la collection gagnants!</span></h3>
+    <h3>Il est temps de célébrer en style avec les <span class="break">maillots de l'équipe nationale et la collection gagnante!</span></h3>
     <a href="page_produit.php?id=6" class="discover-text">Découvrir</a>
     <img src="asset/pubespagne.jpg" alt="Maillot de l'Espagne" class="espagne-image">
     <div class="espagne-content">

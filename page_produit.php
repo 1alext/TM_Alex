@@ -9,7 +9,44 @@ if (!isset($_GET['id'])) {
 
 $id = $_GET['id'];
 $produit = afficherUnProduit($id);
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
+    if ($_POST['action'] === 'add_to_cart') {
+        if (!isset($_SESSION['cart'])) {
+            $_SESSION['cart'] = [];
+        }
+
+        $_SESSION['cart'][] = [
+            'id' => $_POST['product_id'],
+            'size' => $_POST['size'],
+        ];
+
+        $_SESSION['message'] = "Article ajouté avec succès au panier!";
+
+        header("Location: " . $_SERVER['REQUEST_URI']); 
+        exit();
+    }
+}
 ?>
+
+<?php if (isset($_SESSION['message'])): ?>
+    <div class="success-message" id="success-message">
+        <?= $_SESSION['message']; ?>
+        <?php unset($_SESSION['message']);?>
+    </div>
+<?php endif; ?>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const successMessage = document.getElementById('success-message');
+        
+        if (successMessage) {
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 3000);
+        }
+    });
+</script>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -22,30 +59,32 @@ $produit = afficherUnProduit($id);
     <script defer src="script.js"></script>
     <p class="navigation"><a href="index.php" class="underline">Accueil</a> / Europe / Produit</p>
 </head>
-<body id="product-page">
-    
-<header>
-    <a href="index.php" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
-    <div class="navbar-icon">
-        <a href="#"><i class='bx bx-search'></i></a>
-        <div class="user-menu-container">
-            <a href="#" class="user-icon" id="user-icon"><i class='bx bx-user'></i></a>
-            <div class="user-menu" id="user-menu">
-                <?php if(isset($_SESSION['user_email'])): ?>
-                    <p><?php echo $_SESSION['user_email']; ?></p>
-                    <a href="#">Commandes</a>
-                    <a href="page_enregistrement/logout_form.php"><i class='bx bx-log-out'></i> Déconnexion</a>
-                <?php else: ?>
-                    <a href="page_enregistrement/pagelogin.php"><i class='bx bx-user'></i>Se connecter</a>
-                    <a href="page_enregistrement/pageenregistrement.php"><i class='bx bx-user'></i> S'enregistrer</a>
-                <?php endif; ?>
+
+<body id="europe-page">
+    <header id="produits-europe">
+        <a href="index.php" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
+        <div class="navbar-icon" id="navbar">
+            <div class="search-bar-container" id="search-bar-container">
+                <input type="text" id="search-bar" placeholder="Rechercher">
             </div>
+            <a href="#" id="search-icon"><i class='bx bx-search'></i></a>
+            <div class="user-menu-container">
+            <span class="user-icon" id="user-icon"><i class='bx bx-user'></i></span>
+                <div class="user-menu" id="user-menu">
+                    <?php if(isset($_SESSION['user_email'])): ?>
+                        <p><?php echo $_SESSION['user_email']; ?></p>
+                        <a href="page_enregistrement/logout_form.php">Déconnexion</a>
+                    <?php else: ?>
+                        <a href="page_enregistrement/pagelogin.php" class="user-button">Se connecter</a>
+                        <a href="page_enregistrement/pageenregistrement.php" class="user-button">S'enregistrer</a>
+                    <?php endif; ?>
+                </div>
+            </div>  
+            <a href="pagepanier.php"><i class='bx bx-cart'></i></a>
+            <a href="pagefavoris.php"><i class='bx bx-heart'></i></a>
+            <a href="#" class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></a>
         </div>
-        <a href="pagepanier.php"><i class='bx bx-cart'></i></a>
-        <a href="#"><i class='bx bx-heart'></i></a>
-        <a href="#" class="menu-icon"><i class='bx bx-menu'></i></a>
-    </div>
-</header>
+    </header>
 
 <section class="product-details">
     <div class="title-container">
@@ -62,7 +101,7 @@ $produit = afficherUnProduit($id);
     <p class="price"><?= htmlspecialchars($produit->prix) ?> CHF</p>
 
     <!-- Formulaire pour choisir la taille -->
-    <form action="" method="POST" class="size-selection">
+    <form action="" method="POST" class="size-selection" autocomplete="off">
         <label for="size">Choisissez une taille :</label>
         <select name="size" id="size" required>
             <option value="" disabled selected>Sélectionnez une taille</option>
