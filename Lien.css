@@ -1140,7 +1140,8 @@ body {
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    height: 1000px; 
+    height: 100vh; /* Utiliser 100vh pour éviter le défilement */
+    overflow: hidden; /* Évite le défilement */
 }
 
 /*Bouton pour commencer les achats*/
@@ -1158,7 +1159,7 @@ body {
 .center-container .empty-cart {
     text-align: center;
     font-size: 48px;
-    color: #666;
+    color: #000000;
     margin-top: 50px;
     font-weight: bold;
 }
@@ -1201,7 +1202,7 @@ body {
 /*Image du produit*/
 .product-image {
     width: 120px;
-    height: 150px;
+    height: 160px;
     object-fit: cover;
     border-radius: 8px;
     margin-right: 20px;
@@ -1264,4 +1265,93 @@ body {
 
 .checkout-btn:hover {
     background-color: #218838;
+}
+
+/*Conteneur principal des favoris */
+.favorites-container {
+    max-width: 1000px;
+    margin: 100px auto 0;
+    padding: 30px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Titre des favoris */
+.favorites-container h1 {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*Message lorsque la liste de favoris est vide*/
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*Utiliser 100vh pour éviter le défilement*/
+    overflow: hidden; /*Évite le défilement*/
+}
+
+.empty-favorites {
+    text-align: center;
+    font-size: 48px;
+    color: #000000;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+/* Bouton pour commencer les achats */
+.start-shopping-btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.start-shopping-btn:hover {
+    background-color: #555;
+}
+
+/* Style pour un article favori */
+.favorite-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Image du produit */
+.product-image {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* Détails du produit */
+.product-details {
+    flex-grow: 1;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #000000;
 }

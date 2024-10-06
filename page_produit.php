@@ -10,20 +10,29 @@ if (!isset($_GET['id'])) {
 $id = $_GET['id'];
 $produit = afficherUnProduit($id);
 
+//Initialiser le panier et les favoris
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = [];
+}
+if (!isset($_SESSION['favorites'])) {
+    $_SESSION['favorites'] = [];
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     if ($_POST['action'] === 'add_to_cart') {
-        if (!isset($_SESSION['cart'])) {
-            $_SESSION['cart'] = [];
-        }
-
         $_SESSION['cart'][] = [
             'id' => $_POST['product_id'],
             'size' => $_POST['size'],
         ];
-
         $_SESSION['message'] = "Article ajouté avec succès au panier!";
+        header("Location: " . $_SERVER['REQUEST_URI']);
+        exit();
+    }
 
-        header("Location: " . $_SERVER['REQUEST_URI']); 
+    if ($_POST['action'] === 'add_to_favorites') {
+        $_SESSION['favorites'][] = $_POST['product_id'];
+        $_SESSION['message'] = "Article ajouté aux favoris!";
+        header("Location: " . $_SERVER['REQUEST_URI']);
         exit();
     }
 }
@@ -32,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
 <?php if (isset($_SESSION['message'])): ?>
     <div class="success-message" id="success-message">
         <?= $_SESSION['message']; ?>
-        <?php unset($_SESSION['message']);?>
+        <?php unset($_SESSION['message']); ?>
     </div>
 <?php endif; ?>
 
@@ -101,21 +110,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     <p class="price"><?= htmlspecialchars($produit->prix) ?> CHF</p>
 
     <!-- Formulaire pour choisir la taille -->
-    <form action="" method="POST" class="size-selection" autocomplete="off">
-        <label for="size">Choisissez une taille :</label>
-        <select name="size" id="size" required>
-            <option value="" disabled selected>Sélectionnez une taille</option>
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="XXL">XXL</option>
-        </select>
-        <input type="hidden" name="product_id" value="<?= htmlspecialchars($produit->id) ?>">
-        <button type="submit" name="action" value="add_to_cart">Ajouter au Panier</button>
-        <button type="submit" name="action" value="add_to_favorites">Ajouter aux Favoris</button>
-    </form>
+<form action="" method="POST" class="size-selection" autocomplete="off">
+    <label for="size">Choisissez une taille :</label>
+    <select name="size" id="size" required>
+        <option value="" disabled selected>Sélectionnez une taille</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+    </select>
+    <input type="hidden" name="product_id" value="<?= htmlspecialchars($produit->id) ?>">
+    <button type="submit" name="action" value="add_to_cart">Ajouter au Panier</button>
+    <button type="submit" name="action" value="add_to_favorites">Ajouter aux Favoris</button>
+</form>
 </section>
 
 <!--Section Hardvest en quelques chiffres-->
