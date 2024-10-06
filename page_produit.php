@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="Lien.css">
     <script defer src="script.js"></script>
-    <p class="navigation"><a href="index.php" class="underline">Accueil</a> / Europe / Produit</p>
+    <p class="navigation"><a href="index.php" class="underline">Accueil</a> / Europe</p>
 </head>
 
 <body id="europe-page">
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
                 <div class="user-menu" id="user-menu">
                     <?php if(isset($_SESSION['user_email'])): ?>
                         <p><?php echo $_SESSION['user_email']; ?></p>
-                        <a href="page_enregistrement/logout_form.php">Déconnexion</a>
+                        <a href="page_enregistrement/logout_form.php" class="logout-link">Déconnexion</a>
                     <?php else: ?>
                         <a href="page_enregistrement/pagelogin.php" class="user-button">Se connecter</a>
                         <a href="page_enregistrement/pageenregistrement.php" class="user-button">S'enregistrer</a>

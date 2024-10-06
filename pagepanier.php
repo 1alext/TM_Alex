@@ -2,7 +2,7 @@
 session_start();
 require("config/commandes.php");
 
-//Si l'utilisateur a cliqué sur le bouton de suppression
+//Suppression d'un produit du panier
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['remove_item'])) {
     $idToRemove = $_POST['product_id'];
 
@@ -16,9 +16,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['remove_item'])) {
 }
 
 if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
-    echo "Votre panier est vide.";
+    echo "<div class='center-container'>";
+    echo "<div class='empty-cart'>Votre panier est vide.</div>";
+    echo "<p>Une fois que tu auras ajouté un article au panier, il s'affichera ici. Prêt à commencer ?</p>";
+    echo "<a href='index.php' class='start-shopping-btn'>Commencer à acheter</a>";
+    echo "</div>";
 } else {
+    echo "<div class='cart-container'>";
     echo "<h1>Votre panier</h1>";
+    $total = 0;
 
     foreach ($_SESSION['cart'] as $item) {
         $produit = afficherUnProduit($item['id']);
@@ -28,31 +34,32 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
             $prix = htmlspecialchars($produit->prix);
             $image = htmlspecialchars($produit->image);
             $size = htmlspecialchars($item['size']);
+            $total += $prix;
 
             echo "<div class='panier-item'>";
-            echo "<p>Produit: " . $nom . "</p>";
-            echo "<p>Prix: " . $prix . " CHF</p>";
-            echo "<p>Taille: " . $size . "</p>";
-
-            //Afficher l'image du produit
-            if ($image) {
-                echo "<img src='" . $image . "' alt='" . $nom . "' width='100' height='100'>";
-            } else {
-                echo "<p>Aucune image disponible pour ce produit.</p>";
-            }
-
-            //Bouton pour supprimer l'article
-            echo "<form method='POST' action='' style='display:inline-block;'>";
+            echo "<img src='" . $image . "' alt='" . $nom . "' class='product-image'>";
+            echo "<div class='product-details'>";
+            echo "<p class='product-name'>" . $nom . "</p>";
+            echo "<p class='product-price'>" . $prix . " CHF</p>";
+            echo "<p class='product-size'>Taille: " . $size . "</p>";
+            echo "</div>";
+            echo "<form method='POST' action='' class='delete-form'>";
             echo "<input type='hidden' name='product_id' value='" . $item['id'] . "'>";
             echo "<button type='submit' name='remove_item' class='delete-btn' title='Supprimer'><i class='bx bx-trash'></i></button>";
             echo "</form>";
-
-            echo "<hr>";
             echo "</div>";
         } else {
             echo "<p>Produit introuvable dans la base de données.</p>";
         }
     }
+
+    //Affichage du total et options supplémentaires
+    echo "<div class='cart-summary'>";
+    echo "<p>Total : <span class='total-price'>" . $total . " CHF</span></p>";
+    echo "<a href='index.php' class='continue-shopping-btn'>Continuer vos achats</a>";
+    echo "<a href='' class='checkout-btn'>Commander</a>";
+    echo "</div>";
+    echo "</div>";
 }
 ?>
 <!DOCTYPE html>
@@ -60,14 +67,36 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hardvest</title>
     <link rel="stylesheet" href="Lien.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
+
+<!-- Ajoute un ID à ton body pour différencier cette page -->
+<body id="europe-page">
+    <header id="produits-europe">
+        <a href="index.php" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
+        <div class="navbar-icon" id="navbar">
+            <div class="search-bar-container" id="search-bar-container">
+                <input type="text" id="search-bar" placeholder="Rechercher">
+            </div>
+            <a href="#" id="search-icon"><i class='bx bx-search'></i></a>
+            <div class="user-menu-container">
+            <span class="user-icon" id="user-icon"><i class='bx bx-user'></i></span>
+                <div class="user-menu" id="user-menu">
+                    <?php if(isset($_SESSION['user_email'])): ?>
+                        <p><?php echo $_SESSION['user_email']; ?></p>
+                        <a href="page_enregistrement/logout_form.php" class="logout-link">Déconnexion</a>
+                    <?php else: ?>
+                        <a href="page_enregistrement/pagelogin.php" class="user-button">Se connecter</a>
+                        <a href="page_enregistrement/pageenregistrement.php" class="user-button">S'enregistrer</a>
+                    <?php endif; ?>
+                </div>
+            </div>  
+            <a href="pagepanier.php"><i class='bx bx-cart'></i></a>
+            <a href="pagefavoris.php"><i class='bx bx-heart'></i></a>
+            <a href="#" class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></a>
+        </div>
+    </header>
+</body>
+</html>
