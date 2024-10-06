@@ -209,4 +209,4 @@ image libre d'un garcon pour la section avis : https://www.bigstockphoto.com/fr/
 
 06.10.2024 : page panier et favoris terminés
 
-barre de recherche et rendre le site responsive
+barre de recherche et rendre le site responsive et word
