@@ -207,4 +207,4 @@ ajout des styles de page europe.php dans tout les autres catégories. On peut à
 sources qui ont aidé : Section avis : https://www.youtube.com/watch?v=Pglz2SGKyRk ajout panier : https://www.youtube.com/watch?v=OX3FxGhRffc https://www.youtube.com/watch?v=HnOMoXMWF3s&t=2950s https://www.youtube.com/watch?v=-LPvL4G5sSs https://www.youtube.com/watch?v=OX3FxGhRffc&t=2184s https://www.youtube.com/watch?v=0wYSviHeRbs
 image libre d'un garcon pour la section avis : https://www.bigstockphoto.com/fr/image-477050365/stock-photo-white-background-studio-portrait-of-a-handsome-cool-boy-teenager-teen-young-adult-male-wearing-a-whi/ 
 
-06.10.2024 : page panier terminée
+06.10.2024 : page panier et favoris terminés
