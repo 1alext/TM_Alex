@@ -208,3 +208,5 @@ sources qui ont aidé : Section avis : https://www.youtube.com/watch?v=Pglz2SGKy
 image libre d'un garcon pour la section avis : https://www.bigstockphoto.com/fr/image-477050365/stock-photo-white-background-studio-portrait-of-a-handsome-cool-boy-teenager-teen-young-adult-male-wearing-a-whi/ 
 
 06.10.2024 : page panier et favoris terminés
+
+barre de recherche et rendre le site responsive
