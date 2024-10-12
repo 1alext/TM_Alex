@@ -27,9 +27,12 @@ $Produits = afficher();
  <header>
     <a href="#" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
     <div class="navbar-icon" id="navbar">
-        <div class="search-bar-container" id="search-bar-container">
-            <input type="text" id="search-bar" placeholder="Rechercher">
-        </div>
+    <form method="GET" action="recherche.php" class="search-bar-container" id="search-bar-container">
+    <div class="search-wrapper">
+        <input type="text" id="search-bar" name="query" placeholder="Rechercher">
+        <span id="search-button"><i class='bx bx-subdirectory-right'></i></span>
+    </div>
+</form>
         <a href="#user-icon" id="search-icon"><i class='bx bx-search'></i></a>
         <div class="user-menu-container">
         <span class="user-icon" id="user-icon"><i class='bx bx-user'></i></span>

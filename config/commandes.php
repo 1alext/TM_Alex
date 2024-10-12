@@ -41,5 +41,3 @@ function afficherProduitsParIds($ids) {
         return $data;
     }
 }
-
-

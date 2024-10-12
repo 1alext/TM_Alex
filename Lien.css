@@ -28,6 +28,31 @@ header .logo img     {
     margin-top: 20px; 
 }
 
+.search-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#search-button {
+    position: absolute;
+    right: 10px;
+    top: -15px; 
+    transform: translateY(-40%); 
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+#search-button i {
+    font-size: 20px;
+    color: #f3f3f3;
+}
+
+#search-button:hover i {
+    color: rgb(61, 61, 61); 
+}
 
 .navbar-icon i {
     font-size: 30px;

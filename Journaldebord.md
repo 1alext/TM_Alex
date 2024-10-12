@@ -210,3 +210,5 @@ image libre d'un garcon pour la section avis : https://www.bigstockphoto.com/fr/
 06.10.2024 : page panier et favoris terminés
 
 barre de recherche et rendre le site responsive et word
+
+13.10.2024 : création page recherche.php pour la barre de recherche et ajout d'un bouton pour confirmer la recherche

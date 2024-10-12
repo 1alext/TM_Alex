@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="Lien.css">
     <script defer src="script.js"></script>
-    <p class="navigation"><a href="index.php" class="underline">Accueil</a> / Europe</p>
+    <p class="navigation"><a href="index.php" class="underline">Accueil</a></p>
 </head>
 
 <body id="europe-page">
