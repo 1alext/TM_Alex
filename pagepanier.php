@@ -2,7 +2,7 @@
 session_start();
 require("config/commandes.php");
 
-//Suppression d'un produit du panier
+// Suppression d'un produit du panier
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['remove_item'])) {
     $idToRemove = $_POST['product_id'];
 
@@ -13,6 +13,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['remove_item'])) {
             break;
         }
     }
+}
+
+// Vérifier l'action de commande
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['checkout'])) {
+    if (!isset($_SESSION['user_email'])) {
+        $_SESSION['message'] = "Connectez-vous pour commander.";
+    } else {
+        // L'utilisateur est connecté, affiche le message
+        $_SESSION['message'] = "Cette fonction n'est pas possible.";
+    }
+    header("Location: " . $_SERVER['REQUEST_URI']);
+    exit();
 }
 
 if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
@@ -53,15 +65,27 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
         }
     }
 
-    //Affichage du total et options supplémentaires
+    // Affichage du total et options supplémentaires
     echo "<div class='cart-summary'>";
     echo "<p>Total : <span class='total-price'>" . $total . " CHF</span></p>";
+    
+    //Formulaire pour la commande
+    echo "<form method='POST' action=''>";
+    echo "<button type='submit' name='checkout' class='checkout-btn'>Commander</button>";
+    echo "</form>";
+    // Bouton pour continuer vos achats
     echo "<a href='index.php' class='continue-shopping-btn'>Continuer vos achats</a>";
-    echo "<a href='' class='checkout-btn'>Commander</a>";
-    echo "</div>";
     echo "</div>";
 }
-?>
+
+// Afficher le message si défini
+if (isset($_SESSION['message'])): ?>
+    <div class="success-message" id="success-message">
+        <?= $_SESSION['message']; ?>
+        <?php unset($_SESSION['message']); ?>
+    </div>
+<?php endif; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -77,15 +101,15 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
     <header id="produits-europe">
         <a href="index.php" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>
         <div class="navbar-icon" id="navbar">
-        <form method="GET" action="recherche.php" class="search-bar-container" id="search-bar-container">
-    <div class="search-wrapper">
-        <input type="text" id="search-bar" name="query" placeholder="Rechercher">
-        <button type="submit" id="search-button"><i class='bx bx-subdirectory-right'></i></button>
-    </div>
-</form>
+            <form method="GET" action="recherche.php" class="search-bar-container" id="search-bar-container">
+                <div class="search-wrapper">
+                    <input type="text" id="search-bar" name="query" placeholder="Rechercher">
+                    <button type="submit" id="search-button"><i class='bx bx-subdirectory-right'></i></button>
+                </div>
+            </form>
             <a href="#" id="search-icon"><i class='bx bx-search'></i></a>
             <div class="user-menu-container">
-            <span class="user-icon" id="user-icon"><i class='bx bx-user'></i></span>
+                <span class="user-icon" id="user-icon"><i class='bx bx-user'></i></span>
                 <div class="user-menu" id="user-menu">
                     <?php if(isset($_SESSION['user_email'])): ?>
                         <p><?php echo $_SESSION['user_email']; ?></p>
