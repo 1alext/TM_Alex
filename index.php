@@ -30,7 +30,7 @@ $Produits = afficher();
     <form method="GET" action="recherche.php" class="search-bar-container" id="search-bar-container">
     <div class="search-wrapper">
         <input type="text" id="search-bar" name="query" placeholder="Rechercher">
-        <span id="search-button"><i class='bx bx-subdirectory-right'></i></span>
+        <button type="submit" id="search-button"><i class='bx bx-subdirectory-right'></i></button>
     </div>
 </form>
         <a href="#user-icon" id="search-icon"><i class='bx bx-search'></i></a>

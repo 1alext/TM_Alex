@@ -46,6 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
         searchBarContainer.classList.toggle('show-search-bar');
     });
 });
+document.getElementById('search-button').addEventListener('click', function(event) {
+    var searchBarValue = document.getElementById('search-bar').value.trim();
+    
+    if (searchBarValue === "") {
+        event.preventDefault(); // Empêche la soumission si le champ est vide
+    }
+});
 
 //icon menu qui affiche les icones à la vertical lors qu'on est en responsive//
 

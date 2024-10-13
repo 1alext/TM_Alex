@@ -41,3 +41,14 @@ function afficherProduitsParIds($ids) {
         return $data;
     }
 }
+
+function rechercherProduits($query)
+{
+    if (require("connexion.php")) {
+        $req = $access->prepare("SELECT * FROM produits WHERE nom LIKE ? OR description LIKE ?");
+        $req->execute(array("%$query%", "%$query%"));
+        $data = $req->fetchAll(PDO::FETCH_OBJ);
+        $req->closeCursor();
+        return $data;
+    }
+}

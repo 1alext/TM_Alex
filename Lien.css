@@ -1165,8 +1165,8 @@ body {
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    height: 100vh; /* Utiliser 100vh pour éviter le défilement */
-    overflow: hidden; /* Évite le défilement */
+    height: 10px;
+    overflow: hidden;
 }
 
 /*Bouton pour commencer les achats*/
