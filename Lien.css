@@ -8,6 +8,81 @@
     text-decoration: none;
 }
 
+/* Media query pour les écrans de moins de 1050px */
+@media screen and (max-width: 1050px) { 
+    .navbar-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1px;
+    }
+
+    .navbar-icon a:not(.menu-icon) {
+        display: none;
+    }
+
+    /* Ajouter la ligne suivante pour cacher l'icône utilisateur */
+    .navbar-icon .user-icon {
+        display: none;
+    }
+
+    .navbar-icon .menu-icon {
+        display: inline-block;
+    }
+
+    .navbar-icon.responsive a {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Ajouter cette ligne pour montrer l'icône utilisateur lorsque le menu est en mode responsive */
+    .navbar-icon.responsive .user-icon {
+        display: block;
+    }
+
+    .navbar-icon.responsive .user-menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar-icon.responsive .user-menu-container .user-menu {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        border: none;
+    }
+
+    .navbar-icon.responsive .user-menu-container .user-menu a {
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 550px) {
+    .enregistrement {
+        width: 90%; 
+        padding: 10px; 
+    }
+}
+
+@media screen and (max-width: 375px) {
+    section#contact .container form{
+        flex-direction: column;
+        width: 95px;
+    section#contact .container form input{
+        width: 100%;
+    }
+}
+}
 /*logo et icones*/
 header {
     position: fixed;
@@ -236,54 +311,6 @@ header .logo img     {
     display: none;
 }
 
-/* Media query pour les écrans de moins de 1050px */
-@media screen and (max-width: 1050px) {
-    .navbar-icon {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 1px;
-    }
-
-    .navbar-icon a:not(.menu-icon) {
-        display: none;
-    }
-
-    .navbar-icon .menu-icon {
-        display: inline-block;
-    }
-
-    .navbar-icon.responsive a {
-        display: block;
-        text-align: left;
-        padding: 10px;
-        width: 100%;
-        color: white;
-        text-decoration: none;
-    }
-
-    .navbar-icon.responsive .user-menu-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    .navbar-icon.responsive .user-menu-container .user-menu {
-        position: static;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        border: none;
-    }
-
-    .navbar-icon.responsive .user-menu-container .user-menu a {
-        padding: 10px;
-        width: 100%;
-        text-align: left;
-    }
-}
 
 /*page d'enregistrement*/
 .enregistrement-container {
@@ -352,13 +379,6 @@ header .logo img     {
 
 #produits-europe .user-menu p {
     color: #000000; /*texte de l'e-mail en noir pour pages continents et page produit*/
-}
-
-@media (max-width: 550px) {
-    .enregistrement {
-        width: 90%; 
-        padding: 10px; 
-    }
 }
 
 /*Concerne la fenêtre pour se connecter et déconnecter*/
@@ -759,16 +779,6 @@ section#contact .container form button{
 
 section#contact .container form button:hover{
     transform: translateY(-5px);
-}
-
-@media screen and (max-width: 375px) {
-    section#contact .container form{
-        flex-direction: column;
-        width: 95px;
-    section#contact .container form input{
-        width: 100%;
-    }
-}
 }
 
 /*europe.php*/
