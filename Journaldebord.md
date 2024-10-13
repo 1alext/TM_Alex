@@ -214,3 +214,6 @@ barre de recherche et rendre le site responsive et word
 13.10.2024 : création page recherche.php pour la barre de recherche et ajout d'un bouton pour confirmer la recherche
 
 ajout fonction de recherche et est accessible depuis toutes les pages
+
+ajout message qui oblige de se connecter pour 
+commander
