@@ -254,10 +254,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo '<div style="color: black; margin-top: 20px; font-size: 18px;">Adresse email invalide.</div>';
 
         } else {
-            try {
-                //Connexion à la base de données
-                $access = new PDO("mysql:host=localhost;dbname=hardvest;charset=utf8", "root", "");
-                $access->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            try {  
+                $access = new PDO(
+                    "mysql:host=mysql-hardvest.alwaysdata.net;dbname=hardvest_site;charset=utf8",
+                    "hardvest",  // Nom d'utilisateur
+                    "6T#Y.s.RxPGY$23"  // Mot de passe
+                );
 
                 //Exécute la requête d'insertion
                 $sql = "INSERT INTO contacts (email, sujet, message) VALUES (:email, :sujet, :message)";
@@ -270,8 +272,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 echo '<div style="color: black; margin-top: 20px; font-size: 18px;">Message envoyé avec succès !</div>';
 
-            } catch (Exception $e) {
-                echo "Erreur : " . $e->getMessage();
+                $access->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+            } catch (Exception $error) {
+                echo "Erreur : " . $error->getMessage();
             }
         }
     }
