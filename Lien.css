@@ -21,7 +21,6 @@
         display: none;
     }
 
-    /* Ajouter la ligne suivante pour cacher l'icône utilisateur */
     .navbar-icon .user-icon {
         display: none;
     }
@@ -39,7 +38,6 @@
         text-decoration: none;
     }
 
-    /* Ajouter cette ligne pour montrer l'icône utilisateur lorsque le menu est en mode responsive */
     .navbar-icon.responsive .user-icon {
         display: block;
     }
@@ -74,15 +72,84 @@
     }
 }
 
-@media screen and (max-width: 375px) {
-    section#contact .container form{
-        flex-direction: column;
-        width: 95px;
-    section#contact .container form input{
-        width: 100%;
+@media (max-width: 1300px) {
+    .best-seller {
+        flex: 1 1 calc(33.33% - 20px);
+        margin-bottom: 20px;
     }
 }
+
+@media (max-width: 1000px) {
+    .best-seller {
+        flex: 1 1 calc(50% - 20px);
+        margin-bottom: 20px;
+    }
 }
+
+@media (max-width: 700px) {
+    .best-seller {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .best-seller {
+        flex: 1 1 100%; 
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .social {
+        margin-bottom: -70px; 
+    }
+}
+
+@media (max-width: 375px) {
+    .social {
+        margin-bottom: -70px; 
+    }
+}
+
+@media (max-width: 700px) {
+    .continent-card {
+        width: 80px; 
+        height: 80px; 
+    }
+    .continent-card p {
+        font-size: 1px; 
+    }
+}
+@media (max-width: 550px) {
+    .continent-card {
+        width: 60px; 
+        height: 60px;
+    }
+    .continent-card p {
+        font-size: 5px; 
+    }
+}
+
+@media (max-width: 450px) {
+    .continent-card {
+        width: 60px;
+        height: 60px; 
+    }
+    .continent-card p {
+        font-size: 3px; 
+    }
+}
+@media (max-width: 375px) {
+    .continent-card {
+        width: 30px; 
+        height: 30px; 
+    }
+    .continent-card p {
+        font-size: 1px; 
+    }
+}
+
 /*logo et icones*/
 header {
     position: fixed;

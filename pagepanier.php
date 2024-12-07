@@ -65,7 +65,7 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
         }
     }
 
-    // Affichage du total et options supplémentaires
+    // Affichage du total
     echo "<div class='cart-summary'>";
     echo "<p>Total : <span class='total-price'>" . $total . " CHF</span></p>";
     
@@ -78,7 +78,7 @@ if (!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
     echo "</div>";
 }
 
-// Afficher le message si défini
+//Afficher le message
 if (isset($_SESSION['message'])): ?>
     <div class="success-message" id="success-message">
         <?= $_SESSION['message']; ?>
@@ -96,7 +96,6 @@ if (isset($_SESSION['message'])): ?>
     <script defer src="script.js"></script>
 </head>
 
-<!-- Ajoute un ID à ton body pour différencier cette page -->
 <body id="europe-page">
     <header id="produits-europe">
         <a href="index.php" class="logo" id="logo"><img src="asset/logo 2.png" alt="Logo"></a>

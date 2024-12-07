@@ -1,16 +1,30 @@
-
-//animation 
+// Écouteur d'événements qui s'active lorsque le DOM est complètement chargé
 document.addEventListener("DOMContentLoaded", function() {
+    // Sélectionne l'élément ayant la classe "slider"
     const slider = document.querySelector(".slider");
+    
+    // Sélectionne tous les éléments <img> à l'intérieur de l'élément "slider"
     const slides = document.querySelectorAll(".slider img");
+    
+    // Récupère le nombre total de diapositives (images) dans le slider
     const totalSlides = slides.length;
+    
+    // Initialise l'index à 0 pour commencer à la première diapositive
     let index = 0;
 
+    // Fonction pour afficher la diapositive suivante
     function nextSlide() {
+        // Incrémente l'index pour passer à la diapositive suivante
+        // Utilise l'opérateur modulo pour revenir à 0 lorsque l'on atteint la dernière diapositive
         index = (index + 1) % totalSlides;
+
+        // Déplace le slider pour afficher la diapositive actuelle en utilisant une transformation CSS
         slider.style.transform = `translateX(${-index * 100}%)`;
     }
-    setInterval(nextSlide, 7000); 
+    
+    // Appelle la fonction nextSlide toutes les 7000 millisecondes (7 secondes)
+    setInterval(nextSlide, 7000);
+
 
 // Page rafraichissement
     const logo = document.getElementById("logo");
