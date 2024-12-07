@@ -1,5 +1,6 @@
 <?php
 require("connexion.php");
+echo $caca;
 #3 fonctions qui permettent d'interragir avec la bd
 function afficher()
 {

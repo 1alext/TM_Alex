@@ -1,4 +1,5 @@
 <?php
+$caca = "essaie";
 #try tente executer le code qui permet de se co à la bd, si une erreur survient catch est exécuté pour afficher l'erreur
 #PDO : PHP data objects permet interraction avec bd, établit la connexion avec access.
 try {   
