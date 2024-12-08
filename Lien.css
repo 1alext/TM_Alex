@@ -276,7 +276,7 @@ header .logo img     {
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    height: 100vh; 
+    height: 1080px; 
     align-items: center;
 }
 
